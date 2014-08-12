@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/load_testing/!svn/ver/10/QCBS/test-output/junitreports
+END
+TEST-com.qcbs.verifications.Tender_briefcase_menu_index.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/load_testing/!svn/ver/2/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_briefcase_menu_index.xml
+END
+TEST-com.qcbs.verifications.Tender_bidding.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/load_testing/!svn/ver/10/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_bidding.xml
+END
+TEST-com.qcbs.verifications.Tender_authorization_index.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/load_testing/!svn/ver/2/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_authorization_index.xml
+END
+TEST-com.qcbs.verifications.Tender_bid.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/load_testing/!svn/ver/10/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_bid.xml
+END
+TEST-com.qcbs.verifications.Tender_creation_with_data_provider.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/load_testing/!svn/ver/10/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_creation_with_data_provider.xml
+END
+TEST-com.qcbs.verifications.Tender_bidding_index.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/load_testing/!svn/ver/6/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_bidding_index.xml
+END
+TEST-com.qcbs.verifications.tender_bidding_index.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/load_testing/!svn/ver/10/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.tender_bidding_index.xml
+END
+TEST-com.qcbs.verifications.Tender_committee_index.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/load_testing/!svn/ver/10/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_committee_index.xml
+END
+TEST-com.qcbs.verifications.tender_bidding_index_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/load_testing/!svn/ver/10/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.tender_bidding_index_1.xml
+END
+TEST-com.qcbs.verifications.tender_creation_with_different_method.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/load_testing/!svn/ver/2/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.tender_creation_with_different_method.xml
+END
+TEST-com.qcbs.verifications.Tender_creation_index.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/load_testing/!svn/ver/2/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_creation_index.xml
+END
+TEST-com.qcbs.verifications.Tender_closing_index.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/load_testing/!svn/ver/6/QCBS/test-output/junitreports/TEST-com.qcbs.verifications.Tender_closing_index.xml
+END

@@ -1,0 +1,762 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>QCBS</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 03:05:17</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 03:07:22</td>   <td>125077</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 03:20:35</td>   <td>918266</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 03:33:48</td>   <td>1711224</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 03:45:44</td>   <td>2426622</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:11:37</td>   <td>3980313</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:13:32</td>   <td>4094718</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:15:27</td>   <td>4209640</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:17:22</td>   <td>4324983</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:19:17</td>   <td>4439998</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:34:07</td>   <td>5330245</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:36:01</td>   <td>5444260</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:38:13</td>   <td>5575432</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:40:07</td>   <td>5690338</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:42:02</td>   <td>5804714</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:57:54</td>   <td>6757140</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:59:54</td>   <td>6877265</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:01:49</td>   <td>6992327</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:03:45</td>   <td>7108188</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:05:41</td>   <td>7223547</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:21:39</td>   <td>8181428</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:23:33</td>   <td>8296115</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:25:29</td>   <td>8411411</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:27:24</td>   <td>8526442</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:29:18</td>   <td>8641349</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:45:14</td>   <td>9596476</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:47:09</td>   <td>9712383</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:49:05</td>   <td>9828007</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:51:01</td>   <td>9943569</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:52:56</td>   <td>10058490</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:08:49</td>   <td>11011695</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:10:46</td>   <td>11128867</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:12:41</td>   <td>11243492</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:14:35</td>   <td>11357804</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:16:30</td>   <td>11472553</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:32:21</td>   <td>12423658</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:34:15</td>   <td>12537861</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:36:09</td>   <td>12652141</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:38:04</td>   <td>12766484</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:39:59</td>   <td>12882016</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:55:49</td>   <td>13831895</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:57:44</td>   <td>13946597</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:59:38</td>   <td>14060629</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:01:32</td>   <td>14175364</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:03:28</td>   <td>14290598</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.Tender_bid(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">Tender_bid</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 16:42:46</td>   <td>-37350854</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 17:14:46</td>   <td>-35430835</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 17:46:39</td>   <td>-33517855</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 18:16:05</td>   <td>-31752292</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 18:48:45</td>   <td>-29792543</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 19:20:47</td>   <td>-27869971</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 19:53:32</td>   <td>-25905367</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 20:25:29</td>   <td>-23987936</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 20:57:18</td>   <td>-22078720</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 21:29:05</td>   <td>-20172594</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 22:00:52</td>   <td>-18265310</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 22:34:19</td>   <td>-16257818</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/08 23:06:16</td>   <td>-14341106</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/09 02:08:02</td>   <td>-3434675</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="c1ea89">  <td>14/07/09 02:40:07</td>   <td>-1509826</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_creation_with_data_provider.create_Tender(java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">create_Tender</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 16:42:34</td>   <td>-37363373</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:04:13</td>   <td>-64163</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:11:28</td>   <td>3971106</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:33:59</td>   <td>5321492</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:57:44</td>   <td>6746557</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:21:30</td>   <td>8173034</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:45:05</td>   <td>9587471</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:08:39</td>   <td>11002019</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:32:12</td>   <td>12414889</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:55:40</td>   <td>13822954</td> <td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;fetchSuiteConfiguration</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 16:42:34</td>   <td>-37363357</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 17:14:38</td>   <td>-35439557</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 17:46:30</td>   <td>-33526624</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 18:15:56</td>   <td>-31761219</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 18:48:36</td>   <td>-29801156</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 19:20:38</td>   <td>-27878865</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 19:53:23</td>   <td>-25914105</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 20:25:20</td>   <td>-23996814</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 20:57:10</td>   <td>-22086911</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 21:28:56</td>   <td>-20181301</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 22:00:43</td>   <td>-18274048</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 22:34:10</td>   <td>-16266978</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 23:06:07</td>   <td>-14350016</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 02:07:53</td>   <td>-3443788</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 02:39:58</td>   <td>-1519236</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:04:13</td>   <td>-64163</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:06:48</td>   <td>91024</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:20:19</td>   <td>902324</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:33:32</td>   <td>1695126</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:45:15</td>   <td>2398304</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:57:25</td>   <td>3127999</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:59:33</td>   <td>3255936</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:01:44</td>   <td>3386437</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:03:53</td>   <td>3515414</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:05:36</td>   <td>3619236</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:07:45</td>   <td>3747781</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:09:27</td>   <td>3849428</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:11:28</td>   <td>3971106</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:13:23</td>   <td>4085996</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:15:18</td>   <td>4200730</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:17:13</td>   <td>4316245</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:19:08</td>   <td>4431010</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:20:32</td>   <td>4515020</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:21:51</td>   <td>4593702</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:23:48</td>   <td>4710558</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:25:57</td>   <td>4839453</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:28:06</td>   <td>4968482</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:30:13</td>   <td>5096372</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:32:09</td>   <td>5212073</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:33:59</td>   <td>5321492</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:35:53</td>   <td>5436054</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:38:04</td>   <td>5566647</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:39:59</td>   <td>5681819</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:41:54</td>   <td>5796788</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:43:48</td>   <td>5910976</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:45:36</td>   <td>6019318</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:47:33</td>   <td>6135769</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:49:41</td>   <td>6263933</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:51:50</td>   <td>6392550</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:53:58</td>   <td>6521310</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:55:55</td>   <td>6637918</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:57:44</td>   <td>6746557</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:59:41</td>   <td>6863729</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:01:40</td>   <td>6982886</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:03:37</td>   <td>7099823</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:05:31</td>   <td>7214247</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:07:27</td>   <td>7329715</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:09:16</td>   <td>7438618</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:11:21</td>   <td>7563928</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:13:30</td>   <td>7692618</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:15:38</td>   <td>7820467</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:17:46</td>   <td>7948413</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:19:41</td>   <td>8064067</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:21:30</td>   <td>8173034</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:23:25</td>   <td>8287627</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:25:19</td>   <td>8402142</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:27:15</td>   <td>8517782</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:29:11</td>   <td>8633469</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:31:05</td>   <td>8747985</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:32:54</td>   <td>8857170</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:34:50</td>   <td>8972825</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:36:58</td>   <td>9101037</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:39:08</td>   <td>9231210</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:41:18</td>   <td>9361006</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:43:15</td>   <td>9478067</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:45:05</td>   <td>9587471</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:47:00</td>   <td>9702847</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:48:55</td>   <td>9818285</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:50:52</td>   <td>9934628</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:52:47</td>   <td>10049674</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:54:43</td>   <td>10165752</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:56:33</td>   <td>10275702</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:58:30</td>   <td>10392418</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:00:37</td>   <td>10520285</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:02:46</td>   <td>10648749</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:04:53</td>   <td>10776289</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:06:49</td>   <td>10892397</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:08:39</td>   <td>11002019</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:10:35</td>   <td>11117878</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:12:32</td>   <td>11234535</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:14:26</td>   <td>11349300</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:16:20</td>   <td>11463206</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:18:16</td>   <td>11579002</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:20:06</td>   <td>11688640</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:22:02</td>   <td>11804997</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:24:11</td>   <td>11933883</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:26:19</td>   <td>12061550</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:28:27</td>   <td>12189519</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:30:23</td>   <td>12305829</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:32:12</td>   <td>12414889</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:34:07</td>   <td>12529951</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:36:01</td>   <td>12643497</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:37:55</td>   <td>12758090</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:39:50</td>   <td>12873043</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:41:45</td>   <td>12987965</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:43:33</td>   <td>13096384</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:45:29</td>   <td>13211756</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:47:37</td>   <td>13339657</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:49:45</td>   <td>13468205</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:51:53</td>   <td>13595803</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:53:50</td>   <td>13712597</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:55:40</td>   <td>13822954</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:57:35</td>   <td>13937938</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:59:30</td>   <td>14052578</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:01:24</td>   <td>14166703</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:03:19</td>   <td>14281454</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:05:15</td>   <td>14397453</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:07:03</td>   <td>14505498</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:08:59</td>   <td>14621933</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:11:21</td>   <td>14764283</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:13:33</td>   <td>14895766</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:16:27</td>   <td>15069909</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:18:31</td>   <td>15193533</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&gt;&gt;SeleniumInit.setUp(java.lang.reflect.Method)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&gt;&gt;setUp</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 17:14:37</td>   <td>-35440293</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 17:46:30</td>   <td>-33527433</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 18:15:55</td>   <td>-31762585</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 18:48:35</td>   <td>-29802120</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 19:20:37</td>   <td>-27879835</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 19:53:22</td>   <td>-25915105</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 20:25:19</td>   <td>-23997775</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 20:57:09</td>   <td>-22087634</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 21:28:55</td>   <td>-20182236</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 22:00:42</td>   <td>-18274683</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 22:34:09</td>   <td>-16267915</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/08 23:06:06</td>   <td>-14350853</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 02:07:53</td>   <td>-3443851</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 02:39:57</td>   <td>-1520143</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:03:55</td>   <td>-81889</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_creation_with_data_provider@8fce95]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:06:45</td>   <td>87976</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:19:58</td>   <td>880736</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:33:31</td>   <td>1693737</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:45:11</td>   <td>2393866</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:57:24</td>   <td>3127219</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 03:59:33</td>   <td>3255401</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:01:42</td>   <td>3385036</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:03:51</td>   <td>3514012</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:05:36</td>   <td>3618471</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:07:44</td>   <td>3746964</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:09:26</td>   <td>3848772</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:11:27</td>   <td>3970311</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:13:22</td>   <td>4085136</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:15:17</td>   <td>4199869</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:17:13</td>   <td>4315400</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:19:07</td>   <td>4430087</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:20:31</td>   <td>4514144</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:21:50</td>   <td>4592779</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:23:47</td>   <td>4709651</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:25:55</td>   <td>4838395</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:28:05</td>   <td>4967578</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:30:13</td>   <td>5095495</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:32:08</td>   <td>5211212</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:33:58</td>   <td>5320584</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:35:52</td>   <td>5435224</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:38:03</td>   <td>5565678</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:39:58</td>   <td>5680943</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:41:53</td>   <td>5795631</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:43:47</td>   <td>5909944</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:45:35</td>   <td>6018301</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:47:32</td>   <td>6134799</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:49:40</td>   <td>6263047</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:51:48</td>   <td>6391258</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:53:57</td>   <td>6519965</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:55:54</td>   <td>6636573</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:57:43</td>   <td>6745572</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 04:59:40</td>   <td>6862478</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:01:39</td>   <td>6981979</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:03:36</td>   <td>7098400</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:05:31</td>   <td>7213417</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:07:26</td>   <td>7328854</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:09:15</td>   <td>7437680</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:11:20</td>   <td>7563131</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:13:28</td>   <td>7691389</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:15:37</td>   <td>7819681</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:17:45</td>   <td>7947529</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:19:40</td>   <td>8062613</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:21:29</td>   <td>8172111</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:23:24</td>   <td>8286767</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:25:18</td>   <td>8401250</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:27:14</td>   <td>8516953</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:29:09</td>   <td>8632171</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:31:04</td>   <td>8747125</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:32:53</td>   <td>8856341</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:34:49</td>   <td>8971995</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:36:57</td>   <td>9100203</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:39:07</td>   <td>9229924</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:41:17</td>   <td>9359666</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:43:14</td>   <td>9476660</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:45:04</td>   <td>9586564</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:46:59</td>   <td>9701846</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:48:55</td>   <td>9817409</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:50:51</td>   <td>9933658</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:52:46</td>   <td>10048798</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:54:42</td>   <td>10164876</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:56:32</td>   <td>10274826</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 05:58:29</td>   <td>10391480</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:00:37</td>   <td>10519418</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:02:45</td>   <td>10647926</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:04:52</td>   <td>10775207</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:06:49</td>   <td>10891631</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:08:38</td>   <td>11001112</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:10:34</td>   <td>11116862</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:12:31</td>   <td>11233690</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:14:26</td>   <td>11348580</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:16:19</td>   <td>11462361</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:18:15</td>   <td>11578017</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:20:05</td>   <td>11687733</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:22:01</td>   <td>11804167</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:24:10</td>   <td>11932423</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:26:18</td>   <td>12060697</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:28:26</td>   <td>12188704</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:30:22</td>   <td>12305016</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:32:11</td>   <td>12413982</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:34:06</td>   <td>12529012</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:36:00</td>   <td>12642621</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:37:54</td>   <td>12757230</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:39:49</td>   <td>12871932</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:41:44</td>   <td>12987120</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:43:33</td>   <td>13095524</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:45:28</td>   <td>13210927</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:47:36</td>   <td>13338856</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:49:44</td>   <td>13466865</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:51:52</td>   <td>13595016</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:53:49</td>   <td>13711768</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:55:39</td>   <td>13822015</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:57:34</td>   <td>13937093</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 06:59:28</td>   <td>14051374</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:01:23</td>   <td>14165843</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:03:18</td>   <td>14280499</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:05:13</td>   <td>14396233</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:07:02</td>   <td>14504622</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:08:58</td>   <td>14621104</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:11:20</td>   <td>14763334</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:13:32</td>   <td>14894835</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:16:26</td>   <td>15068580</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:18:30</td>   <td>15192673</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="dfafd1">  <td>14/07/09 07:20:21</td>   <td>15303857</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SeleniumInit.tearDown(org.testng.ITestResult)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">&lt;&lt;tearDown</td> 
+<td>&nbsp;</td>  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 03:57:35</td>   <td>3137674</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:20:41</td>   <td>4524305</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:43:56</td>   <td>5919121</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:07:36</td>   <td>7338640</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:31:14</td>   <td>8756911</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:54:52</td>   <td>10175084</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:18:26</td>   <td>11588724</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:41:54</td>   <td>12996500</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:05:23</td>   <td>14405708</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_close()[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">tender_close</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:09:35</td>   <td>3858088</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:32:18</td>   <td>5220795</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:56:04</td>   <td>6646454</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:19:49</td>   <td>8072228</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:43:24</td>   <td>9487181</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:06:59</td>   <td>10902088</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:30:32</td>   <td>12314708</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:53:59</td>   <td>13722210</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:18:41</td>   <td>15204287</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_open()[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">tender_open</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 03:59:42</td>   <td>3265189</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:01:53</td>   <td>3395660</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:04:02</td>   <td>3524840</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:05:45</td>   <td>3627990</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:07:54</td>   <td>3756768</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@a6aeed]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:22:00</td>   <td>4603033</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:23:56</td>   <td>4718906</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:26:06</td>   <td>4848614</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:28:14</td>   <td>4977048</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:30:22</td>   <td>5104813</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1507fb2]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:45:46</td>   <td>6028541</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:47:41</td>   <td>6144257</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:49:49</td>   <td>6272296</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:51:58</td>   <td>6400882</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 04:54:07</td>   <td>6529846</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@129f3b5]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:09:33</td>   <td>7456247</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:11:30</td>   <td>7572651</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:13:38</td>   <td>7700638</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:15:46</td>   <td>7829111</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:17:54</td>   <td>7957197</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1125127]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:33:02</td>   <td>8865080</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:34:59</td>   <td>8981578</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:37:08</td>   <td>9110447</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:39:17</td>   <td>9240308</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:41:27</td>   <td>9369776</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@13c1b02]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:56:42</td>   <td>10284706</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 05:58:38</td>   <td>10400656</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:00:47</td>   <td>10529461</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:02:54</td>   <td>10657331</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:05:03</td>   <td>10785872</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@19209ea]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:20:15</td>   <td>11697487</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:22:11</td>   <td>11813672</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:24:19</td>   <td>11942169</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:26:27</td>   <td>12069679</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:28:36</td>   <td>12198773</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@1c99159]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:43:42</td>   <td>13104606</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:45:37</td>   <td>13219822</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:47:45</td>   <td>13348239</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:49:54</td>   <td>13476600</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 06:52:02</td>   <td>13604431</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@91cee]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:07:11</td>   <td>14513986</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:09:09</td>   <td>14631952</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:11:31</td>   <td>14773990</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:13:44</td>   <td>14906614</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+<tr bgcolor="7ddcde">  <td>14/07/09 07:16:37</td>   <td>15079992</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Tender_bidding.tender_reencryption(java.lang.String, java.lang.String)[pri:0, instance:com.qcbs.verifications.Tender_bidding@74c3aa]">tender_reencryption</td> 
+  <td>main@19739141</td>   <td></td> </tr>
+</table>

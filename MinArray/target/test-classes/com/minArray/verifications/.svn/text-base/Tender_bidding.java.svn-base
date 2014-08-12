@@ -1,0 +1,273 @@
+package com.qcbs.verifications;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+import com.qcbs.page.DashboardPage;
+
+public class Tender_bidding extends SeleniumInit {
+
+	Common common = new Common(driver);
+
+	/*
+	 * DashboardPage db = new DashboardPage(driver);
+	 */
+	/*-----------------------------TENDER BIDDING----------------------------------------*/
+
+	/*
+	 * THIS IS THE DATA PROVIDER METHOD .TO RUN FOR DIFFERENT USER ADD THE VALUE
+	 * INTO 'retObjArr' ARRAY AS SHOWN
+	 */
+
+	@DataProvider(name = "Tender_bidding")
+	public Object[][] tender_bidding() {
+
+		Object[][] retObjArr = {
+
+		{ "willie", "admin123" },
+
+		{ "heinzco", "admin123" },
+
+	/*	{ "teezmo", "admin123" },
+
+		{ "watcon", "admin123" },
+
+		{ "matibini", "admin123" },
+		
+		{ "motadiile", "admin123" },
+		
+*/
+		};
+		return (retObjArr);
+
+	}
+
+	/*------------------------------------------------------------------------------------*/
+
+	@Test(dataProvider = "tender_bidding")
+	public void Tender_bid(String user_name, String password) {
+
+		// -----------------------------------------------------------------------------------------------
+
+		common.log("<br></br><h3>Step 1:Open Given url </h3>");
+
+		/*
+		 * db.open_homepage();// home page open verify method
+		 */
+		common.log("<h3>Test Case Name - Tender Bid</h3>");
+		common.log("<h3>Test Case Serial Number - </h3>");
+
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		/*
+		 * db.login_varify();// login page verify method
+		 */
+		try {
+
+			indexpage.login(user_name, password);// login method
+			common.pause(2);
+
+			common.log("<h3>Step 3:Click on Edit,Click on ITT,Select Record For Procced.</h3>");
+			bid_indexpage.select_tender_for_bid();
+
+			common.pause(2);
+
+			bid_indexpage.download_document();
+			common.pause(2);
+
+			bid_indexpage.Pay_Tender_Document_Fees();
+			common.pause(2);
+			bid_indexpage.prepare_bid();
+			common.pause(2);
+
+			bid_indexpage.bid_submission();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		} catch (Exception e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login(user_name, password);// login method
+			common.pause(3);
+
+			bid_indexpage.select_tender_for_bid();
+
+			common.pause(2);
+
+			bid_indexpage.download_document();
+			common.pause(2);
+
+			bid_indexpage.Pay_Tender_Document_Fees();
+			common.pause(2);
+			bid_indexpage.prepare_bid();
+			common.pause(2);
+
+			bid_indexpage.bid_submission();
+			common.pause(2);
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+	/*-------------------------------------------------------------------------------------*/
+
+	@Test
+	public void tender_close() {
+
+		common.log("<h3>Test Case Name - Tender Close</h3>");
+		common.log("<h3>Test Case Serial Number - </h3>");
+
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		/*
+		 * db.open_homepage();// home page open verify method
+		 */
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		/*
+		 * db.login_varify();// login page verify method
+		 */
+		try {
+
+			indexpage.login("patric", "admin123");// login method
+			common.pause(3);
+
+			close_indexpage.select_tender_for_close();
+			common.pause(2);
+			close_indexpage.Tender_Opening_Authority();
+			common.pause(2);
+			close_indexpage.Super_Hash_Generation();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("patric", "admin123");// login method
+			common.pause(3);
+
+			close_indexpage.select_tender_for_close();
+			common.pause(2);
+			close_indexpage.Tender_Opening_Authority();
+			common.pause(2);
+			close_indexpage.Super_Hash_Generation();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+	@Test(dataProvider = "tender_bidding")
+	public void tender_reencryption(String user_name, String password) {
+
+		//
+		// -------------------------------tender
+		// reencryption-------------------------------
+		//
+
+		common.log("<h3>Test Case Name - Tender Re-encryption</h3>");
+		common.log("<h3>Test Case Serial Number - </h3>");
+
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		/*
+		 * db.open_homepage();// home page open verify method
+		 */
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		/*
+		 * db.login_varify();// login page verify method
+		 */
+		try {
+
+			indexpage.login(user_name, password);// login method
+			common.pause(3);
+
+			reencryption_indexpage.select_tender_for_encrypt();
+			common.pause(2);
+			reencryption_indexpage.bid_reencryption();
+			common.pause(2);
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login(user_name, password);// login method
+			common.pause(3);
+
+			reencryption_indexpage.select_tender_for_encrypt();
+			common.pause(2);
+			reencryption_indexpage.bid_reencryption();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+	@Test
+	public void tender_open() {
+		//
+		// -------------------------------tender
+		// open-------------------------------
+		//
+
+		common.log("<h3>Test Case Name - Tender open</h3>");
+		common.log("<h3>Test Case Serial Number - </h3>");
+
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		/*
+		 * db.open_homepage();// home page open verify method
+		 */
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		/*
+		 * db.login_varify();// login page verify method
+		 */
+		try {
+
+			indexpage.login("patric", "admin123");// login method
+			common.pause(3);
+
+			open_IndexPage.select_tender_for_open();
+			common.pause(3);
+			open_IndexPage.Opening_of_Envelope();
+			common.pause(3);
+			open_IndexPage.Download_Bid_Documents();
+			common.pause(3);
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("patric", "admin123");// login method
+			common.pause(3);
+
+			open_IndexPage.select_tender_for_open();
+			common.pause(3);
+			open_IndexPage.Opening_of_Envelope();
+			common.pause(3);
+			open_IndexPage.Download_Bid_Documents();
+			common.pause(3);
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+}
+
+/*-------------------------------------------------------------------------------------*/
+

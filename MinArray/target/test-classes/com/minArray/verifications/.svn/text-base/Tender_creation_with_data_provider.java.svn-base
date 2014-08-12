@@ -1,0 +1,273 @@
+package com.qcbs.verifications;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.ITestContext;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+import com.qcbs.Init.TestData;
+import com.qcbs.page.DashboardPage;
+
+public class Tender_creation_with_data_provider extends SeleniumInit {
+
+	Common common = new Common(driver);
+
+	@DataProvider(name = "Tender_creation")
+	public Iterator<Object[]> define_tender(ITestContext context) {
+
+		String c = context.getCurrentXmlTest().getParameter("count");
+
+		int count = Integer.parseInt(c);
+
+		TestData td = new TestData();
+		java.util.List<Object[]> arraylist = new ArrayList<Object[]>();
+
+		for (int i = 1; i <= count; i++) {
+			String[] s1 = { "Tender Creation -" + i + "" };
+
+			arraylist.add(s1);
+		}
+		return arraylist.iterator();
+
+	}
+
+	
+	
+	
+	/*-----------------------------TENDER CREATION----------------------------------------*/
+
+	@Test(dataProvider = "define_tender")
+	public void create_Tender(String test) {
+
+		 TestData td1 = new TestData();
+		 String  title = td1.testing_procurment_title();
+System.out.println(title);
+		
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		
+		
+		DashboardPage db = new DashboardPage(driver);
+
+		db.open_homepage();// home page open verify method
+
+		/* for (int i = 1; i <= count; i++) { */
+
+		common.log("<h3>Test Case Name - Tender Prepare</h3>");
+		common.log("<h3>Test Case Serial Number - dg_cr_Ten_01</h3>");
+
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		db.login_varify();// login page verify method
+
+		
+		try {
+
+			indexpage.login("sherlock", "admin123");// login method
+			common.pause(1);
+
+			tender_indexpage.tender_creation(title);// create Tender method
+
+			common.pause(1);
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+			common.pause(1);
+			indexpage.login("sherlock", "admin123");// login method
+			common.pause(1);
+
+			tender_indexpage.tender_creation(title);// create Tender method
+			common.pause(1);
+
+			common.pause(1);
+
+			indexpage.logout();// logout method
+
+			common.pause(2);
+
+		}
+		common.pause(5);
+		// tender approve method called
+
+		common.log("<h3>Test Case Name - Tender Confirm Fund</h3>");
+		common.log("<h3>Test Case Serial Number - dg_cr_Ten_02</h3>");
+
+		common.log("<h3>Step 5:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+
+		try {
+
+			common.pause(2);
+			indexpage.login("tommie", "admin123");// login method
+			common.pause(2);
+
+			approve_indexpage.tender_approve(title);// create Tender method
+			common.pause(2);
+
+			indexpage.logout();
+			common.pause(2);
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("tommie", "admin123");// login method
+			common.pause(2);
+
+			approve_indexpage.tender_approve(title);// create Tender method
+			common.pause(2);
+
+			indexpage.logout();
+
+			common.pause(2);
+
+		}
+
+		common.pause(5);
+		common.log("<h3>Test Case Name - Tender Prepare After Confirm Fund</h3>");
+		common.log("<h3>Test Case Serial Number - dg_cr_Ten_03</h3>");
+
+		common.log("<h3>Step 8:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+
+		try {
+			common.pause(2);
+			indexpage.login("sherlock", "admin123");// login method
+			common.pause(1);
+
+			tpi_indexpage.prepare_after_conform_fund(title);// create Tender
+														// method
+			common.pause(1);
+
+			indexpage.logout();// logout method
+
+			common.pause(2);
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+			common.pause(1);
+			indexpage.login("sherlock", "admin123");// login method
+			common.pause(1);
+
+			tpi_indexpage.prepare_after_conform_fund(title);// create Tender
+														// method
+			common.pause(1);
+
+			indexpage.logout();// logout method
+
+			common.pause(1);
+
+		}
+
+		
+		common.log("<h3>Tender Authorization And Release</h3>");
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+		db.open_homepage();// home page open verify method
+
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		db.login_varify();// login page verify method
+
+		try {
+
+			indexpage.login("bellamy", "admin123");// login method
+			common.pause(4);
+
+			common.pause(4);
+
+			authorize_indexpage.Tender_vetting(title);// Tender
+													// authorization
+													// method
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("bellamy", "admin123");// login method
+			common.pause(4);
+
+			authorize_indexpage.Tender_vetting(title);// Tender
+													// authorization
+													// method
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		}
+		common.pause(5);
+
+		common.log("<h3>Step 5:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		try {
+
+			indexpage.login("williamg", "admin123");// login method
+			common.pause(4);
+
+			authorize_indexpage.Tender_authorization(title);// Tender
+														// authorization
+														// method
+			common.pause(2);
+
+			indexpage.logout_mtc();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("williamg", "admin123");// login method
+			common.pause(4);
+
+			authorize_indexpage.Tender_authorization(title);// Tender
+														// authorization
+														// method
+			common.pause(2);
+
+			indexpage.logout_mtc();// logout method
+
+		}
+		common.pause(5);
+
+		common.log("<h3>Step 9:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+
+		try {
+
+			indexpage.login("bellamy", "admin123");// login method
+			common.pause(4);
+
+			authorize_indexpage.Tender_release(title);// Tender
+													// release
+													// method
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("bellamy", "admin123");// login method
+			common.pause(4);
+
+			authorize_indexpage.Tender_release(title);// Tender
+													// release
+													// method
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		}
+
+		/*
+		 * common.log("<h3>Test Completed = " + i + "</h3>");
+		 */}
+	/*
+	 * }
+	 */
+}

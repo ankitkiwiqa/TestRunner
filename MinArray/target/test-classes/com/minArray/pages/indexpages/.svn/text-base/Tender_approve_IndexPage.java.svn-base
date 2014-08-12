@@ -1,0 +1,234 @@
+package com.qcbs.pages.indexpages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.TestData;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_approve_IndexPage extends AbstractPage {
+
+	public Tender_approve_IndexPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+	/*-----------------------------------------------------------------------------------------------------------------*/
+	@FindBy(xpath = "//*[@class='loggedinAsBox']")
+	private WebElement select_loggedin;
+
+	@FindBy(xpath = ".//*[@id='gwt-uid-90']")
+	public WebElement dashboard_manu;
+	
+	public Tender_creation_DashboardPage tender_approve(String title) {
+
+		Tender_approve_IndexPage tai = new Tender_approve_IndexPage(driver);
+	/*	
+
+		Select logedin_select = new Select(select_loggedin);
+		logedin_select
+				.selectByVisibleText("Planning Officer moa Veterinary south east : Department of Veterinary Services");*/
+/*
+		(new WebDriverWait(driver, 10))
+				  .until(ExpectedConditions.presenceOfElementLocated(By.xpath("s]")));
+		*/
+		
+		common.pause(3);
+		tcd.tender_approve_dashboard();// verification method of tender approver
+										// dashboard
+
+		common.pause(1);
+		common.log("<h3>Step 6:Click on Edit,Click on ITT,Select Tender to Proceed</h3>");
+
+		tai.select_tender_for_approval(title);// select tender for approval
+
+		common.pause(1);
+
+		tai.confirmation_of_funds();// conformation funds method
+
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------------------SELECT TENDER FOR APPROVAL METHOD---------------------------------------------------------------------------*/
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/div[contains(.,'Edit')]")
+	private WebElement edit_button;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')][contains(.,'ITT')]")
+	private WebElement itt_button;
+
+	@FindBy(xpath = "//div/div/div/div/div[2]/div[1]/div/table[1]/tbody/tr/td[2]/input")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Search')]")
+	private WebElement search_box_button;
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[7]/div/span[1]/img[@title='Proceed']")
+	private WebElement tender_record;
+
+	public Tender_creation_DashboardPage select_tender_for_approval(String title) {
+
+		Tender_creation_IndexPage tdi = new Tender_creation_IndexPage(driver);
+
+		common.pause(2);
+		edit_button.click();
+		common.pause(2);
+		itt_button.click();
+		common.pause(5);
+
+		tcd.tender_approve_search();// verification method
+		common.pause(1);
+
+		search_box.sendKeys(title);
+		common.pause(2);
+		search_box_button.click();
+		common.pause(3);
+		tender_record.click();
+		common.pause(5);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*---------------------------------------------------CONFIRMATION OF FUNDS----------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Confirmation of Funds')]")
+	private WebElement conformation_on_funds_button;
+
+	@FindBy(xpath = "//table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Fund_Available_for_the_procurement;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[6]/td/table/tbody/tr/td/table/tbody/tr[1]/td[2]/div/input")
+	private WebElement approved_amount;
+//new 
+	
+	
+	
+
+	
+	@FindBy(xpath = "//table/tbody/tr[7]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement organization_code;
+	
+	
+	
+
+	@FindBy(xpath = "//tbody/tr[8]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement account;
+
+
+	@FindBy(xpath = "//tbody/tr[9]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement cost_center;
+
+
+	@FindBy(xpath = "//table/tbody/tr[10]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement project;
+
+
+	@FindBy(xpath = "//tbody/tr[11]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement remarks;
+
+	
+	
+	
+	
+	
+	@FindBy(xpath = "//div/div/div/div/div/div[4]/div/div/div[1]/div[3]/table/tbody/tr/td[6]/img")
+	private WebElement save_button;
+
+	@FindBy(xpath = "//div/table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement save_button_ok;
+
+	@FindBy(xpath = "//div/div/div/div/div/div[4]/div/div/div[1]/div[3]/table/tbody/tr/td[7]/img")
+	private WebElement submit_button;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement submit_button_ok;
+
+	public Tender_creation_DashboardPage confirmation_of_funds() {
+
+		
+
+		new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='hyperlink_item'][contains(.,'Confirmation of Funds')]")));
+		
+		
+		
+		TestData td = new TestData();
+
+		String fund = td.approved_amout();
+		common.log("<h3>Step 7:Click on Confirmation of Fund,Select Appropiate Data,Click on save</h3>");
+
+		
+		conformation_on_funds_button.click();
+		common.pause(5);
+
+		tcd.tender_approve_confirmation_on_funds();// verfication after click on
+													// cofirmation of checkbox
+		common.pause(1);
+
+		
+		common.move_to_element(Fund_Available_for_the_procurement);
+		
+        common.selectFromComboBy_Visible_Text(Fund_Available_for_the_procurement, "Yes");
+		
+		
+		common.pause(1);
+		
+		common.move_to_element(approved_amount);
+		approved_amount.sendKeys(fund);
+		common.pause(1);
+
+		common.move_to_element(organization_code);
+		organization_code.sendKeys(td.test_data());
+		
+		
+		common.move_to_element(account);
+		account.sendKeys(td.test_data());
+		
+		common.move_to_element(cost_center);
+		cost_center.sendKeys(td.test_data());
+		common.pause(1);
+		common.move_to_element(project);
+		project.sendKeys(td.test_data());
+		common.pause(1);
+
+		common.move_to_element(remarks);
+		remarks.sendKeys(td.test_data());
+		
+		
+		common.pause(1);
+		save_button.click();
+
+		common.log("<h3><u>Data Entered</u></h3>"
+				+ "<li><b> Fund Available for the procurement:</b> Yes</li>"
+
+				+ " <li><b>Approved Amount :</b> " + td.approved_amout()
+				+ "</li>" + " <li><b>Revenue/Capital :</b> Revenue</li>"
+
+				+ "<br></br>");
+
+		common.pause(3);
+		save_button_ok.click();
+		common.pause(2);
+
+		submit_button.click();
+		common.pause(2);
+
+		submit_button_ok.click();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+}

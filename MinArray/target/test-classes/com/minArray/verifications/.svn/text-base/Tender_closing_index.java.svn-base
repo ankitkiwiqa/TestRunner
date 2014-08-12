@@ -1,0 +1,63 @@
+package com.qcbs.verifications;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+import com.qcbs.page.DashboardPage;
+
+public class Tender_closing_index extends SeleniumInit {
+
+	DashboardPage db = new DashboardPage(driver);
+	Common common = new Common(driver);
+	
+	@Test
+	public void tender_close() {
+
+		
+		common.log("<h3>Test Case Name - Tender Close</h3>");
+		common.log("<h3>Test Case Serial Number - </h3>");
+
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		db.open_homepage();// home page open verify method
+
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		db.login_varify();// login page verify method
+
+		try {
+
+			indexpage.login("patric", "admin123");// login method
+			common.pause(3);
+
+			close_indexpage.select_tender_for_close();
+			common.pause(2);
+			close_indexpage.Tender_Opening_Authority();
+			common.pause(2);
+			close_indexpage.Super_Hash_Generation();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("patric", "admin123");// login method
+			common.pause(3);
+
+			close_indexpage.select_tender_for_close();
+			common.pause(2);
+			close_indexpage.Tender_Opening_Authority();
+			common.pause(2);
+			close_indexpage.Super_Hash_Generation();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+}

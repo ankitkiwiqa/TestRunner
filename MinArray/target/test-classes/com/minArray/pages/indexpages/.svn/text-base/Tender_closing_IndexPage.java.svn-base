@@ -1,0 +1,153 @@
+package com.qcbs.pages.indexpages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+import com.qcbs.Init.Common;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_closing_IndexPage extends AbstractPage {
+
+	public Tender_closing_IndexPage(WebDriver driver) {
+		super(driver);
+
+	}
+
+	Common common = new Common(driver);
+
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+
+	@FindBy(xpath = "//input[@class='searchBox']")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Search')]")
+	private WebElement search_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Edit')]")
+	private WebElement edit_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'ITT')]")
+	private WebElement itt_button;
+
+	@FindBy(xpath = "//img[@title='Proceed']")
+	private WebElement tender_respond_button;
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[1]/select")
+	private WebElement select_box_on_Tender_Opening_Authority;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Dashboard')]")
+	private WebElement dashboardmanu;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'My Briefcase')]")
+	private WebElement mybriefcase;
+
+	@FindBy(xpath = ".//*[@class='loggedInUserNameLabel']")
+	private WebElement account_name;
+
+	public Tender_creation_DashboardPage select_tender_for_close() {
+
+		common.log("<h3>Step 3:Click on Edit,Click on ITT,Select Record For Procced.</h3>");
+		common.pause(1);
+		tcd.verification_method(dashboardmanu, "Dashboard", "Button",
+				"Dashboard");
+		tcd.verification_method(mybriefcase, "My Briefcase", "Button",
+				"Dashboard");
+		tcd.verification_method(account_name, "User Name", "Label", "Dashboard");
+
+		common.pause(1);
+		edit_button.click();
+		common.pause(1);
+		itt_button.click();
+		common.pause(3);
+
+		Tender_bid_Indexpage tbi=new Tender_bid_Indexpage(driver);
+		
+		search_box.sendKeys(tbi.Tender_name);
+		common.pause(1);
+		search_button.click();
+		common.pause(1);
+
+		tender_respond_button.click();
+		common.pause(7);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Save']")
+	private WebElement save_button;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'OK')]")
+	private WebElement ok_button;
+
+	@FindBy(xpath = "//img[@alt='Proceed To Next']")
+	private WebElement next_button;
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Tender Opening Authority')]")
+	private WebElement opening_authority_button;
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Super Hash Generation')]")
+	private WebElement hash_generator_button;
+
+	public Tender_creation_DashboardPage Tender_Opening_Authority() {
+		common.log("<h3>Step 4:Select Appropiate option from Open Authority Selection box on Open Authority Selection Page,Click on Save,Click on Next</h3>");
+
+		common.pause(5);
+		tcd.verification_method(opening_authority_button,
+				"Tender Opening Authority", "Button",
+				"Tender Opening Authority");
+		common.pause(1);
+		/*
+		 * common.selectFromComboByVisibleElement(
+		 * select_box_on_Tender_Opening_Authority, "patric  george (patric)");
+		 */
+		Select select = new Select(select_box_on_Tender_Opening_Authority);
+		select.selectByIndex(1);
+
+		common.pause(2);
+
+		save_button.click();
+		common.pause(1);
+		ok_button.click();
+		common.pause(1);
+
+		next_button.click();
+		common.pause(2);
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+	@FindBy(xpath = "//img[@alt='Close']")
+	private WebElement close_button;
+
+	@FindBy(xpath = "//div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement certificate_selection;
+
+	public Tender_creation_DashboardPage Super_Hash_Generation() {
+
+		common.log("<h3>Step 5:Click on Close,Select Certificate for Encrypt,Click on next on Super Hash Generation Page</h3>");
+
+		common.pause(5);
+		tcd.verification_method(hash_generator_button, "Super Hash Generation",
+				"Button", "Super Hash Generation");
+
+		close_button.click();
+		common.pause(1);
+
+		Tender_bid_Indexpage tbi = new Tender_bid_Indexpage(driver);
+		tbi.certificate_selection(certificate_selection);
+		common.pause(3);
+
+		next_button.click();
+		common.pause(3);
+		ok_button.click();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+}

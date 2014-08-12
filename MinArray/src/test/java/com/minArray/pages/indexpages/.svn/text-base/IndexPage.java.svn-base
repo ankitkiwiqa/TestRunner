@@ -1,0 +1,258 @@
+package com.qcbs.pages.indexpages;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.TestData;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.DashboardPage;
+
+public class IndexPage extends AbstractPage {
+
+	public IndexPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+	DashboardPage db = new DashboardPage(driver);
+
+	/*----------------------------login user-------------------------------------------------*/
+	@FindBy(xpath = ".//*[@id='username']")
+	private WebElement login_username;
+
+	@FindBy(xpath = ".//*[@id='password']")
+	private WebElement login_password;
+
+	@FindBy(xpath = ".//*[@id='submitbutton']")
+	private WebElement login_submit_button;
+
+	@FindBy(xpath = "//div[@class='login_label'][contains(.,'Change Password')]")
+	private WebElement change_password_label;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td/table/tbody/tr/td[3]/input[@class='gwt-PasswordTextBox']")
+	private WebElement old_password;
+
+	@FindBy(xpath = "//table/tbody/tr[4]/td/table/tbody/tr/td[3]/input[@class='gwt-PasswordTextBox']")
+	private WebElement new_password;
+
+	@FindBy(xpath = "//table/tbody/tr[6]/td/table/tbody/tr/td[3]/input[@class='gwt-PasswordTextBox']")
+	private WebElement confirm_password;
+
+	@FindBy(xpath = "//button[contains(.,'Submit')]")
+	private WebElement change_password_submit;
+
+	@FindBy(xpath = "//button[contains(.,'OK')]")
+	private WebElement ok_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')]/div[@class='loggedInUserNameLabel']")
+	private WebElement account_name;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')][contains(.,'Change Password')]")
+	private WebElement change_password_menu_item;
+
+	public DashboardPage login(String log_name, String log_password) {
+
+		common.pause(5);
+
+		login_username.sendKeys(log_name);
+		common.pause(1);
+
+		login_password.sendKeys(log_password);
+		common.pause(1);
+
+		common.log("<h3><u>Data Entered</u></h3>" + "<li><b> User ID :</b> '"
+				+ log_name + "'</li>"
+
+				+ " <li><b>Password :</b> '" + log_password + "'</li><br></br>");
+
+		login_submit_button.click();
+		common.pause(5);
+		try {
+			if (change_password_label.isDisplayed()) {
+
+				old_password.sendKeys(log_password);
+				common.pause(2);
+				new_password.sendKeys("admin1234");
+				common.pause(2);
+				confirm_password.sendKeys("admin1234");
+				common.pause(2);
+
+				change_password_submit.click();
+				common.pause(2);
+				ok_button.click();
+				common.pause(7);
+
+				account_name.click();
+				common.pause(2);
+				change_password_menu_item.click();
+				common.pause(2);
+
+				old_password.sendKeys("admin1234");
+				common.pause(2);
+				new_password.sendKeys("admin123");
+				common.pause(2);
+				confirm_password.sendKeys("admin123");
+				common.pause(2);
+
+				change_password_submit.click();
+				common.pause(2);
+				ok_button.click();
+				common.pause(7);
+
+			}
+
+		} catch (NoSuchElementException e) {
+
+		}
+
+		return new DashboardPage(driver);
+
+	}
+
+	/*-------------------------FORCE LOGOUT---------------------------------------*/
+	@FindBy(xpath = ".//*[@id='forcelogDiv']/input")
+	private WebElement force_logout;
+
+	public DashboardPage force_logout() {
+
+		force_logout.click();
+		common.pause(1);
+		common.log("<h3>Force Logout Performed</h3>");
+
+		return new DashboardPage(driver);
+	}
+
+	/*----------------------------------------------------------------*/
+
+	/*
+	 * .//*[starts-with(@id,'gwt-uid')]/div[contains(.,'Manage')]
+	 */
+
+	/*-----------------------------create Organization elements-------------------------------------------------------*/
+	@FindBy(xpath = ".//*[@id='gwt-uid-89']")
+	private WebElement dashboard_manage;
+
+	@FindBy(xpath = ".//*[@id='gwt-uid-84']")
+	private WebElement dashboard_manage_admin;
+
+	@FindBy(xpath = "//*[@class='hyperlink_item'][contains(.,'Manage Organization Admin')]")
+	private WebElement Manage_Organization_Admin;
+
+	@FindBy(xpath = "//button[contains(.,'Add New')]")
+	private WebElement Manage_Organization_add_new;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td/table/tbody/tr/td[3]/input")
+	private WebElement organization_name;
+
+	@FindBy(xpath = "//table/tbody/tr[4]/td/table/tbody/tr/td[3]/textarea")
+	private WebElement organization_description;
+
+	@FindBy(xpath = "//table/tbody/tr[6]/td/table/tbody/tr/td[3]/input")
+	private WebElement oraganization_url;
+
+	@FindBy(xpath = "//table/tbody/tr[12]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_first_name;
+
+	@FindBy(xpath = "//table/tbody/tr[14]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_middle_name;
+
+	@FindBy(xpath = "//table/tbody/tr[16]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_last_name;
+
+	@FindBy(xpath = "//table/tbody/tr[18]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_user_name;
+
+	@FindBy(xpath = "//table/tbody/tr[20]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_password;
+
+	@FindBy(xpath = "//table/tbody/tr[22]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_conform_password;
+
+	@FindBy(xpath = "//table/tbody/tr[24]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_email;
+
+	@FindBy(xpath = " //table/tbody/tr/td[1]/button")
+	private WebElement admin_register_button;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td/button")
+	private WebElement alert_ok;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/input")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[3]/button")
+	private WebElement search_button;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr[1]/td/div/div/table/tbody[1]/tr/td[1]/div/input")
+	private WebElement search_select;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[4]/td/table/tbody/tr/td[2]/button[contains(.,'Active')]")
+	private WebElement user_active;
+
+	@FindBy(xpath = "html/body/div[5]/div/table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button[contains(.,'OK')]")
+	private WebElement active_user_ok;
+
+	/*---------------------------------------------------------------------------------------------------------*/
+
+	/*----------------------------dashboard manage---------------------------------------------------------*/
+
+	/*-----------------------------dashboard manage-------------------------------------------------------*/
+
+	/*---------------- logout element-------------------------- */
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/div[@class='loggedInUserNameLabel']")
+	private WebElement admin_name;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')][contains(.,'Logout')]")
+	private WebElement admin_log_out;
+
+	/*-----------------------------------------------------------*/
+
+	/* -------------------------logout method ------------------------- */
+	public DashboardPage logout() {
+
+		admin_name.click();
+		common.pause(2);
+		db.logout();
+		common.pause(2);
+		admin_log_out.click();
+		common.pause(2);
+		common.log("<h3>Log out Performed</h3>");
+		return new DashboardPage(driver);
+
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------------*/
+
+	/*---------------- logout element-------------------------- */
+	@FindBy(xpath = ".//*[@id='gwt-uid-114']/div")
+	private WebElement admin_name1;
+
+	@FindBy(xpath = ".//*[@id='gwt-uid-112']")
+	private WebElement admin_log_out1;
+
+	/*-----------------------------------------------------------*/
+
+	/* -------------------------logout method ------------------------- */
+	public DashboardPage logout_mtc() {
+
+		admin_name1.click();
+		common.pause(2);
+		/* db.logout(); */
+		common.pause(2);
+		admin_log_out1.click();
+		common.pause(2);
+		common.log("<h3>Log out Performed</h3>");
+
+		return new DashboardPage(driver);
+
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------------*/
+
+	/*--------------------------------------------------------------------------------------------------------------------------*/
+
+}

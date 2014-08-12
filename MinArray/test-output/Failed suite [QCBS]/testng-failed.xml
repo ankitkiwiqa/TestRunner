@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="10" name="Failed suite [Failed suite [QCBS]]">
+  <parameter name="selenium.url" value="http://ipms.ppadb.co.bw:8090/IVM10/login"/>
+  <parameter name="selenium.browser" value="firefox"/>
+  <parameter name="count" value="15"/>
+  <parameter name="count_for_tender_bid" value="1"/>
+  <parameter name="count_autherization" value="2"/>
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <test name="Tender Preparation with data provider(failed)(failed)">
+    <classes>
+      <class name="com.qcbs.verifications.Tender_creation_with_data_provider">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="create_Tender" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qcbs.verifications.Tender_creation_with_data_provider -->
+    </classes>
+  </test> <!-- Tender Preparation with data provider(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [QCBS]] -->

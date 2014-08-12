@@ -1,0 +1,137 @@
+/*package com.qcbs.verifications;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.ITestContext;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+import com.qcbs.page.DashboardPage;
+
+public class Tender_authorization_index extends SeleniumInit {
+
+	Common common = new Common(driver);
+
+	-----------------------------TENDER CREATION----------------------------------------
+
+	@Test()
+	public void Tender_authorize(ITestContext context) {
+
+		String c = context.getCurrentXmlTest().getParameter(
+				"count_autherization");
+		int count = Integer.parseInt(c);
+
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		DashboardPage db = new DashboardPage(driver);
+
+		db.open_homepage();// home page open verify method
+
+		for (int i = 1; i <= count; i++) {
+
+			common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+			db.login_varify();// login page verify method
+
+			try {
+
+				indexpage.login("bellamy", "admin123");// login method
+				common.pause(4);
+
+				common.pause(4);
+
+				authorize_indexpage.Tender_vetting();// Tender
+														// authorization
+														// method
+				common.pause(2);
+
+				indexpage.logout();// logout method
+
+			} catch (NoSuchElementException e) {
+
+				indexpage.force_logout();// force logout method
+
+				indexpage.login("bellamy", "admin123");// login method
+				common.pause(4);
+
+				authorize_indexpage.Tender_vetting();// Tender
+														// authorization
+														// method
+				common.pause(2);
+
+				indexpage.logout();// logout method
+
+			}
+			common.pause(5);
+
+		
+			
+			
+			
+			
+			common.log("<h3>Step 5:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+			try {
+
+				indexpage.login("williamg", "admin123");// login method
+				common.pause(4);
+
+				authorize_indexpage.Tender_authorization();// Tender
+															// authorization
+															// method
+				common.pause(2);
+
+				indexpage.logout_mtc();// logout method
+
+			} catch (NoSuchElementException e) {
+
+				indexpage.force_logout();// force logout method
+
+				indexpage.login("williamg", "admin123");// login method
+				common.pause(4);
+
+				authorize_indexpage.Tender_authorization();// Tender
+															// authorization
+															// method
+				common.pause(2);
+
+				indexpage.logout_mtc();// logout method
+
+			}
+			common.pause(5);
+
+			common.log("<h3>Step 9:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+
+			try {
+
+				indexpage.login("bellamy", "admin123");// login method
+				common.pause(4);
+
+				authorize_indexpage.Tender_release();// Tender
+														// release
+														// method
+				common.pause(2);
+
+				indexpage.logout();// logout method
+
+			} catch (NoSuchElementException e) {
+
+				indexpage.force_logout();// force logout method
+
+				indexpage.login("bellamy", "admin123");// login method
+				common.pause(4);
+
+				authorize_indexpage.Tender_release();// Tender
+														// release
+														// method
+				common.pause(2);
+
+				indexpage.logout();// logout method
+
+			}
+
+			common.log("<h3>Test Completed = " + i + "</h3>");
+		}
+	}
+	-------------------------------------------------------------------------------------
+
+}
+*/

@@ -1,0 +1,1361 @@
+package com.qcbs.pages.indexpages;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.TestData;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_updatePrepare_Indexpage extends AbstractPage {
+
+	public Tender_updatePrepare_Indexpage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+
+	@FindBy(xpath = "//img[@title='Proceed']")
+	private WebElement tender_record_proceed;
+
+	@FindBy(xpath = "//div/div/div/div/div/div[4]/div/div/div[1]/div[3]/table/tbody/tr/td[6]/img")
+	private WebElement save_button;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement save_button_ok;
+
+	@FindBy(xpath = "//div/div/div/div/div/div[4]/div/div/div[1]/div[3]/table/tbody/tr/td[7]/img")
+	private WebElement next_button;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement submit_button_ok;
+
+	@FindBy(xpath = "//div/div/div/div/div/div[4]/div/div/div[1]/div[3]/table/tbody/tr/td[2]/img")
+	private WebElement info_button;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/table/tbody/tr/td/button")
+	private WebElement info_button_close;
+
+	public Tender_creation_DashboardPage prepare_after_conform_fund() {
+		common.pause(3);
+
+		// select method of tender record
+
+		common.log("<h3>Step 10:Click on Proceed button on View All Procurement Plan/ITT Page</h3>");
+
+		tcd.tender_approve_search();// View All Procurement Plan/ITT page
+									// verification
+
+		common.pause(1);
+		tender_record_proceed.click();
+		/*common.pause(10);
+*/
+
+		new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='hyperlink_item'][contains(.,'Preview')]")));
+		common.log("<h3>Step 11:Click on Next button on Preview Page</h3>");
+
+	    tcd.verify_preview_page();// preview page verification
+		common.pause(1);
+		
+	 info_button.click();
+	 common.pause(4); 
+	 info_button_close.click();
+	 common.pause(4);
+		 
+		next_button.click();// / next button click on preview
+		common.pause(5);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*----------------------------------------------------Update_ITT_Attributess---------------------------------------------------------------*/
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Save']")
+	private WebElement save_on_update_itt;
+
+	@FindBy(xpath = "html/body/div[5]/div/table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement save_ok_on_update_itt;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Proceed To Next']")
+	private WebElement next_on_update_itt;
+
+	@FindBy(xpath = ".//table/tbody/tr/td[1]/div/table/tbody/tr/td/table/tbody/tr/td/input")
+	private WebElement extra;
+
+	public Tender_creation_DashboardPage Update_ITT_Attributes() {
+
+		common.log("<h3>Step 12:Click on Save And Next button on Update ITT Attributes Page</h3>");
+		// update itt verification if wanted
+		common.pause(2);
+
+		tcd.verify_update_itt_page();
+		common.pause(2);
+		Actions action = new Actions(driver);
+		action.moveToElement(extra).build().perform();
+
+		common.pause(1);
+		save_on_update_itt.click();
+		common.pause(2);
+		save_ok_on_update_itt.click();
+		common.pause(2);
+
+		next_on_update_itt.click();
+		common.pause(5);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*---------------------------------------------------------------------------------------------------------------------*/
+
+	@FindBy(xpath = ".//*[@class='cke_contents']")
+	private WebElement logo_box;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[11]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Agent;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td/div/div/div/div/div[2]/div/div/div[3]/div/div[2]/div/div/table/tbody/tr[2]/td[1]/div")
+	private WebElement tender_data;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Tender_Document_Comprises;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[6]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Volume_Approach;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[7]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement PPADB_Registration_Requirements;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[8]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement other_eligibility_criteria;
+
+	@FindBy(xpath = "//table/tbody/tr[10]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Alternate_Tender_Offer;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[12]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Part_Bidding_Allowed;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[14]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Envelope_Procedure;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[18]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement bid_opening;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[19]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement contract;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[20]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Additional_Conditions_of_Tender;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td/div/div/div/div/div[2]/div/div/div[3]/div/div[2]/div/div/table/tbody/tr[3]/td[1]/div")
+	private WebElement Tender_Data_Tender_Evaluation_Criteria;
+
+	@FindBy(xpath = "//table/tbody/tr[11]/td/table/tbody/tr[2]/td/div/table/tbody/tr[1]/td/table/tbody/tr/td[1]/button")
+	private WebElement add_parent_criteria;
+
+	/*-----------------evalution criteria paraent 1--------------------------------------------*/
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[2]/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Evalution_criteria_parent1;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[2]/div/table/tbody/tr/td[3]/table/tbody/tr/td[1]/img[@title='Add Child Item']")
+	private WebElement Evalution_criteria_parent1_add_child;
+
+	@FindBy(xpath = " //div[@class='gwt-Tree']/div[@class='childTreePadding'][1]/div/div[2]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Evalution_criteria_parent1_child1;
+
+	/*-----------------evaluation criteria parent 2--------------------------------------------*/
+
+	@FindBy(xpath = " //div[@class='gwt-Tree']/div[3]/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Evalution_criteria_parent2;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[3]/div/table/tbody/tr/td[3]/table/tbody/tr/td[1]/img[@title='Add Child Item']")
+	private WebElement Evalution_criteria_parent2_add_child;// click this
+															// element to add
+															// child
+
+	@FindBy(xpath = " //div[3]/table/tbody/tr/td/div/table/tbody/tr/td[3]/table/tbody/tr/td[1]/img")
+	private WebElement Evalution_criteria_parent2_add_child_2;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[@class='childTreePadding'][2]/div/div[2]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Evalution_criteria_parent2_child1;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[3]/div/div[3]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Evalution_criteria_parent2_child2;
+
+	/*-----------------evaluation criteria parent 3--------------------------------------------*/
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[4]/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Evalution_criteria_parent3;
+
+	@FindBy(xpath = "//div[4]/div/table/tbody/tr/td[3]/table/tbody/tr/td[1]/img")
+	private WebElement Evalution_criteria_parent3_add_child;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[@class='childTreePadding'][3]/div/div[2]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Evalution_criteria_parent3_child1;
+
+	/*-----------------evaluation criteria parent 4--------------------------------------------*/
+
+	@FindBy(xpath = "//tr[11]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td/div[@class='gwt-Tree']/div[5]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea[@class='gwt-TextArea']")
+	private WebElement Evalution_criteria_parent4;
+
+	@FindBy(xpath = "//div[5]/div/table/tbody/tr/td[3]/table/tbody/tr/td[1]/img")
+	private WebElement Evalution_criteria_parent4_add_child;
+	
+	
+	
+	/*--------------------------------------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//tbody/tr[12]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement The_minimum_Technical_Score_required_to_pass_is;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[13]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement STAGE_III_FINANCIAL_EVALUATION;
+
+	@FindBy(xpath = "//table/tbody/tr/td[1]/div/table/tbody/tr/td[2]/select")
+	private WebElement Category_of_Preference;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[2]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea[@class='gwt-TextArea']")
+	private WebElement price_of_Preference;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[15]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Note;
+
+	/*-----------------------------------------STANDARDISED CONDITIONS OF TENDER------------------------------------------------------------------*/
+	@FindBy(xpath = "//table/tbody/tr[4]/td[1]/div[contains(.,'STANDARDISED CONDITIONS OF TENDER')]")
+	private WebElement STANDARDISED_CONDITIONS_OF_TENDER;
+
+	/*-----------------------------------------------------------PRICING INSTRUCTIONS------------------------------------------------------------*/
+
+	@FindBy(xpath = "//div/div/table/tbody/tr[5]/td[1]/div[contains(.,'PRICING INSTRUCTIONS')]")
+	private WebElement PRICING_INSTRUCTIONS;
+
+	/*------------------------------------------------------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//div/div/div[3]/div/div[2]/div/div/table/tbody/tr[6]/td[1]/div[contains(.,'Returnable Document Formats')]")
+	private WebElement Returnable_Document_Formats;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[2]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_1;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[3]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_2;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[4]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_3;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[5]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_4;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[6]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_5;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[7]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_6;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[8]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_7;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[9]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_8;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[10]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_9;
+
+	/*@FindBy(xpath = "//div[11]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement upload_document_10_name_of_document;
+
+	@FindBy(xpath = "//div[@class='gwt-Tree']/div[11]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/img")
+	private WebElement upload_document_10;*/
+
+	/*-------------------------------------------------------------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage Manage_ITT_forms() {
+
+		common.log("<h3>Step 13:Add the Valid data into COVER PAGE Section into Manage ITT Forms Page</h3>");
+		common.pause(5);
+		tcd.verify_manage_itt_page();// MANAGE ITT FORMS PAGE VERIFICATION
+		common.pause(1);
+		tcd.verify_cover();
+		// coverpage verification
+
+		/*----------------------------cover page----------------------------------*/
+		common.pause(1);
+		logo_box.sendKeys("LOGO");
+		common.pause(1);
+
+		Actions action1 = new Actions(driver);
+		action1.moveToElement(Agent).build().perform();
+		common.pause(1);
+		Agent.sendKeys("Agent");
+		common.pause(1);
+		/*-----------------------------------------save---------------------------------------------*/
+		/*
+		 * save_button.click(); common.pause(3); save_button_ok.click();
+		 * common.pause(3);
+		 *//*-------------------------------------------------------------------------*/
+
+		/*---------------tender data-----------------------------------------------*/
+		common.log("<h3>Step 14:Click on TENDER DATA ,Add the Valid data into TENDER DATA Section into Manage ITT Forms Page</h3>");
+		common.pause(2);
+
+		tender_data.click(); // tender data option click
+		common.pause(2);
+
+		tcd.verify_tender_data(); // TENDER DATA VERIFICATION
+		common.pause(1);
+
+		Select select = new Select(Tender_Document_Comprises);
+		select.selectByVisibleText("Three Volume Approach");
+		common.pause(1);
+		Volume_Approach.sendKeys("Three Volume Approach");
+
+	/*	Actions action2 = new Actions(driver);
+		action2.moveToElement(PPADB_Registration_Requirements).build()
+				.perform();
+		common.pause(1);
+		PPADB_Registration_Requirements
+				.sendKeys("PPADB Registration Requirements");
+		common.pause(1);*/
+
+		Actions Action3 = new Actions(driver);
+		Action3.moveToElement(other_eligibility_criteria).build().perform();
+		common.pause(1);
+		other_eligibility_criteria.sendKeys("other_eligibility_criteria");
+		common.pause(1);
+
+		Actions action4 = new Actions(driver);
+		action4.moveToElement(Alternate_Tender_Offer).build().perform();
+		common.pause(1);
+		Select select_tender_offer = new Select(Alternate_Tender_Offer);
+		select_tender_offer.selectByVisibleText("Allowed");
+		common.pause(1);
+
+		Actions action5 = new Actions(driver);
+		action5.moveToElement(Part_Bidding_Allowed).build().perform();
+		common.pause(1);
+		Select select_part_biddind = new Select(Part_Bidding_Allowed);
+		select_part_biddind.selectByVisibleText("Yes");
+		common.pause(1);
+
+		Actions action6 = new Actions(driver);
+		action6.moveToElement(Envelope_Procedure).build().perform();
+		common.pause(1);
+
+		Select select_envelope = new Select(Envelope_Procedure);
+		select_envelope.selectByVisibleText("Single Envelope");
+
+		common.pause(1);
+
+		Actions action7 = new Actions(driver);
+		action7.moveToElement(bid_opening).build().perform();
+
+		common.pause(1);
+
+	/*	Actions action8 = new Actions(driver);
+		action8.moveToElement(contract).build().perform();
+*/
+		common.pause(1);
+
+		Actions action9 = new Actions(driver);
+		action9.moveToElement(Additional_Conditions_of_Tender).build()
+				.perform();
+
+		common.pause(1);
+		/*----------------------------------saving data------------------------------------------*/
+		/*
+		 * save_button.click(); common.pause(5); save_button_ok.click();
+		 * common.pause(5);
+		 *//*------------------------------------------------------------------------------------------*/
+
+		/*------------------------------Tender Data – Tender Evaluation Criteria---------------------------*/
+		common.log("<h3>Step 15:Click on Tender Data – Tender Evaluation Criteria ,Add the Valid data into Tender Data – Tender Evaluation Criteria Section into Manage ITT Forms Page</h3>");
+		common.pause(2);
+
+		Tender_Data_Tender_Evaluation_Criteria.click();
+		common.pause(3);
+
+		tcd.verify_tender_evaluation_data(); // TENDER DATA VERIFICATION
+		common.pause(1);
+
+		Actions action10 = new Actions(driver);
+		action10.moveToElement(add_parent_criteria).build().perform();
+		common.pause(1);
+
+		add_parent_criteria.click();// for add second parent
+
+		common.pause(1);
+		add_parent_criteria.click();// for add third parent
+
+		common.pause(1);
+		add_parent_criteria.click();// for add forth parent
+
+		common.pause(1);
+		Evalution_criteria_parent1_add_child.click();// add child of first
+														// parent
+		common.pause(1);
+		Evalution_criteria_parent2_add_child.click();// add child of second
+														// parent
+		common.pause(1);
+		Evalution_criteria_parent2_add_child_2.click();// add child of second
+		common.pause(1); // parent
+
+		Actions move_to_parent3 = new Actions(driver);
+		move_to_parent3.moveToElement(Evalution_criteria_parent3_add_child)
+				.build().perform();
+		common.pause(1);
+
+		Evalution_criteria_parent3_add_child.click();// add child of third
+														// parent
+		common.pause(1);
+
+		Actions move_to_parent1 = new Actions(driver);
+		move_to_parent1.moveToElement(Evalution_criteria_parent1).build()
+				.perform();
+		common.pause(1);
+
+		Evalution_criteria_parent1.sendKeys("p1");
+		common.pause(1);
+		Evalution_criteria_parent1_child1.sendKeys("c1");
+		common.pause(1);
+		Evalution_criteria_parent2.sendKeys("p2");
+		common.pause(1);
+		Evalution_criteria_parent2_child1.sendKeys("p2.c1");
+		common.pause(1);
+		Evalution_criteria_parent2_child2.sendKeys("p2.c2");
+		common.pause(1);
+		Evalution_criteria_parent3.sendKeys("p3");
+		common.pause(1);
+
+		Actions move_to_child = new Actions(driver);
+		move_to_child.moveToElement(Evalution_criteria_parent3_child1).build()
+				.perform();
+		common.pause(1);
+
+		Evalution_criteria_parent3_child1.sendKeys("p3.c1");
+		common.pause(1);
+
+		Actions move_to_parent4 = new Actions(driver);
+		move_to_parent4.moveToElement(Evalution_criteria_parent4).build()
+				.perform();
+		common.pause(1);
+
+		Evalution_criteria_parent4.sendKeys("p4");
+
+		common.pause(1);
+
+		Actions move_to_passing = new Actions(driver);
+		move_to_passing
+				.moveToElement(The_minimum_Technical_Score_required_to_pass_is)
+				.build().perform();
+
+		The_minimum_Technical_Score_required_to_pass_is.sendKeys("70");
+
+		common.pause(1);
+		STAGE_III_FINANCIAL_EVALUATION
+				.sendKeys("STAGE_III_FINANCIAL_EVALUATION");
+		common.pause(1);
+
+		Actions move_to_preference = new Actions(driver);
+		move_to_preference.moveToElement(Category_of_Preference).build()
+				.perform();
+		common.pause(1);
+
+		Select select_catagory_of_preference = new Select(
+				Category_of_Preference);
+		select_catagory_of_preference
+				.selectByVisibleText("Joint ventures between Citizen contractors");
+
+		common.pause(1);
+
+		TestData td = new TestData();
+		price_of_Preference.sendKeys(td.price_preference());
+		common.pause(1);
+
+		Note.sendKeys(td.note());
+		common.pause(1);
+
+		/*--------------------------------------------saving data---------------------------------------------------*/
+		/*
+		 * save_button.click(); common.pause(5); save_button_ok.click();
+		 * common.pause(5);
+		 *//*-------------------------------STANDARDISED CONDITIONS OF TENDER------------------------------------------------------------------*/
+
+		STANDARDISED_CONDITIONS_OF_TENDER.click();// STANDARDISED CONDITIONS OF
+													// TENDER
+		common.pause(3);
+		/*---------------------------------------------------------------------------------------------------------------*/
+
+		/*-----------------------------------------------------Returnable Document Formats--------------------------------------------------------------*/
+
+		common.pause(2);
+		common.log("<h3>Step 16:Click on Returnable Document Formats ,Add the Valid document into Returnable Document Formats  Section into Manage ITT Forms Page</h3>");
+		common.pause(1);
+
+		Returnable_Document_Formats.click();
+		common.pause(3);
+		tcd.verify_Returnable_Document_Formats();// Returnable Document Formats
+													// verivfication method
+		common.pause(1);
+
+		Tender_updatePrepare_Indexpage tupi = new Tender_updatePrepare_Indexpage(
+				driver);
+
+		/*file upload using robot class*/
+		/*
+		upload_document(upload_document_1);
+		common.pause(1);
+		upload_document(upload_document_2);
+		common.pause(1);
+		upload_document(upload_document_3);
+		common.pause(1);
+		upload_document(upload_document_4);
+		common.pause(1);
+		upload_document(upload_document_5);
+		common.pause(1);
+		upload_document(upload_document_6);
+		common.pause(1);
+		upload_document(upload_document_7);
+		common.pause(1);
+		upload_document(upload_document_8);
+		common.pause(1);
+		upload_document(upload_document_9);
+		common.pause(1);
+
+/*-----------file upload using briefcase-------------*/
+
+
+		upload_document_from_briefcase(upload_document_1);
+		common.pause(1);
+
+		upload_document_from_briefcase(upload_document_2);
+		common.pause(1);
+
+
+		upload_document_from_briefcase(upload_document_3);
+		common.pause(1);
+
+
+		upload_document_from_briefcase(upload_document_4);
+		common.pause(1);
+
+
+		upload_document_from_briefcase(upload_document_5);
+		common.pause(1);
+
+
+		upload_document_from_briefcase(upload_document_6);
+		common.pause(1);
+
+
+		upload_document_from_briefcase(upload_document_7);
+		common.pause(1);
+
+		
+
+		upload_document_from_briefcase(upload_document_8);
+		common.pause(1);
+
+
+		upload_document_from_briefcase(upload_document_9);
+		common.pause(1);
+
+		
+
+
+
+
+	/*	Actions move_to_document_name = new Actions(driver);
+		move_to_document_name
+				.moveToElement(upload_document_10_name_of_document).build()
+				.perform();
+		common.pause(2);
+
+		upload_document_10_name_of_document.sendKeys(td.test_data());
+		common.pause(1);
+		
+
+		upload_document_from_briefcase(upload_document_10);
+		common.pause(1);*/
+
+		/*tupi.upload_document(upload_document_10);
+		*/common.pause(2);
+		/*---------------------------------------SAVING DATA------------------------------------------------------------------*/
+		/*
+		 * save_button.click(); common.pause(5); save_button_ok.click();
+		 * common.pause(5);
+		 *//*----------------------------------------------ATTACH TEMPLATE---------------------------------------------------------------*/
+
+		tupi.attach_template();// ATTACH TEMPLATE METHOD
+		common.pause(2);
+		/*---------------------------------------SAVING DATA------------------------------------------------------------------*/
+
+		save_button.click();
+		common.pause(5);
+		save_button_ok.click();
+		common.pause(5);
+		next_button.click();
+		common.pause(5);
+		/*-------------------------------------------------------------------------------------------------*/
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------------------------DOCUMENT UPLOAD-----------------------------------------------------------------*/
+
+	@FindBy(xpath = "//form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[4]/td/input")
+	private WebElement upload_file_browse;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement upload_file_ok;
+
+	@FindBy(xpath = "//div/table/tbody/tr[2]/td/table/tbody/tr/td/button")
+	private WebElement file_upload_close;
+
+	public Tender_creation_DashboardPage upload_document(
+			WebElement upload_button) {
+		common.pause(3);
+		upload_button.click();
+		common.pause(2);
+		upload_file_browse.click();
+		common.pause(2);
+
+		try {
+
+			Robot r = new Robot();
+
+			r.keyPress(KeyEvent.VK_D); // d
+			r.keyRelease(KeyEvent.VK_D);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_PERIOD); // d
+			r.keyRelease(KeyEvent.VK_PERIOD);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_T); // t
+			r.keyRelease(KeyEvent.VK_T);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_X); // x
+			r.keyRelease(KeyEvent.VK_X);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_T); // t
+			r.keyRelease(KeyEvent.VK_T);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_TAB); // t
+			r.keyRelease(KeyEvent.VK_TAB);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_TAB); // t
+			r.keyRelease(KeyEvent.VK_TAB);
+			common.pause(2);
+			r.keyPress(KeyEvent.VK_ENTER); // confirm by pressing Enter in the
+			r.keyRelease(KeyEvent.VK_ENTER); // end
+
+		} catch (AWTException e) {
+
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		common.pause(5);
+		upload_file_ok.click();
+
+		common.pause(2);
+
+		file_upload_close.click();
+
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*----------------------------------------------------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//img[@class='gwt-Image'][@title='Upload Files from Briefcase']")
+	private WebElement upload_file_browse_from_briefcase;
+
+	@FindBy(xpath = "//tr[1]/td/div[starts-with(@__gwt_cell,'cell-gwt-uid')]/input")
+	private WebElement select_document;
+
+	@FindBy(xpath = "//button[contains(.,'Save')]")
+	private WebElement save_button_briefcase_popup;
+
+	@FindBy(xpath = "//button[contains(.,'OK')]")
+	private WebElement ok_button;
+
+	/*----------------upload document from briefcase---------------------------------*/
+
+	public Tender_creation_DashboardPage upload_document_from_briefcase(
+			WebElement upload_button) {
+		
+	
+		common.pause(1);
+		common.move_to_element(upload_button);
+		upload_button.click();
+		common.pause(2);
+		upload_file_browse_from_briefcase.click();
+		common.pause(1);
+		select_document.click();
+		common.pause(2);
+
+		
+		save_button_briefcase_popup.click();
+		common.pause(5);
+		ok_button.click();
+
+		common.pause(2);
+
+		file_upload_close.click();
+
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------------------------------------------------------*/
+
+	/*----------------------------------------------ATTACH TEMPLATE METHOD---------------------------------------*/
+
+	public Tender_creation_DashboardPage attach_template() {
+
+		attach_template_form();// attach template forms
+
+		common.pause(1);
+		scope_of_work_supplies();// scope of works supplies template method
+		common.pause(1);
+		scope_of_works_services();// scope of works services template method
+		common.pause(1);
+		scope_of_works_supplies_1();// scope of works_supplies template method
+		common.pause(1);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------------------------------------------------------------------------------------*/
+	@FindBy(xpath = "//td[1]/table/tbody/tr/td[1]/img[@alt='Add Templates']")
+	private WebElement attach_template_button;
+
+	@FindBy(xpath = "//tr[2]/td[2]/div/table/tbody/tr[1]/td/table/tbody/tr/td[2]/input")
+	private WebElement searchbox;
+
+	@FindBy(xpath = "//div/table/tbody/tr[1]/td/table/tbody/tr/td[3]/button")
+	private WebElement search_button;
+
+	@FindBy(xpath = "//div/table/tbody/tr[2]/td/table/tbody/tr[1]/td/div/div/table/tbody[1]/tr[2]/td[1]/div/input")
+	private WebElement select_scope_of_work_services;
+
+	@FindBy(xpath = "//div/table/tbody/tr[2]/td/table/tbody/tr[1]/td/div/div/table/tbody[1]/tr[3]/td[1]/div/input")
+	private WebElement select_scope_of_work_supplies;
+
+	@FindBy(xpath = "//div/table/tbody/tr[2]/td/table/tbody/tr[1]/td/div/div/table/tbody[1]/tr[4]/td[1]/div/input")
+	private WebElement select_scope_of_work_supplies1;
+
+	@FindBy(xpath = "//tr[2]/td[2]/div/table/tbody/tr[5]/td/table/tbody/tr/td[1]/button")
+	private WebElement attach_template;
+
+	@FindBy(xpath = "//tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement attach_template_ok;
+
+	public Tender_creation_DashboardPage attach_template_form() {
+
+		common.log("<h3>Step 17:Click on Attach Templates ,Select Template into Template POP-UP</h3>");
+
+		common.pause(2);
+		tcd.verify_attach_template_button(); // template button verification
+		common.pause(1);
+		attach_template_button.click();
+		common.pause(5);
+		tcd.verify_attach_template_popup();// template verification
+
+		common.pause(1);
+
+		searchbox.sendKeys("scope of work");
+		common.pause(1);
+		search_button.click();
+		common.pause(2);
+
+		common.log("<h3>Step 18:Select Template,Add valid data into selected Template ,click SAVE and NEXT into Manage ITT Forms Page</h3>");
+
+		select_scope_of_work_services.click();
+		common.pause(1);
+		select_scope_of_work_supplies.click();
+		common.pause(1);
+		select_scope_of_work_supplies1.click();
+		common.pause(1);
+		attach_template.click();
+		common.pause(10);
+		attach_template_ok.click();
+		common.pause(5);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------------------------Scope Of Work-Supplies----------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//div[2]/div/div/div[3]/div/div[2]/div/div/table/tbody/tr/td/div[contains(.,'Scope Of Work - Supplies')]")
+	private WebElement scope_of_work_supplies;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Employer_Purchasers_objectives;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Overview_of_the_required_supplies;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[6]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Applicable_national_and_international_standards;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[7]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Particular_specifications;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[8]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Specific_requirements;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[10]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Certification_by_recognized_bodies;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[11]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Quality_plans_and_control;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[12]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Procurement_Scheme;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[13]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Scheme_Details;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[15]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Format_of_communications;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[16]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Forms_for_contract_administration;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[17]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Electronic_payments;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[18]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Bonds_and_guarantees;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[19]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Payment_certificates;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[20]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Insurance_provided_by_the_Employer_Supplier;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[21]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Health_and_safety_requirements_and_procedures;
+
+	@FindBy(xpath = "//table/tbody/tr[14]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[4]/td/input")
+	private WebElement Pro_Formas_of_the_relevant_Schedule_to_the_end_of_the_Scope_of_Work_browse;
+
+	@FindBy(xpath = "//table/tbody/tr[22]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[4]/td/input")
+	private WebElement ANNEXES_browse;
+
+	public Tender_creation_DashboardPage scope_of_work_supplies() {
+
+		Tender_updatePrepare_Indexpage tupi = new Tender_updatePrepare_Indexpage(
+				driver);
+
+		common.pause(2);
+		Actions move_to_work_supplies = new Actions(driver);
+		move_to_work_supplies.moveToElement(scope_of_work_supplies).build()
+				.perform();
+		common.pause(1);
+		scope_of_work_supplies.click();
+
+		common.pause(3);
+		tcd.verification_method(scope_of_work_supplies,
+				"Scope Of Work-Supplies", "Label", "Manage ITT Forms");
+
+		common.pause(1);
+
+		tupi.Move_to_elements_fill_data(Employer_Purchasers_objectives);
+
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Overview_of_the_required_supplies);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Applicable_national_and_international_standards);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Particular_specifications);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Specific_requirements);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Certification_by_recognized_bodies);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Quality_plans_and_control);
+
+		common.pause(1);
+		Actions move_to_procument = new Actions(driver);
+		move_to_procument.moveToElement(Procurement_Scheme).build().perform(); // procument
+																				// scheme
+																				// on
+																				// select
+																				// function
+
+		common.pause(1);
+		Select select_procument = new Select(Procurement_Scheme);
+		select_procument.selectByVisibleText("Reserved procurement (Scheme 1)");
+
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Scheme_Details);
+		common.pause(1);
+		/*
+		 * tupi.scope_of_work_supplies_document_upload(
+		 * Pro_Formas_of_the_relevant_Schedule_to_the_end_of_the_Scope_of_Work_browse
+		 * ); common.pause(3);
+		 */
+		tupi.Move_to_elements_fill_data(Format_of_communications);
+		common.pause(1);
+
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Forms_for_contract_administration);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Electronic_payments);
+
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Bonds_and_guarantees);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Payment_certificates);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Insurance_provided_by_the_Employer_Supplier);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Health_and_safety_requirements_and_procedures);
+		common.pause(1);
+
+		/*
+		 * tupi.scope_of_work_supplies_document_upload(ANNEXES_browse);
+		 * common.pause(3);
+		 */
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------------------------------------------------------------------*/
+
+	/*-----------------------------------------Scope of Work - Services------------------------------------------------------*/
+
+	@FindBy(xpath = "//div[2]/div/div/div[3]/div/div[2]/div/div/table/tbody/tr/td/div[contains(.,'Scope of Work - Services')]")
+	private WebElement scope_of_works_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Client_Employer_objectives;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Description_of_th_eservices;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Extent_of_the_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[6]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Use_of_reasonable_skill_and_care;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[7]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Co_operation_with_other_services_providers;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[8]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Brief;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[9]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement applicable_national_and_international_standards;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[10]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Particular_specifications_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[11]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Approvals;
+
+	@FindBy(xpath = "//div/div/table/tbody/tr/td/table/tbody/tr[12]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Procurement_Scheme_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[13]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Scheme_Details_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[15]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Access_to_land_buildings_sites;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[16]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Planning_and_programming;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[17]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Software_application_for_programming;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[18]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Quality_management;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[19]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Format_of_communications_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[20]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Key_personnel;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[21]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Forms_for_contract_administration_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[23]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Electronic_payments_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[24]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Daily_records;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[25]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Professional_indemnity_insurances;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[26]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Payment_certificates_services;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[27]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Use_of_documents_by_the_Employer_Client;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[28]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Property_provided_for_the_Consultant_use;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[29]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Proof_of_compliance_with_the_law;
+
+	@FindBy(xpath = "//table/tbody/tr[22]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[4]/td/input")
+	private WebElement Attach_Pro_Formas;
+
+	@FindBy(xpath = "//table/tbody/tr[30]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[4]/td/input")
+	private WebElement ANNEXES_services;
+
+	public Tender_creation_DashboardPage scope_of_works_services() {
+
+		common.pause(2);
+		Actions move_to_scope_of_works_services = new Actions(driver);
+		move_to_scope_of_works_services.moveToElement(scope_of_works_services)
+				.build().perform();
+
+		common.pause(1);
+		scope_of_works_services.click();
+
+		common.pause(4);
+		tcd.verification_method(scope_of_works_services,
+				"Scope Of Work-Services", "Label", "Manage ITT Forms"); // verification
+		Move_to_elements_fill_data(Client_Employer_objectives);
+		common.pause(1);
+
+		Move_to_elements_fill_data(Description_of_th_eservices);
+		common.pause(1);
+
+		Move_to_elements_fill_data(Extent_of_the_services);
+		common.pause(1);
+
+		Move_to_elements_fill_data(Use_of_reasonable_skill_and_care);
+		common.pause(1);
+
+		Move_to_elements_fill_data(Co_operation_with_other_services_providers);
+		common.pause(1);
+
+		Move_to_elements_fill_data(Brief);
+		common.pause(1);
+
+		Move_to_elements_fill_data(applicable_national_and_international_standards);
+		common.pause(1);
+
+		Move_to_elements_fill_data(Particular_specifications);
+		common.pause(1);
+
+		Move_to_elements_fill_data(Approvals);
+		common.pause(1);
+
+		Actions move_to_procurement = new Actions(driver);
+		move_to_procurement.moveToElement(Procurement_Scheme_services).build()
+				.perform();
+
+		common.pause(1);
+		Select select_procurement = new Select(Procurement_Scheme_services);
+		select_procurement
+				.selectByVisibleText("Reserved procurement (Scheme 1)");
+
+		common.pause(1);
+		Move_to_elements_fill_data(Scheme_Details_services);
+
+		common.pause(1);
+		/*
+		 * scope_of_work_supplies_document_upload(
+		 * Pro_Formas_of_the_relevant_Schedule_to_the_end_of_the_Scope_of_Work_browse
+		 * );
+		 */
+		common.pause(1);
+		Move_to_elements_fill_data(Access_to_land_buildings_sites);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Planning_and_programming);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Software_application_for_programming);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Quality_management);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Format_of_communications_services);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Key_personnel);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Forms_for_contract_administration_services);
+
+		common.pause(1);
+		/*
+		 * scope_of_work_supplies_document_upload(Attach_Pro_Formas);
+		 */
+		common.pause(1);
+		Move_to_elements_fill_data(Electronic_payments_services);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Daily_records);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Professional_indemnity_insurances);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Payment_certificates_services);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Use_of_documents_by_the_Employer_Client);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Property_provided_for_the_Consultant_use);
+
+		common.pause(1);
+		Move_to_elements_fill_data(Proof_of_compliance_with_the_law);
+
+		common.pause(1);
+		/*
+		 * scope_of_work_supplies_document_upload(ANNEXES_services);
+		 */
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*---------------------------------------------------------------------------------------------------------------------*/
+
+	/*---------------------------------------------------Scope Of Work_Supplies---------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//div[2]/div/div/div[3]/div/div[2]/div/div/table/tbody/tr/td/div[contains(.,'Scope of Work_Supplies')]")
+	private WebElement scope_of_work_Supplies_2;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Extent_of_the_supplies;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[8]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Particular_specifications_2;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[9]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Specific_requirements_2;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[10]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Delivery;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[11]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Certification_by_recognized_bodies_2;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[13]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Description;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[15]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Format_of_communications_2;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[16]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Forms_for_contract_administration_2;
+
+	@FindBy(xpath = "//table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement item_description;
+
+	@FindBy(xpath = "//table/tbody/tr/td[3]/div/table/tbody/tr/td/table/tbody/tr/td/input")
+	private WebElement quentity;
+
+	@FindBy(xpath = "//table/tbody/tr/td[1]/div/table/tbody/tr/td/table/tbody/tr/td/input")
+	private WebElement item_no;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[7]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Applicable_national_and_international_standards_2;
+
+	@FindBy(xpath = "//table/tbody/tr[14]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[4]/td/input")
+	private WebElement Attach_Proforma;
+
+	@FindBy(xpath = "//table/tbody/tr[22]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[4]/td/input")
+	private WebElement Upload_Reference_Documents;
+
+	public Tender_creation_DashboardPage scope_of_works_supplies_1() {
+		Tender_updatePrepare_Indexpage tupi = new Tender_updatePrepare_Indexpage(
+				driver);
+
+		TestData td = new TestData();
+
+		common.pause(3);
+		Actions move_to_scope_of_work_Supplies_2 = new Actions(driver);
+		move_to_scope_of_work_Supplies_2
+				.moveToElement(scope_of_work_Supplies_2).build().perform();
+
+		common.pause(1);
+		scope_of_work_Supplies_2.click();
+		common.pause(4);
+
+		tcd.verification_method(scope_of_work_Supplies_2,
+				"Scope Of Work_Supplies", "Label", "Manage ITT Forms");
+
+		common.pause(1);
+
+		tupi.Move_to_elements_fill_data(Employer_Purchasers_objectives);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Overview_of_the_required_supplies);
+		common.pause(1);
+
+		tupi.Move_to_elements_fill_data(Extent_of_the_supplies);
+		common.pause(1);
+		Actions move_to_items = new Actions(driver);
+		move_to_items.moveToElement(item_no).build().perform();
+		common.pause(1);
+		item_no.sendKeys(td.item_no());
+		common.pause(1);
+		item_description.sendKeys(td.test_data());
+		common.pause(1);
+		quentity.sendKeys(td.quantity());
+
+		common.pause(1);
+
+		Actions move_to_national_internation = new Actions(driver);
+		move_to_national_internation
+				.moveToElement(
+						Applicable_national_and_international_standards_2)
+				.build().perform();
+
+		common.pause(1);
+		Select select_national_internation = new Select(
+				Applicable_national_and_international_standards_2);
+		select_national_internation.selectByVisibleText("Std 1");
+
+		common.pause(1);
+
+		tupi.Move_to_elements_fill_data(Particular_specifications_2);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Specific_requirements_2);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Delivery);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Certification_by_recognized_bodies_2);
+		common.pause(1);
+
+		Actions move_to_procurement = new Actions(driver);
+		move_to_procurement.moveToElement(Procurement_Scheme_services).build()
+				.perform();
+
+		common.pause(1);
+		Select select_procurement = new Select(Procurement_Scheme_services);
+		select_procurement
+				.selectByVisibleText("Reserved procurement (Scheme 1)");
+		common.pause(1);
+
+		tupi.Move_to_elements_fill_data(Description);
+		common.pause(1);
+		/*
+		 * tupi.scope_of_work_supplies_document_upload(Attach_Proforma);
+		 */common.pause(1);
+		tupi.Move_to_elements_fill_data(Format_of_communications_2);
+
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Forms_for_contract_administration_2);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Electronic_payments);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Bonds_and_guarantees);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Payment_certificates);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Insurance_provided_by_the_Employer_Supplier);
+		common.pause(1);
+		tupi.Move_to_elements_fill_data(Health_and_safety_requirements_and_procedures);
+		common.pause(1);
+		/*
+		 * tupi.scope_of_work_supplies_document_upload(Upload_Reference_Documents
+		 * );
+		 */;
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------------*/
+
+	/*----------------------------------------------Method to upload document-----------------*/
+
+	public Tender_creation_DashboardPage scope_of_work_supplies_document_upload(
+			WebElement element) {
+
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+
+		common.pause(4);
+		element.click();
+		common.pause(2);
+		try {
+
+			Robot r = new Robot();
+
+			common.pause(3);
+			r.keyPress(KeyEvent.VK_D); // d
+			r.keyRelease(KeyEvent.VK_D);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_PERIOD); // d
+			r.keyRelease(KeyEvent.VK_PERIOD);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_T); // t
+			r.keyRelease(KeyEvent.VK_T);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_X); // x
+			r.keyRelease(KeyEvent.VK_X);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_T); // t
+			r.keyRelease(KeyEvent.VK_T);
+
+			common.pause(3);
+			r.keyPress(KeyEvent.VK_TAB); // t
+			r.keyRelease(KeyEvent.VK_TAB);
+			common.pause(3);
+			r.keyPress(KeyEvent.VK_TAB); // t
+			r.keyRelease(KeyEvent.VK_TAB);
+			common.pause(3
+
+			);
+
+			r.keyPress(KeyEvent.VK_ENTER); // confirm by pressing Enter in the
+											// end
+			r.keyRelease(KeyEvent.VK_ENTER);
+
+		} catch (AWTException e) {
+
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		common.pause(5);
+		upload_file_ok.click();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+	/*--------------------------------------------Move to element and fill data-------------------------------------------------------------------------------*/
+
+	public Tender_updatePrepare_Indexpage Move_to_elements_fill_data(
+			WebElement element) {
+		TestData td = new TestData();
+		String random_data = td.test_data();
+		common.pause(1);
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+
+		common.pause(1);
+		element.sendKeys(random_data);
+
+		return new Tender_updatePrepare_Indexpage(driver);
+	}
+
+	/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+}

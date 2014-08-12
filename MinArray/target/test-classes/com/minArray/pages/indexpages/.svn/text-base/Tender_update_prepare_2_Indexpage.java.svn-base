@@ -1,0 +1,721 @@
+package com.qcbs.pages.indexpages;
+
+import java.util.Calendar;
+import java.util.Date;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.TestData;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_update_prepare_2_Indexpage extends AbstractPage {
+
+	public Tender_update_prepare_2_Indexpage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+	Common common = new Common(driver);
+
+	/*----------------------------MANAGE BID FORMS------------------------------------------------------*/
+	/*
+	*/
+
+	@FindBy(xpath = "//div/table/tbody/tr/td[1]/table/tbody/tr/td[1]/img")
+	private WebElement attach_template;
+
+	@FindBy(xpath = "//div/table/tbody/tr[5]/td/table/tbody/tr/td[1]/button")
+	private WebElement attach_template_assign_envelope_button;
+
+	@FindBy(xpath = "//tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement ok_button;
+
+	@FindBy(xpath = "//div/div/div/div/div/div[4]/div/div/div[1]/div[3]/table/tbody/tr/td[6]/img")
+	private WebElement save_button;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement save_button_ok;
+
+	@FindBy(xpath = "//div/div/div/div/div/div[4]/div/div/div[1]/div[3]/table/tbody/tr/td[7]/img")
+	private WebElement next_button;
+
+	public Tender_creation_DashboardPage Manage_bid_forms() {
+
+		common.log("<h3>Step 19:Click on Attach Template,Select Template And Assign Envelope </h3>");
+
+		common.pause(3);
+
+		tcd.verify_attach_template_button(); // template button verification
+		common.pause(2);
+		attach_template.click();
+		common.pause(3);
+		attach_templates("TENDER SCHEDULES - EXPERIENCE OF TENDERER");
+		common.pause(1);
+		attach_templates("TENDER SCHEDULES - BASIS OF DESIGN");
+
+		common.pause(1);
+		attach_templates("TENDER SCHEDULES - HEALTH AND SAFETY PLAN");
+		common.pause(1);
+
+		attach_template_assign_envelope_button.click();
+		common.pause(8);
+		ok_button.click();
+		common.pause(3);
+
+		manage_envelope();// manage envelope method called
+		common.pause(3);
+		/*-----------------------------saving data---------------------------------------*/
+		save_button.click();
+		common.pause(3);
+		save_button_ok.click();
+		common.pause(3);
+		next_button.click();
+		common.pause(3);
+		/*------------------------------------------------------------------------------*/
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-------------------------------------------------------Attach Template-----------------------------------------------------------*/
+
+	@FindBy(xpath = "//tr[2]/td[2]/div/table/tbody/tr[1]/td/table/tbody/tr/td[2]/input")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//td[2]/div/table/tbody/tr[1]/td/table/tbody/tr/td[3]/button")
+	private WebElement search_button;
+
+	@FindBy(xpath = "//td/table/tbody/tr[1]/td/div/div/table/tbody[1]/tr/td[1]/div/input")
+	private WebElement search_result_1;
+
+	public Tender_creation_DashboardPage attach_templates(String search_result) {
+
+		common.pause(2);
+		search_box.clear();
+		common.pause(1);
+		search_box.sendKeys(search_result);
+		common.pause(1);
+		search_button.click();
+		common.pause(1);
+		search_result_1.click();
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------------------Manage Envelopes-------------------------------------------------------------*/
+
+	@FindBy(xpath = "//div/div/table/tbody[1]/tr[1]/td[1]/div/input")
+	private WebElement envelope_option_1;
+
+	@FindBy(xpath = "//div/div/table/tbody[1]/tr[2]/td[1]/div/input")
+	private WebElement envelope_option_2;
+
+	@FindBy(xpath = "//div/div/table/tbody[1]/tr[3]/td[1]/div/input")
+	private WebElement envelope_option_3;
+
+	@FindBy(xpath = "//div/div/table/tbody[1]/tr[4]/td[1]/div/input")
+	private WebElement envelope_option_4;
+
+	@FindBy(xpath = "//div/div/table/tbody[1]/tr[5]/td[1]/div/input")
+	private WebElement envelope_option_5;
+
+	@FindBy(xpath = "//td[2]/div/table/tbody/tr[2]/td/table/tbody/tr/td[2]/img")
+	private WebElement envelope_button;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/div[contains(.,'Financial')]")
+	private WebElement envelope_financial_option;
+
+	@FindBy(xpath = "//table/tbody/tr/td[2]/div/div[contains(.,'Technical')]")
+	private WebElement envelope_technical_option;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/div/table/tbody/tr[3]/td/button")
+	private WebElement envelope_close;
+
+	public Tender_creation_DashboardPage manage_envelope() {
+
+		common.pause(5);
+		tcd.verify_attach_template_and_assign_envelope_popup();
+
+		common.pause(1);
+		envelope_option_1.click();
+		common.pause(1);
+		envelope_option_2.click();
+		common.pause(1);
+		envelope_technical_option.click();
+		common.pause(1);
+		envelope_button.click();
+		common.pause(2);
+		envelope_option_1.click();
+		common.pause(1);
+		envelope_option_2.click();
+		common.pause(1);
+
+		envelope_option_3.click();
+		common.pause(1);
+		envelope_financial_option.click();
+		common.pause(1);
+		envelope_button.click();
+		common.pause(2);
+		envelope_close.click();
+		common.pause(5);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	/*----------------------------------ADD ITEMS---------------------------------------*/
+	@FindBy(xpath = "//div/div/div/table/tbody/tr[1]/td/table/tbody/tr[2]/td/table/tbody/tr/td[3]/button")
+	private WebElement add_item;
+
+	@FindBy(xpath = "//tbody/tr[3]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement item_id;
+
+	@FindBy(xpath = "//tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement item_name;
+
+	@FindBy(xpath = "//table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement quentity;
+
+	@FindBy(xpath = "//tr[2]/td[2]/div/table/tbody/tr[2]/td/table/tbody/tr/td[1]/button")
+	private WebElement save;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/img")
+	private WebElement add_child;
+
+	@FindBy(xpath = "//table/tbody/tr[10]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement unit;
+
+	@FindBy(xpath = "//table/tbody/tr[11]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement qty;
+
+	@FindBy(xpath = "//table/tbody/tr[12]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement estimated_unit_rates;
+
+	@FindBy(xpath = "//table/tbody/tr[13]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement estimated_amont;
+
+	@FindBy(xpath = "//div[@class='Caption'][contains(.,'Add BOQ Item')]")
+	private WebElement add_boq_item_template;
+
+	public Tender_creation_DashboardPage add_item() {
+		common.log("<h3>Step 20:Click on ADD ITEMS,Add Valid details into Add BOQ Items POP-UP,Click on Add Child, Add Valid details into Add BOQ Items POP-UP</h3>");
+		
+		TestData td = new TestData();
+		tcd.verify_add_items(); //add item section verification here
+
+		move_to_element(add_item);
+		common.pause(2);
+		add_item.click();
+		common.pause(2);
+
+		tcd.verification_method(add_boq_item_template, "Add BOQ Items",
+				"Label", "Add BOQ Items"); // add boq items template verification here
+		common.pause(2);
+		move_to_element(item_id);
+		item_id.sendKeys(td.item_no());
+		common.pause(2);
+		move_to_element(item_name);
+		item_name.sendKeys(td.item_name());
+		common.pause(2);
+
+		Actions move_to_action = new Actions(driver);
+
+		move_to_action.moveToElement(quentity).build().perform();
+		common.pause(2);
+		quentity.sendKeys(td.quantity());
+
+		save.click();
+		common.pause(3);
+
+		add_child.click();
+
+		common.pause(3);
+		move_to_element(item_id);
+		item_id.sendKeys(td.item_no());
+		common.pause(1);
+		move_to_element(item_name);
+		item_name.sendKeys(td.item_name());
+		common.pause(1);
+
+		Actions move_to_unit = new Actions(driver);
+		move_to_unit.moveToElement(unit).build().perform();
+
+		common.pause(1);
+		unit.sendKeys("each");
+		common.pause(1);
+		move_to_element(qty);
+		qty.sendKeys(td.quantity());
+		common.pause(1);
+		move_to_element(estimated_amont);
+		estimated_unit_rates.sendKeys(td.estimated_unit_rates());
+		common.pause(1);
+
+		save.click();
+		common.pause(3);
+		
+		
+		/*----------------------------------saving data---------------------------------------*/
+		save_button.click();
+		common.pause(5);
+		save_button_ok.click();
+		common.pause(5);
+		next_button.click();
+		common.pause(8);
+		/*---------------------------------------------------------------------------*/
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	
+	
+	
+	
+	
+	/*public Tender_updatePrepare_Indexpage Move_to_elements(
+			WebElement element) {
+		common.pause(1);
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+
+
+		return new Tender_updatePrepare_Indexpage(driver);
+	}
+*/
+	
+	
+	
+	
+	
+	/*--------------------------------------------Evaluation_criteria------------------------------------------------------------*/
+
+	@FindBy(xpath = "//table/tbody/tr/td[2]/table/tbody/tr[1]/td[2]/select")
+	private WebElement Passing_Marks_Level;
+
+	
+	@FindBy(xpath = "//tr[7]/td[3]/table/tbody/tr/td[2]/img")
+	private WebElement p1_c1_define_criteria;
+
+	@FindBy(xpath = "//tr[11]/td[3]/table/tbody/tr/td[2]/img")
+	private WebElement p2_c1_define_criteria;
+
+	@FindBy(xpath = "//tr[12]/td[3]/table/tbody/tr/td[2]/img")
+	private WebElement p2_c2_define_criteria;
+
+	@FindBy(xpath = "//tr[16]/td[3]/table/tbody/tr/td[2]/img")
+	private WebElement p3_c1_define_criteria;
+
+	@FindBy(xpath = "//tr[5]/td[3]/table/tbody/tr/td[2]/img")
+	private WebElement p1_define_criteria;
+
+	@FindBy(xpath = "//tr[9]/td[3]/table/tbody/tr/td[2]/img")
+	private WebElement p2_define_criteria;
+
+	@FindBy(xpath = "//tr[14]/td[3]/table/tbody/tr/td[2]/img")
+	private WebElement p3_define_criteria;
+
+	@FindBy(xpath = "//tr[18]/td[3]/table/tbody/tr/td[2]/img")
+	private WebElement p4_define_criteria;
+
+	@FindBy(xpath = "//td/div/div/table/tbody/tr[7]/td[2]/input[@class='gwt-TextBox']")
+	private WebElement Minimum_values;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td/div/div/table/tbody/tr[9]/td[2]/input")
+	private WebElement Maximum_values;
+
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr/td[1]/button[contains(.,'Save')]")
+	private WebElement save_button_define_criteria;
+
+	@FindBy(xpath = "//tbody/tr[1]/td/div/div/table/tbody/tr[6]/td[2]/input")
+	private WebElement passing_marks_define_criteria;
+
+	@FindBy(xpath = "//tbody/tr[1]/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/table/tbody/tr[3]/td[2]/input")
+	private WebElement minimum_marks_define_criteria;
+
+	@FindBy(xpath = "//tr[1]/td/table/tbody/tr/td[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td[2]/input")
+	private WebElement maximum_marks_define_criteria;
+
+	@FindBy(xpath = "//button[contains(.,'Save Criteria')]")
+	private WebElement save_define_criteria;
+
+	@FindBy(xpath = "//div/div/div[3]/div/div[2]/div/div/table/tbody/tr[2]/td/div[contains(.,'Evaluate Comp.')]")
+	private WebElement Evaluate_comp;
+
+	@FindBy(xpath = "//table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr[1]/td[5]/button")
+	private WebElement Save_minimum_count;
+
+	public Tender_creation_DashboardPage Evaluation_criteria() {
+
+		common.log("<h3>Step 21:Click on add Define Criteria for all,Add Valid Details into Forms,Click on Save Defined Criteria</h3>");
+			
+		
+		common.pause(2);
+		Select select_Passing_Marks_Level = new Select(Passing_Marks_Level);
+		select_Passing_Marks_Level
+				.selectByVisibleText("Envelope And Criteria Level");
+		common.pause(2);
+		
+		tcd.verify_Evalution_criteria();//verification here
+		common.pause(1);
+		
+		// define criteria method
+		define_criteria_child(p1_c1_define_criteria);
+		common.pause(1);
+		define_criteria_child(p2_c1_define_criteria);
+		common.pause(1);
+		define_criteria_child(p2_c2_define_criteria);
+		common.pause(1);
+		define_criteria_child(p3_c1_define_criteria);
+		common.pause(1);
+
+		/*
+		 * define_criteria_child(p4_define_criteria); common.pause(3);
+		d.txt 
+		*/
+
+		define_criteria_parent(p1_define_criteria, "45");
+		common.pause(1);
+		define_criteria_parent(p2_define_criteria, "80");
+		common.pause(1);
+		define_criteria_parent(p3_define_criteria, "45");
+		common.pause(1);
+		define_criteria_parent_with_no_child(p4_define_criteria, "45");
+		common.pause(1);
+
+		Actions move_to_minimum_marks = new Actions(driver);
+		move_to_minimum_marks.moveToElement(minimum_marks_define_criteria)
+				.build().perform();
+		common.pause(1);
+		minimum_marks_define_criteria.clear();
+		common.pause(1);
+		minimum_marks_define_criteria.sendKeys("30");
+		common.pause(1);
+		maximum_marks_define_criteria.clear();
+		common.pause(1);
+
+		maximum_marks_define_criteria.sendKeys("250");
+		common.pause(2);
+
+		save_define_criteria.click();
+		common.pause(5);
+		save_button_ok.click();
+		common.pause(5);
+		/*----------------------------------------------Evaluate Comp-----------------------------------------------*/
+		/*Evaluate_comp.click();
+		common.pause(3);
+		Save_minimum_count.click();
+		common.pause(6);
+		save_button_ok.click();
+		common.pause(3);*/
+		/*-------------------------------------------------------------saving data---------------------------------------*/
+
+		save_button.click();
+		common.pause(5);
+		save_button_ok.click();
+		common.pause(5);
+		next_button.click();
+		common.pause(8);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*----------------------------------------------------define_criteria_child---------------------------------------------------*/
+	@FindBy(xpath="//div[@class='Caption'][contains(.,'Define Report Criteria')]")
+	private WebElement define_criteria_popup_label;
+	
+	
+	public Tender_creation_DashboardPage define_criteria_child(
+			WebElement element) {
+
+		
+		common.pause(3);
+		
+		Actions move_to_elements = new Actions(driver);
+		move_to_elements.moveToElement(element).build().perform();
+		common.pause(1);
+		element.click();
+		common.pause(2);
+
+		
+		tcd.verification_method(define_criteria_popup_label, "Define Report Criteria", "label", "Define Report Criteria") ;                  //verification here
+		common.pause(1);
+		Minimum_values.clear();
+		common.pause(1);
+		Maximum_values.clear();
+		common.pause(1);
+		Minimum_values.sendKeys("30");
+		common.pause(1);
+		Maximum_values.sendKeys("50");
+		common.pause(1);
+		save_button_define_criteria.click();
+		common.pause(3);
+		ok_button.click();
+		common.pause(1);
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+	/*-------------------------------------------------define_criteria_parent----------------------------------------------------------*/
+	public Tender_creation_DashboardPage define_criteria_parent(
+			WebElement element, String passing_marks) {
+
+		common.pause(3);
+		
+		Actions move_to_elements = new Actions(driver);
+		move_to_elements.moveToElement(element).build().perform();
+		common.pause(1);
+		element.click();
+		common.pause(1);
+
+		Actions move_to_passing_marks = new Actions(driver);
+		move_to_passing_marks.moveToElement(passing_marks_define_criteria)
+				.build().perform();
+		common.pause(1);
+		passing_marks_define_criteria.clear();
+		common.pause(1);
+		passing_marks_define_criteria.sendKeys(passing_marks);
+		common.pause(1);
+		save_button_define_criteria.click();
+		common.pause(1);
+		ok_button.click();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+	/*------------------------------------------define_criteria_parent_with_no_child------------------------------------------------*/
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td/div/div/table/tbody/tr[11]/td[2]/input")
+	private WebElement passing_marks_with_no_child;
+
+	public Tender_creation_DashboardPage define_criteria_parent_with_no_child(
+			WebElement element, String passing_marks) {
+
+		common.pause(3);
+		
+		Actions move_to_elements = new Actions(driver);
+		move_to_elements.moveToElement(element).build().perform();
+		common.pause(1);
+		element.click();
+		common.pause(1);
+
+		
+		Minimum_values.clear();
+		common.pause(1);
+		Maximum_values.clear();
+		common.pause(1);
+
+		Minimum_values.sendKeys("30");
+		common.pause(1);
+		Maximum_values.sendKeys("50");
+		common.pause(1);
+
+		Actions move_to_passing_marks = new Actions(driver);
+		move_to_passing_marks.moveToElement(passing_marks_with_no_child)
+				.build().perform();
+		common.pause(1);
+		passing_marks_with_no_child.clear();
+		common.pause(1);
+		passing_marks_with_no_child.sendKeys(passing_marks);
+		common.pause(1);
+		save_button_define_criteria.click();
+		common.pause(3);
+		ok_button.click();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+	/*----------------------------------------------------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//tbody/tr[3]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Prequalification_Required;
+
+	/*@FindBy(xpath = "//table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement PPADB_Registration_Requirement;*/
+
+	@FindBy(xpath = "//table/tbody/tr[6]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Other_Eligibility_Criteria;
+
+	@FindBy(xpath = "//table/tbody/tr[7]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Envelope_Procedure;
+
+	@FindBy(xpath = "//tbody/tr[8]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Preferencial_Schemes;
+
+	@FindBy(xpath = "//table/tbody/tr[10]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Reservation_Schemes;
+
+	/*@FindBy(xpath = "//tbody/tr[12]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/textarea")
+	private WebElement Tender_Document_can_be_obtained_from;
+*/
+	@FindBy(xpath = "//tbody/tr[21]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/select")
+	private WebElement Site_Visit_Required;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement location;
+
+	/*@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/img")
+	private WebElement date_button;
+*/
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[2]/select")
+	private WebElement is_site_visit_compalsary;
+
+	public Tender_creation_DashboardPage prepare_notice() {
+		common.pause(2);
+		common.log("<h3>Step 22:Add the valid data into Prepare Notice,Click on Save And Next</h3>");
+		
+		
+	      tcd.verify_prepare_notice();      // verification
+	      common.pause(1);
+	
+		
+		TestData td = new TestData();
+		Select select_prequalification_required = new Select(
+				Prequalification_Required);
+		select_prequalification_required.selectByVisibleText("Yes");
+		common.pause(1);
+	/*	move_to_element(PPADB_Registration_Requirement);
+		common.pause(1);
+		PPADB_Registration_Requirement.sendKeys(td.test_data());*/
+		common.pause(1);
+		move_to_element(Other_Eligibility_Criteria);
+		common.pause(1);
+		move_to_element(Preferencial_Schemes);
+		common.pause(1);
+		Select select_preferencial_schemes = new Select(Preferencial_Schemes);
+		select_preferencial_schemes.selectByValue("Yes");
+		common.pause(1);
+		move_to_element(Reservation_Schemes);
+		common.pause(1);
+		Select select_reservation = new Select(Reservation_Schemes);
+		select_reservation.selectByVisibleText("Yes");
+		common.pause(1);
+		move_to_element(Site_Visit_Required);
+		common.pause(1);
+		Select select_site_visit_required = new Select(Site_Visit_Required);
+		select_site_visit_required.selectByVisibleText("Yes");
+		common.pause(1);
+		move_to_element(location);
+		common.pause(1);
+		location.sendKeys(td.test_data());
+		common.pause(1);
+		select_date_time();// select date method
+		common.pause(1);
+		Select select_site_visit = new Select(is_site_visit_compalsary);
+		select_site_visit.selectByVisibleText("Yes");
+
+		common.pause(1);
+
+		/*------------------------------------------Save data----------------------------------------------------------*/
+
+		save_button.click();
+		common.pause(4);
+		save_button_ok.click();
+		common.pause(3);
+		next_button.click();
+		common.pause(5);
+
+		/*--------------------------------------------------------------------------------------------------*/
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*---------------------------------------------------------------------------------------------------*/
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/input")
+	private WebElement date_box;
+
+	public Tender_creation_DashboardPage select_date_time() {
+
+		common.pause(2);
+	/*	date_button.click();
+		common.pause(2);*/
+		/*java.util.Date today = new java.util.Date();*/
+
+		Date date1 = new Date(); // your date
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date1);
+
+		cal.add(Calendar.MONTH, 4);
+
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+		int day = cal.get(Calendar.DAY_OF_MONTH);
+
+		String date = "" + day + "/" + month + "/" + year + "";
+		
+		System.out.println(date);
+		date_box.sendKeys(date);
+		common.pause(2);
+		/*
+		 * WebElement date_1 = driver.findElement(By
+		 * .xpath("//div[@tabindex='0'][contains(.,'" + date + "')]"));
+		 */
+		/*
+		 * date_1.click();// date click
+		 */common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*---------------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage move_to_element(WebElement element) {
+
+		common.pause(2);
+
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------Prepare_Schedule----------------------------------------------------------*/
+
+	@FindBy(xpath = "//div[@class='smallHeaderwithoutBold'][contains(.,'You are here : ITT Preparation > Prepare Tender Schedule')]")
+	private WebElement prepare_schedule_label;
+	
+	public Tender_creation_DashboardPage Prepare_Schedule() {
+		common.log("<h3>Step 23:Click on Save And Next On Prepare Schedule</h3>");
+		common.pause(5);
+		tcd.verification_method(prepare_schedule_label, "You are here : ITT Preparation > Prepare Tender Schedule", "Label", " Prepare Tender Schedule");
+		
+		common.pause(1);
+		next_button.click();
+		common.pause(5);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------Preview----------------------------------------------------*/
+
+	@FindBy(xpath = "//div[4]/div/div/div[1]/div[3]/table/tbody/tr/td[7]/img")
+	private WebElement submit_button;
+
+	@FindBy(xpath = "//div[@class='smallHeaderwithoutBold'][contains(.,'You are here : ITT Preparation > Preview Tender Forms')]")
+	private WebElement preview_label;
+	
+	public Tender_creation_DashboardPage Preview() {
+		common.log("<h3>Step 24:Click on SUBMIT on Preview Page</h3>");
+		
+		tcd.verification_method(preview_label, "You are here : ITT Preparation > Preview Tender Forms", "Label", " Preview Tender Forms");
+		
+		common.pause(1);
+		submit_button.click();
+		common.pause(4);
+		save_button_ok.click();
+		common.pause(4);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+}

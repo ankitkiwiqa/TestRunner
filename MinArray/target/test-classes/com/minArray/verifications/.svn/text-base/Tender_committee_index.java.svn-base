@@ -1,0 +1,357 @@
+package com.qcbs.verifications;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+
+public class Tender_committee_index extends SeleniumInit {
+
+	Common common = new Common(driver);
+
+	@Test
+	public void Tender_committee() {
+
+		//
+		// -------------------------------tender
+		// committee-------------------------------
+		//
+
+		common.log("<h3>Test Case Name - Tender committe</h3>");
+		common.log("<h3>Test Case Serial Number - </h3>");
+
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		/*
+		 * db.open_homepage();// home page open verify method
+		 */
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		/*
+		 * db.login_varify();// login page verify method
+		 */
+		try {
+
+			indexpage.login("bellamy", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.select_tender_for_committee();
+			common.pause(2);
+			committe_IndexPage.create_new_committee();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("bellamy", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.select_tender_for_committee();
+			common.pause(2);
+			committe_IndexPage.create_new_committee();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+	@Test
+	public void commitee_invitation_accept() {
+
+		// ---------available member
+
+		try {
+
+			indexpage.login("xander", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.accept_invitation();
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+			indexpage.login("xander", "admin123");// login method
+			common.pause(3);
+			committe_IndexPage.accept_invitation();
+
+			indexpage.logout();// logout method
+
+		}
+
+		// -------------------------------
+		try {
+
+			indexpage.login("bennett", "admin123");// login method
+			common.pause(3);
+			committe_IndexPage.accept_invitation();
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("bennett", "admin123");// login method
+			common.pause(3);
+			committe_IndexPage.accept_invitation();
+
+			indexpage.logout();// logout method
+
+		}
+
+		// -----------------------------------------
+
+		try {
+
+			indexpage.login("charles", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.accept_invitation();
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("charles", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.accept_invitation();
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+	// ---------------------------------------------------------------------------------------------------
+	@Test
+	public void finalize_committee() {
+
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		/*
+		 * db.open_homepage();// home page open verify method
+		 */
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+		/*
+		 * db.login_varify();// login page verify method
+		 */
+		try {
+
+			indexpage.login("bellamy", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.select_tender_for_committee();
+			common.pause(1);
+			committe_IndexPage.finalize_committee();
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("bellamy", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.select_tender_for_committee();
+			common.pause(1);
+
+			committe_IndexPage.finalize_committee();
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+	// -------------------------------------------------------------------------------------------
+
+	@Test
+	public void proceed_commitee_member() {
+
+		try {
+
+			indexpage.login("bennett", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage
+					.proceed_comittee_member_after_finalizae_committee();
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("bennett", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage
+					.proceed_comittee_member_after_finalizae_committee();
+
+			indexpage.logout();// logout method
+
+		}
+		// --------------------------------------------------------------------------------------------------
+
+		try {
+
+			indexpage.login("charles", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage
+					.proceed_comittee_member_after_finalizae_committee();
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("charles", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage
+					.proceed_comittee_member_after_finalizae_committee();
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+	// --------------------------------------------------------------------------------------
+
+	@Test
+	public void proceed_commitee_chair_person() {
+
+		try {
+
+			indexpage.login("xander", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.proceed_chairperson_after_finalizae_committee();
+			common.pause(3);
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("xander", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.proceed_chairperson_after_finalizae_committee();
+			common.pause(3);
+
+			indexpage.logout();// logout method
+
+		}
+
+	}
+
+	// -----------------------------------------------------------------------------------------------
+
+	@Test
+	public void give_feed_back_committee_member() {
+
+		try {
+
+			indexpage.login("bennett", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.committee_member_give_feed_back();
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("bennett", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.committee_member_give_feed_back();
+
+			indexpage.logout();// logout method
+
+		}
+
+		try {
+
+			indexpage.login("charles", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.committee_member_give_feed_back();
+
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("charles", "admin123");// login method
+			common.pause(3);
+
+			committe_IndexPage.committee_member_give_feed_back();
+			indexpage.logout();// logout method
+
+		}
+
+	}
+	
+	
+	
+	@Test
+	public void give_feedback_chairperson()
+	{
+		
+		try {
+
+			indexpage.login("xander", "admin123");// login method
+			common.pause(3);
+
+			
+			
+			
+			indexpage.logout();// logout method
+
+		} catch (NoSuchElementException e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login("xander", "admin123");// login method
+			common.pause(3);
+	
+			
+			
+			
+			
+			indexpage.logout();// logout method
+
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

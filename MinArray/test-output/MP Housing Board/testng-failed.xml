@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="10" name="Failed suite [MP Housing Board]">
+  <parameter name="selenium.url" value="http://ipms.ppadb.co.bw:8090/IVM10/login"/>
+  <parameter name="selenium.browser" value="firefox"/>
+  <parameter name="count" value="4"/>
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <test name="create Organization(failed)">
+    <classes>
+      <class name="com.qcbs.verifications.Tender_creation_index">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="create_Tender" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qcbs.verifications.Tender_creation_index -->
+    </classes>
+  </test> <!-- create Organization(failed) -->
+</suite> <!-- Failed suite [MP Housing Board] -->

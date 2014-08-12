@@ -1,0 +1,346 @@
+package com.qcbs.pages.indexpages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.qcbs.Init.Common;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_authorize_IndexPage extends AbstractPage {
+
+	public Tender_authorize_IndexPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+
+	/*-------------------------------------------------------TENDER VETTING---------------------------------------------------------------------*/
+	// div[@class='sortbyView'][contains(.,'View All Procurement Plan/ITT')]
+
+	public Tender_creation_DashboardPage Tender_vetting(String title) {
+
+		common.pause(5);
+		/*
+		 * Select_loggedinasBOX(
+		 * "director of pe veterinary moa : Department of Veterinary Services"
+		 * );// select
+		 */// logged
+			// in
+			// method
+
+		common.log("<h3>Step 3: Select Appropiate Option From Logged In As Box, Click on EDIT,Click on ITT,Select Record For Proceed</h3>");
+
+	
+		tcd.tender_vetting_dashboard_verification();// dashboard verification
+
+		common.pause(2);
+		Select_record_for_proceed(title);// select record for vetting method
+		common.pause(2);
+
+		select_Transation();// select transation
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*---------------------------------------SELECT LOGGED IN METHOD --------------------*/
+
+	@FindBy(xpath = "//select[@class='loggedinAsBox']")
+	private WebElement LoggedinAsBox;
+
+	public Tender_creation_DashboardPage Select_loggedinasBOX(String loggedin) {
+
+		common.pause(2);
+		Select select_login_box = new Select(LoggedinAsBox);
+		select_login_box.selectByVisibleText(loggedin);
+
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-------------------------------------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid-')][contains(.,'Edit')]")
+	private WebElement Edit_button;
+
+	@FindBy(xpath = "//td[starts-with(@id,'gwt-uid-')][contains(.,'ITT')]")
+	private WebElement ITT_button;
+
+	@FindBy(xpath = "//tbody/tr[1]/td[7]/div/span[1]/img[@title='Proceed']")
+	private WebElement Proceed_button;
+
+	@FindBy(xpath = "//input[@class='searchBox']")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//button[contains(.,'Search')]")
+	private WebElement search_button;
+
+	public Tender_creation_DashboardPage Select_record_for_proceed(String title) {
+
+		
+		Edit_button.click();
+		common.pause(3);
+		ITT_button.click();
+
+		/*new WebDriverWait(driver, 10).until(ExpectedConditions
+				.presenceOfElementLocated(By
+						.xpath("//input[@class='searchBox']")));*/
+		common.pause(10);
+
+		System.out.println(title);
+		
+          
+		search_box.sendKeys(title);
+		common.pause(2);
+		search_button.click();
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*------------------------------------------------SELECT TRANASATION----------------------------------------------------------*/
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Select Transaction')]")
+	private WebElement select_Trancation_button;
+
+	@FindBy(xpath = "//select[@class='listBoxStyle']")
+	private WebElement select_Trancation_box;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Save']")
+	private WebElement save_button;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'OK')]")
+	private WebElement save_ok_button;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Proceed To Next']")
+	private WebElement submit_button;
+
+	@FindBy(xpath = "//div[@class='sortbyView'][contains(.,'View All ITT')]")
+	private WebElement View_All_Procurement_Plan_label;
+
+	@FindBy(xpath = "//div[@class='smallHeaderwithoutBold'][contains(.,'You are here : Review Draft ITT > Review Draft ITT')]")
+	private WebElement review_draft;
+
+	public Tender_creation_DashboardPage select_Transation() {
+
+		common.pause(6);
+		tcd.verification_method(View_All_Procurement_Plan_label,
+				"View All Procurement Plan/ITT", "label",
+				"View All Procurement Plan/ITT");// verification method
+
+		common.pause(5);
+		Proceed_button.click();
+		common.pause(10);
+
+		common.log("<h3>Step 4:Click on Select Transaction Button,Select Transaction-'Submit ITT to MTC',Click on Save,Click on Submit</h3>");
+
+		common.pause(2);
+		select_Trancation_button.click();
+		common.pause(7);
+
+		tcd.verification_method(review_draft,
+				"You are here : Review Draft ITT > Review Draft ITT", "Label",
+				"Review Draft ITT");// verification method
+		common.pause(5);
+		Select slect_trancation = new Select(select_Trancation_box);
+		slect_trancation.selectByVisibleText("Submit ITT to MTC");
+		common.pause(2);
+
+		save_button.click();
+		common.pause(3);
+		save_ok_button.click();
+		common.pause(3);
+
+		submit_button.click();
+		common.pause(3);
+		save_ok_button.click();
+		common.pause(5);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*---------------------------------------------------TENDER AUTHORIZATION-------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage Tender_authorization(String title) {
+
+		common.pause(3);
+		Select_loggedinasBOX("MTC Secretary MOA : MTC for Ministry of Agriculture (MOA)");
+
+		common.log("<h3>Step 6: Select Appropiate Option From Logged In As Box, Click on EDIT,Click on ITT,Select Record For Proceed</h3>");
+
+		Select_record_for_proceed(title);
+		common.pause(3);
+
+		tender_auth_process();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*---------------------------------------SELECT LOGGED IN METHOD --------------------*/
+
+	/*------------------------------------------------------------------------------------------------------------*/
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Update Schedule')]")
+	private WebElement update_schedule_button;
+
+	@FindBy(xpath = "//tr[1]/td[7]/div/span[1]/img[@title='Proceed']")
+	private WebElement Proceed_button_auth;
+
+	@FindBy(xpath = "//div[@class='smallHeaderwithoutBold'][contains(.,'You are here : Review vetting by MTC Secretary > Review Vetting')]")
+	private WebElement Review_Vetting_label;
+
+	@FindBy(xpath = "//p/b[contains(.,'MTC Secretary')]")
+	private WebElement mtc_secretary_label;
+
+	public Tender_creation_DashboardPage tender_auth_process() {
+
+		common.pause(5);
+
+		tcd.verification_method(View_All_Procurement_Plan_label,
+				"View All Procurement Plan/ITT", "label",
+				"View All Procurement Plan/ITT");// verification method
+
+		common.pause(5);
+		Proceed_button_auth.click();
+		common.pause(8);
+
+		common.log("<h3>Step 7: Click on Select Transaction button,Select Action-'Update notice And schedule',Click on Save,Click on Submit</h3>");
+		select_Trancation_button.click();
+		common.pause(3);
+
+		tcd.verification_method(
+				Review_Vetting_label,
+				"You are here : Review vetting by MTC Secretary > Review Vetting",
+				"Label", "Review Vetting");
+		common.pause(3);
+
+		tcd.verification_method(mtc_secretary_label, "MTC Secretary's action",
+				"label", "Select Transaction");
+		common.pause(2);
+		Select slect_trancation = new Select(select_Trancation_box);
+		slect_trancation.selectByVisibleText("Update notice and schedule");
+		common.pause(2);
+
+		save_button.click();
+		common.pause(3);
+		save_ok_button.click();
+		common.pause(3);
+
+		submit_button.click();
+		common.pause(3);
+
+		common.log("<h3>Step 8: Click on Update Schedule button,Click on Submit</h3>");
+
+		update_schedule_button.click();
+		common.pause(3);
+
+		submit_button.click();
+		common.pause(4);
+
+		save_ok_button.click();
+		common.pause(6);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*------------------------------------------------TENDER RELEASE--------------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Proceed To Next']")
+	private WebElement next_button;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Release']")
+	private WebElement release_button;
+
+	@FindBy(xpath = "//td/div/div/div/div[3]/div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement select_certificate;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Proceed')]")
+	private WebElement proceed_button_popup;
+
+	@FindBy(xpath = "//div[@class='smallHeaderwithoutBold'][contains(.,'You are here : Tender Document Release > Review ITT')]")
+	private WebElement document_review_release_itt_label;
+
+	@FindBy(xpath = "//div[@class='smallHeaderwithoutBold'][contains(.,'You are here : Tender Document Release > Tender Release')]")
+	private WebElement tender_release;
+
+	@FindBy(xpath = "//div[@class='Caption'][contains(.,'Key Pair Selection')]")
+	private WebElement Certificate_Selection;
+
+	public Tender_creation_DashboardPage Tender_release(String title) {
+
+		common.pause(4);
+		/*
+		 * Select_loggedinasBOX(
+		 * "director of pe veterinary moa : Department of Veterinary Services");
+		 */
+		common.log("<h3>Step 10: Select Appropiate Option From Logged In As Box, Click on EDIT,Click on ITT,Select Record For Proceed</h3>");
+
+	
+		System.out.println(title);
+		Select_record_for_proceed(title);// select record for vetting method
+		
+		
+
+		tcd.verification_method(View_All_Procurement_Plan_label,
+				"View All ITT", "label", "View All ITT");// verification method
+		common.pause(2);
+
+		Proceed_button_auth.click();// proceed button click
+		common.pause(9);
+
+		common.log("<h3>Step 11:Click on Next Button on Review ITT Page</h3>");
+
+		tcd.verification_method(document_review_release_itt_label,
+				"You are here : Tender Document Release > Review ITT", "Label",
+				"Review ITT");// verification method
+
+		common.pause(2);
+		next_button.click();// next button on Review ITT Page
+
+		new WebDriverWait(driver, 15)
+				.until(ExpectedConditions.presenceOfElementLocated(By
+						.xpath("//div[@class='smallHeaderwithoutBold'][contains(.,'You are here : Tender Document Release > Tender Release')]")));
+
+		common.log("<h3>Step 12:Click on Release Button,Select Certificate,Click on Proceed,Click on Complete Button </h3>");
+
+		tcd.verification_method(tender_release,
+				"You are here : Tender Document Release > Tender Release",
+				"Label", "Sign & Release Tender");// verification method
+
+		release_button.click();// release button of Sign & Release Tender
+		common.pause(10);
+
+		tcd.verification_method(Certificate_Selection, "Certificate Selection",
+				"Label", "Certificate Selection Pop-up");//
+		common.pause(3);
+		select_certificate.click();// select certificate
+		common.pause(3);
+
+		proceed_button_popup.click();// proceed button of select certificate
+										// popup
+		common.pause(8);
+
+		save_ok_button.click();// /tender release button click
+		common.pause(5);
+
+		next_button.click();// Complete button click
+		common.pause(5);
+
+		save_ok_button.click();// tender release button ok
+		common.pause(5);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+}

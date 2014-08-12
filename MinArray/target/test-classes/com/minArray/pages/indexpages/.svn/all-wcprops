@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/load_testing/!svn/ver/12/QCBS/src/test/java/com/qcbs/pages/indexpages
+END
+Tender_authorize_IndexPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/load_testing/!svn/ver/5/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_authorize_IndexPage.java
+END
+Tender_prepare_Indexpage.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/load_testing/!svn/ver/12/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_prepare_Indexpage.java
+END
+Tender_closing_IndexPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/load_testing/!svn/ver/9/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_closing_IndexPage.java
+END
+Tender_creation_IndexPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/load_testing/!svn/ver/5/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_creation_IndexPage.java
+END
+Tender_open_IndexPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/load_testing/!svn/ver/9/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_open_IndexPage.java
+END
+Tender_committe_IndexPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/load_testing/!svn/ver/9/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_committe_IndexPage.java
+END
+Tender_updatePrepare_Indexpage.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/load_testing/!svn/ver/5/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_updatePrepare_Indexpage.java
+END
+Tender_approve_IndexPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/load_testing/!svn/ver/12/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_approve_IndexPage.java
+END
+Tender_bid_Indexpage.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/load_testing/!svn/ver/9/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_bid_Indexpage.java
+END
+Tender_reencryption_Indexpage.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/load_testing/!svn/ver/9/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_reencryption_Indexpage.java
+END
+IndexPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/load_testing/!svn/ver/5/QCBS/src/test/java/com/qcbs/pages/indexpages/IndexPage.java
+END
+Tender_update_prepare_2_Indexpage.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/load_testing/!svn/ver/9/QCBS/src/test/java/com/qcbs/pages/indexpages/Tender_update_prepare_2_Indexpage.java
+END

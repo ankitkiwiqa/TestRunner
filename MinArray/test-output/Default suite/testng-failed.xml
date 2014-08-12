@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qcbs.verifications.Tender_bidding_index">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="Tender_committee"/>
+          <include name="tearDown"/>
+          <include name="tender_reencryption"/>
+          <include name="Tender_bid"/>
+          <include name="setUp"/>
+          <include name="tender_open"/>
+          <include name="tender_close"/>
+        </methods>
+      </class> <!-- com.qcbs.verifications.Tender_bidding_index -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,147 @@
+/*package com.qcbs.verifications;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.ITestContext;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+import com.qcbs.page.DashboardPage;
+import com.qcbs.pages.indexpages.Tender_approve_IndexPage;
+import com.qcbs.pages.indexpages.Tender_prepare_Indexpage;
+
+public class Tender_creation_index extends SeleniumInit {
+
+	Common common = new Common(driver);
+
+	-----------------------------TENDER CREATION----------------------------------------
+
+	@Test()
+	public void create_Tender(ITestContext context) {
+
+		String c = context.getCurrentXmlTest().getParameter("count");
+		int count = Integer.parseInt(c);
+
+		common.log("<br></br>   <h3>Step 1:Open Given url </h3>");
+
+		DashboardPage db = new DashboardPage(driver);
+
+		db.open_homepage();// home page open verify method
+
+		for (int i = 1; i <= count; i++) {
+
+			  
+			common.log("<h3>Test Case Name - Tender Prepare</h3>");
+			common.log("<h3>Test Case Serial Number - dg_cr_Ten_01</h3>");
+			
+			common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+			db.login_varify();// login page verify method
+
+		try {
+
+				indexpage.login("sherlock", "admin123");// login method
+				common.pause(2);
+
+				tender_indexpage.tender_creation();// create Tender method
+				common.pause(2);
+
+				common.pause(2);
+
+				indexpage.logout();// logout method
+
+			} catch (NoSuchElementException e) {
+
+				indexpage.force_logout();// force logout method
+
+				indexpage.login("sherlock", "admin123");// login method
+				common.pause(2);
+
+				tender_indexpage.tender_creation();// create Tender method
+				common.pause(2);
+
+				common.pause(2);
+
+				indexpage.logout();// logout method
+
+				common.pause(2);
+
+			}
+			common.pause(5);
+			// tender approve method called
+			
+			common.log("<h3>Test Case Name - Tender Confirm Fund</h3>");
+			common.log("<h3>Test Case Serial Number - dg_cr_Ten_02</h3>");
+			
+			common.log("<h3>Step 5:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+
+			try {
+
+				common.pause(2);
+				indexpage.login("tommie", "admin123");// login method
+				common.pause(2);
+
+				approve_indexpage.tender_approve();// create Tender method
+				common.pause(2);
+
+				indexpage.logout();
+				common.pause(2);
+
+			} catch (NoSuchElementException e) {
+
+				indexpage.force_logout();// force logout method
+
+				indexpage.login("tommie", "admin123");// login method
+				common.pause(2);
+
+				approve_indexpage.tender_approve();// create Tender method
+				common.pause(2);
+
+				indexpage.logout();
+
+				common.pause(2);
+
+			}
+
+			common.pause(5);
+			common.log("<h3>Test Case Name - Tender Prepare After Confirm Fund</h3>");
+			common.log("<h3>Test Case Serial Number - dg_cr_Ten_03</h3>");
+			
+			common.log("<h3>Step 8:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+
+			try {
+				common.pause(2);
+				indexpage.login("sherlock", "admin123");// login method
+				common.pause(2);
+
+				tpi_indexpage.prepare_after_conform_fund();// create Tender
+															// method
+				common.pause(2);
+
+				indexpage.logout();// logout method
+
+				common.pause(2);
+
+			} catch (NoSuchElementException e) {
+
+				indexpage.force_logout();// force logout method
+
+				indexpage.login("sherlock", "admin123");// login method
+				common.pause(2);
+
+				tpi_indexpage.prepare_after_conform_fund();// create Tender
+															// method
+				common.pause(2);
+
+				indexpage.logout();// logout method
+
+				common.pause(2);
+
+			}
+
+			common.log("<h3>Test Completed = " + i +"</h3>");
+		}
+	}
+	-------------------------------------------------------------------------------------
+
+}
+*/

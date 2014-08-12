@@ -1,0 +1,180 @@
+package com.qcbs.verifications;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+import com.qcbs.page.DashboardPage;
+
+public class tender_bidding_index extends SeleniumInit{
+
+	
+	Common common = new Common(driver);
+	
+	DashboardPage db = new DashboardPage(driver);
+	
+	@DataProvider(name = "Tender_bidding")
+	public Object[][] tender_bidding() {
+
+		
+		Object[][] retObjArr = {
+
+		{ "jammie", "admin123" },
+
+		{ "emmette", "admin123" },
+
+		{ "emiligeorge", "admin123" },
+
+		{ "emilygeorge", "admin123" },
+
+		{ "jammygeorge", "admin123" }
+
+		/*
+		 * { "emmette", "admin123" },
+		 * 
+		 * 
+		 * { "emmette", "admin123" },
+		 */
+
+		/*
+		 * 
+		 * { "jammie", "admin123" },
+		 */
+
+		};
+		return (retObjArr);
+
+	}
+
+	/*------------------------------------------------------------------------------------*/
+
+	@Test(dataProvider ="tender_bidding")
+	public void Tender_bid(String user_name, String password) {
+	
+		
+	
+
+	
+		
+		
+		
+		common.log("<br></br><h3>Step 1:Open Given url </h3>");
+
+		/*
+		 * db.open_homepage();// home page open verify method
+		 */
+		common.log("<h3>Test Case Name - Tender Bid</h3>");
+		common.log("<h3>Test Case Serial Number - </h3>");
+
+		common.log("<h3>Step 2:Enter the valid 'USERNAME','PASSWORD'  into Login form And click on login button</h3>");
+	/*	db.login_varify();// login page verify method
+*/
+		try {
+
+			
+			indexpage.login(user_name, password);// login method
+			common.pause(2);
+
+			common.log("<h3>Step 3:Click on Edit,Click on ITT,Select Record For Procced.</h3>");
+			bid_indexpage.select_tender_for_bid();
+
+			common.pause(2);
+
+			bid_indexpage.download_document();
+			common.pause(2);
+
+			bid_indexpage.Pay_Tender_Document_Fees();
+			common.pause(2);
+			bid_indexpage.prepare_bid();
+			common.pause(2);
+
+			bid_indexpage.bid_submission();
+			common.pause(2);
+
+			indexpage.logout();// logout method
+
+		} catch (Exception e) {
+
+			indexpage.force_logout();// force logout method
+
+			indexpage.login(user_name, password);// login method
+			common.pause(3);
+
+			bid_indexpage.select_tender_for_bid();
+
+			common.pause(2);
+
+			bid_indexpage.download_document();
+			common.pause(2);
+
+			bid_indexpage.Pay_Tender_Document_Fees();
+			common.pause(2);
+			bid_indexpage.prepare_bid();
+			common.pause(2);
+
+			bid_indexpage.bid_submission();
+			common.pause(2);
+			indexpage.logout();// logout method
+
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	/*-------------------------------------------------------------------------------------*/
+
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	}
+	
+

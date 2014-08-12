@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="QCBS" duration-ms="32" started-at="2014-08-07T12:17:01Z" finished-at="2014-08-07T12:17:01Z">
+    <groups>
+    </groups>
+    <test name="Create_New_network_Discovery" duration-ms="32" started-at="2014-08-07T12:17:01Z" finished-at="2014-08-07T12:17:01Z">
+      <class name="com.new_poc.verifications.mindArray_CreateNewNetworkDiscovery_index">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.new_poc.verifications.mindArray_CreateNewNetworkDiscovery_index@381bfd7]" name="fetchSuiteConfiguration" is-config="true" duration-ms="23" started-at="2014-08-07T17:47:01Z" finished-at="2014-08-07T17:47:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@38a663a4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+      </class> <!-- com.new_poc.verifications.mindArray_CreateNewNetworkDiscovery_index -->
+    </test> <!-- Create_New_network_Discovery -->
+  </suite> <!-- QCBS -->
+</testng-results>

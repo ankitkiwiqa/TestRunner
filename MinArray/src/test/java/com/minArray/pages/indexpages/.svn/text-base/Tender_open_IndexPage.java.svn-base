@@ -1,0 +1,144 @@
+package com.qcbs.pages.indexpages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.qcbs.Init.Common;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_open_IndexPage extends AbstractPage {
+
+	public Tender_open_IndexPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+
+	@FindBy(xpath = "//input[@class='searchBox']")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Search')]")
+	private WebElement search_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Edit')]")
+	private WebElement edit_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'ITT')]")
+	private WebElement itt_button;
+
+	@FindBy(xpath = "//img[@title='Proceed']")
+	private WebElement tender_respond_button;
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[1]/select")
+	private WebElement select_box_on_Tender_Opening_Authority;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Dashboard')]")
+	private WebElement dashboardmanu;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'My Briefcase')]")
+	private WebElement mybriefcase;
+
+	@FindBy(xpath = ".//*[@class='loggedInUserNameLabel']")
+	private WebElement account_name;
+
+	public Tender_creation_DashboardPage select_tender_for_open() {
+
+		common.log("<h3>Step 3:Click on Edit,Click on ITT,Select Record For Procced.</h3>");
+		common.pause(1);
+		tcd.verification_method(dashboardmanu, "Dashboard", "Button",
+				"Dashboard");
+		tcd.verification_method(mybriefcase, "My Briefcase", "Button",
+				"Dashboard");
+		tcd.verification_method(account_name, "User Name", "Label", "Dashboard");
+
+		common.pause(1);
+		edit_button.click();
+		common.pause(1);
+		itt_button.click();
+		common.pause(3);
+Tender_bid_Indexpage tbi=new Tender_bid_Indexpage(driver);
+		
+		search_box.sendKeys(tbi.Tender_name);
+		common.pause(1);
+		search_button.click();
+		common.pause(1);
+
+		tender_respond_button.click();
+		common.pause(5);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*
+	 * @FindBy(xpath="//tr[1]/td[7]/div/span/img[@title='Proceed']") private
+	 * WebElement proceed;
+	 */
+
+	@FindBy(xpath = "//button[contains(.,'Open Tender')]")
+	private WebElement open_tender_button;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Save']")
+	private WebElement save_button;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'OK')]")
+	private WebElement ok_button;
+
+	@FindBy(xpath = "//img[@alt='Proceed To Next']")
+	private WebElement next_button;
+
+	@FindBy(xpath = "//button[contains(.,'Yes')]")
+	private WebElement yes_button;
+
+	@FindBy(xpath = "//div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement certificate_selection;
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Opening of Envelope')]")
+	private WebElement opening_of_envelope_button;
+
+	public Tender_creation_DashboardPage Opening_of_Envelope() {
+
+		common.log("<h3>Step 4:Click on Open Tender Button,Click on Save,Click on next on Opening of envelope Page .</h3>");
+
+		common.pause(5);
+
+		tcd.verification_method(opening_of_envelope_button,
+				"Opening of Envelope", "Button", "Opening of Envelope");
+		common.pause(2);
+
+		open_tender_button.click();
+		common.pause(2);
+		yes_button.click();
+		common.pause(2);
+		ok_button.click();
+		common.pause(2);
+		save_button.click();
+		common.pause(2);
+		Tender_bid_Indexpage tbi = new Tender_bid_Indexpage(driver);
+		tbi.certificate_selection(certificate_selection);
+		common.pause(2);
+		next_button.click();
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+	public Tender_creation_DashboardPage Download_Bid_Documents() {
+
+		common.log("<h3>Step 5:Click on Next on Download Bid Documents.</h3>");
+
+		common.pause(2);
+		next_button.click();
+		common.pause(2);
+		ok_button.click();
+		common.pause(2);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+}

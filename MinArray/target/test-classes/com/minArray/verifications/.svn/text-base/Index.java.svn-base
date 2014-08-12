@@ -1,0 +1,17 @@
+package com.qcbs.verifications;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.ITestContext;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+import com.qcbs.page.DashboardPage;
+
+public class Index extends SeleniumInit {
+
+
+
+
+
+}

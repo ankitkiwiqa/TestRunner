@@ -1,0 +1,71 @@
+package com.qcbs.verifications;
+
+import org.openqa.selenium.NoSuchElementException;
+import org.testng.annotations.Test;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.SeleniumInit;
+
+public class Tender_briefcase_menu_index extends SeleniumInit {
+
+	
+	Common common=new Common(driver);
+	
+	@Test
+	public void briefcase_upload()
+	{
+		
+		
+		
+		try {
+
+			indexpage.login("emmette", "admin123");// login method
+			common.pause(3);
+			tender_indexpage.document_upload_in_brief_case();
+			common.pause(3);
+			indexpage.logout();
+			
+			
+				} catch (NoSuchElementException e) {
+
+					
+
+					indexpage.force_logout();// force logout method
+
+					indexpage.login("emmette", "admin123");// login method
+					common.pause(3);
+					tender_indexpage.document_upload_in_brief_case();
+					common.pause(3);
+					indexpage.logout();
+					
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

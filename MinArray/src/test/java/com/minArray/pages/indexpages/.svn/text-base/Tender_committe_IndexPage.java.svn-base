@@ -1,0 +1,618 @@
+package com.qcbs.pages.indexpages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.TestData;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_committe_IndexPage extends AbstractPage {
+
+	public Tender_committe_IndexPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+
+	@FindBy(xpath = "//input[@class='searchBox']")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Search')]")
+	private WebElement search_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Edit')]")
+	private WebElement edit_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'ITT')]")
+	private WebElement itt_button;
+
+	@FindBy(xpath = "//tr[1]/td[7]/div/span[1]/img[@title='Proceed']")
+	private WebElement tender_respond_button;
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[1]/select")
+	private WebElement select_box_on_Tender_Opening_Authority;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Dashboard')]")
+	private WebElement dashboardmanu;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'My Briefcase')]")
+	private WebElement mybriefcase;
+
+	@FindBy(xpath = ".//*[@class='loggedInUserNameLabel']")
+	private WebElement account_name;
+
+	
+	
+
+
+	@FindBy(xpath = "//select[@class='listBoxStyle']")
+	private WebElement interest_box;
+
+	
+	public Tender_creation_DashboardPage select_tender_for_committee() {
+
+		common.log("<h3>Step 3:Click on Edit,Click on ITT,Select Record For Procced.</h3>");
+		common.pause(1);
+		tcd.verification_method(dashboardmanu, "Dashboard", "Button",
+				"Dashboard");
+		tcd.verification_method(mybriefcase, "My Briefcase", "Button",
+				"Dashboard");
+		tcd.verification_method(account_name, "User Name", "Label", "Dashboard");
+
+		common.pause(1);
+		edit_button.click();
+		common.pause(1);
+		itt_button.click();
+		common.pause(3);
+
+           
+		
+		search_box.sendKeys(/*Tender_bid_Indexpage.Tender_name*/"KQTest_pr_title_aqzo");
+
+		common.pause(1);
+		search_button.click();
+		common.pause(1);
+
+		tender_respond_button.click();
+		common.pause(2);
+
+		try{
+		if(interest_box.isDisplayed())
+		{
+	    System.out.println("interest box is displayed");
+		common.selectFromComboBy_Visible_Text(interest_box, "No");
+		save_button_commitee_popup.click();
+		}
+		}catch(NoSuchElementException e)
+		{
+			
+			System.out.println("interest box is not displayed");	
+		}
+		
+		
+		
+		
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td/a[contains(.,'Create New Committee')]")
+	private WebElement create_new_committee_button;
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Nominate and Create Committee')]")
+	private WebElement Nominate_and_Create_Committee_button;
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[2]/input")
+	private WebElement Name_on_committee_popup;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/textarea")
+	private WebElement description_on_connection_popup;
+
+	@FindBy(xpath = "//button[contains(.,'Nominate Selected Users')]")
+	private WebElement nominate_members;
+
+	@FindBy(xpath = "//table/tbody/tr/td[2]/select")
+	private WebElement Select_committee_member;
+
+	@FindBy(xpath = "//tbody/tr[1]/td/div/div/table/tbody[1]/tr[1]/td[1]/div/input")
+	private WebElement select_member_1;
+
+	@FindBy(xpath = "//tbody/tr[1]/td/div/div/table/tbody[1]/tr[2]/td[1]/div/input")
+	private WebElement select_member_2;
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[2]/div/div[contains(.,'Select Committee Members')]")
+	private WebElement select_committee_members_label;
+
+	@FindBy(xpath = "//tr[4]/td/table/tbody/tr/td[1]/button[contains(.,'Nominate Selected Users')]")
+	private WebElement Nominate_Selected_Users_button;
+
+	@FindBy(xpath = "//button[contains(.,'Exit')]")
+	private WebElement exit_button;
+
+	@FindBy(xpath = "//button[contains(.,'Save')]")
+	private WebElement save_button_commitee_popup;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Save']")
+	private WebElement save_button;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'OK')]")
+	private WebElement ok_button;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Proceed To Next']")
+	private WebElement submit_button;
+
+	@FindBy(xpath = "//table/tbody[1]/tr[1]/td[5]/div/input")
+	private WebElement works_as_chair_persion;
+
+	
+	@FindBy(xpath = "//tr[1]/td/div/div/table/tbody[1]/tr[1]/td[6]/div/input")
+	private WebElement works_as_secretary_persion;
+    
+	
+		TestData td = new TestData();
+		final String   commitee_name=/*td.commitee_name()*/"KQ_committee_zhu";
+	
+	
+	public Tender_creation_DashboardPage create_new_committee() {
+
+		common.log("<h3>Step 4: Click on Create New Commitee,Select Committee Members,Save Committe </h3>");
+/*
+		tcd.verification_method(Nominate_and_Create_Committee_button,
+				"Nominate and Create Committee", "button",
+				"Nominate and Create Committee");*/
+
+		common.pause(5);
+		create_new_committee_button.click();
+		common.pause(3);
+
+	
+
+		
+		
+		System.out.println("commitee-name " +commitee_name );
+		Name_on_committee_popup.sendKeys(commitee_name);
+		
+		common.pause(1);
+		description_on_connection_popup.sendKeys(td.commitee_name());
+		common.pause(1);
+
+		nominate_members.click();
+		common.pause(1);
+
+		select_committee_member();
+		common.pause(2);
+
+		/*
+		 * nominate_members.click(); common.pause(2);
+		 * 
+		 * select_committee_member("Botswana Police Service(BPS)");
+		 * common.pause(3);
+		 */
+		works_as_chair_persion.click();
+		common.pause(2);
+		works_as_secretary_persion.click();
+		common.pause(2);
+
+		save_button_commitee_popup.click();
+		common.pause(2);
+
+		ok_button.click();
+		common.pause(1);
+
+		save_button.click();
+		common.pause(1);
+		ok_button.click();
+		common.pause(1);
+
+		submit_button.click();
+		common.pause(1);
+
+		ok_button.click();
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	public Tender_creation_DashboardPage select_committee_member() {
+
+		Select select = new Select(Select_committee_member);
+		select.selectByVisibleText("Botswana Defence Force (BDF)");
+
+		common.pause(4);
+		System.out.println("23");
+
+		Actions action1 = new Actions(driver);
+		action1.moveToElement(select_member_1).build().perform();
+
+		select_member_1.click();
+		System.out.println("45");
+		common.pause(1);
+		System.out.println("67");
+
+		Actions action2 = new Actions(driver);
+		action2.moveToElement(select_member_2).build().perform();
+
+		select_member_2.click();
+		System.out.println("89");
+		common.pause(1);
+
+		Nominate_Selected_Users_button.click();
+		common.pause(1);
+
+		ok_button.click();
+		common.pause(2);
+
+		Select select1 = new Select(Select_committee_member);
+		select1.selectByVisibleText("Botswana Police Service(BPS)");
+
+		common.pause(4);
+		System.out.println("23");
+
+		Actions action = new Actions(driver);
+		action.moveToElement(select_member_1).build().perform();
+
+		select_member_1.click();
+		System.out.println("45");
+		common.pause(1);
+		System.out.println("67");
+
+		Actions action23 = new Actions(driver);
+		action23.moveToElement(select_member_2).build().perform();
+
+		select_member_2.click();
+		System.out.println("89");
+		common.pause(1);
+
+		Nominate_Selected_Users_button.click();
+		common.pause(1);
+
+		ok_button.click();
+		common.pause(2);
+
+		exit_button.click();
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	
+	
+	
+	
+	@FindBy(xpath = "//button[contains(.,'My Invitations')]")
+	private WebElement My_invitation_button;
+    
+	@FindBy(xpath = "//td[1]/span/input[starts-with(@id,'gwt-uid')][@type='radio'][@name='new'][@value='on']")
+	private WebElement conform_availability_yes;
+	
+	@FindBy(xpath = "//table/tbody/tr/td[1]/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[1]/td[2]/select[@class='listBoxStyle']")
+	private WebElement any_interest_to_declare;
+	 
+	
+	
+	public void accept_invitation()
+	{
+	
+		common.pause(5);
+		
+		common.move_to_element(My_invitation_button);
+	    
+		My_invitation_button.click();
+		common.pause(2);
+		
+		WebElement envitation_name=driver.findElement(By.xpath("//div[@title='You are invited for "+commitee_name+"']"));
+		System.out.println("//div[@title='You are invited for "+commitee_name+"']");
+	    common.move_to_element(envitation_name);
+	    common.pause(1);
+		envitation_name.click();
+		common.pause(2);
+		conform_availability_yes.click();
+		common.pause(1);
+		
+		common.selectFromComboBy_Visible_Text(any_interest_to_declare, "No");
+		common.pause(1);
+		
+		save_button_commitee_popup.click();
+		common.pause(1);
+		
+		ok_button.click();
+		common.pause(1);		
+		
+	}
+	
+	
+	
+	@FindBy(xpath = "//table/tbody/tr/td[5]/div[contains(.,'Finalize Committee')]")
+	private WebElement finalization_commitee_button;
+    
+	
+	
+	
+	
+	public void finalize_committee()
+	{
+		
+		
+		new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//table/tbody/tr/td[5]/div[contains(.,'Finalize Committee')]")));
+		
+		if(finalization_commitee_button.isDisplayed())
+		{
+			
+			finalization_commitee_button.click();
+			common.pause(1);		
+			
+			ok_button.click();
+			common.pause(2);
+			
+		    submit_button.click();
+		    common.pause(2);
+			
+		    ok_button.click();
+		    common.pause(2);
+		    
+		    
+		    
+		}
+		
+		
+		
+		
+	}
+	
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Evaluate Compliance Criteria')]")
+	private WebElement evaluate_compliance_criteria;
+
+	
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Save count')]")
+	private WebElement save_count;
+	
+	
+	
+	
+	public void proceed_comittee_member_after_finalizae_committee()
+	{
+		
+		logged_as_in_committee_member();
+
+        select_tender_for_committee();
+		
+        common.pause(2);
+		evaluate_compliance_criteria.click();
+		common.pause(2);
+        save_count.click();
+        common.pause(1);
+        ok_button.click();
+        common.pause(1);
+         
+		save_button.click();
+		common.pause(1);
+        
+		ok_button.click();
+		common.pause(1);
+		
+		exit_button.click();
+		common.pause(1);
+		
+	}
+	
+	
+	@FindBy(xpath = ".//*[@id='myinfopanel']/div[2]/div/div[1]/table/tbody/tr[5]/td[2]/select")
+	private WebElement login_box;
+	
+	
+	
+	
+	
+	public void logged_as_in_committee_member()
+	{
+		common.pause(3);
+		List<WebElement> logged_in_as =driver.findElements(By.xpath(".//*[@id='myinfopanel']//select/option"));
+		int count=0;
+		for(WebElement ele : logged_in_as)
+		{
+			
+			System.out.println(count);
+			System.out.println(ele.getText());
+			System.out.println(commitee_name);
+			if(ele.getText().contains(commitee_name))
+			{
+				String loggedInname=ele.getText();
+			
+				common.selectFromComboBy_Visible_Text(login_box, loggedInname);
+				common.pause(3);
+				
+				break;
+				
+			}
+			count++;
+			
+		}
+		
+		
+		
+	}
+	
+	
+	@FindBy(xpath="//button[contains(.,'Shortlist')]")
+	private WebElement shortlist_button;
+	
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Select Transaction')]")
+	private WebElement select_tranction_button;
+
+	
+	
+
+	
+	@FindBy(xpath = "//select[@class='listBoxStyle']")
+	private WebElement select_tranction_combo_box;
+	
+	@FindBy(xpath = "//tr[6]//textarea")
+	private WebElement feedback_textarea;
+	
+	
+	
+	
+	
+	
+	public void proceed_chairperson_after_finalizae_committee()
+	{
+		
+		logged_as_in_committee_member();
+
+        select_tender_for_committee();
+		
+        common.pause(2);
+		evaluate_compliance_criteria.click();
+		common.pause(2);
+        save_count.click();
+        common.pause(1);
+        ok_button.click();
+        common.pause(1);
+         
+		save_button.click();
+		common.pause(1);
+        
+		ok_button.click();
+		common.pause(1);
+		
+		
+		submit_button.click();
+		common.pause(1);
+		
+		shortlist_button.click();
+		common.pause(1);
+		
+		ok_button.click();
+		common.pause(2);
+		
+		
+		select_tranction_button.click();
+		common.pause(2);
+		
+		
+		common.selectFromComboBy_Visible_Text(select_tranction_combo_box, "Proceed with Evaluation");
+		common.pause(2);
+		
+		feedback_textarea.sendKeys("kq_feedback");
+		
+		save_button.click();
+		common.pause(2);
+		
+		ok_button.click();
+		common.pause(2);
+		
+		submit_button.click();
+		common.pause(2);
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	@FindBy(xpath = "//button[contains(.,'Give Feedback')]")
+	private WebElement give_feedback;
+	
+	
+	@FindBy(xpath = "//table/tbody/tr/td/table/tbody/tr[3]/td/textarea")
+	private WebElement remark_on_give_feedback_popup;
+	
+	
+	@FindBy(xpath = "//td/table/tbody/tr/td[1]/button")
+	private WebElement feedback_button_on_feedback_popup;
+	
+	
+	public void committee_member_give_feed_back()
+	{
+		
+		
+		common.pause(2);
+		logged_as_in_committee_member();
+		common.pause(2);
+		select_tender_for_committee();
+		common.pause(2);
+		
+	
+		give_feedback.click();
+		common.pause(2);
+		
+		remark_on_give_feedback_popup.sendKeys("commitee_member_feedback");
+		
+		common.pause(2);
+		
+		feedback_button_on_feedback_popup.click();
+		common.pause(2);
+		
+		ok_button.click();
+		common.pause(2);
+		
+		exit_button.click();
+		common.pause(2);
+		
+	}
+	
+	
+	@FindBy(xpath="//button[contains(.,'Show Feedback')]")
+	private WebElement show_feedback_button;
+	
+	
+	
+
+	@FindBy(xpath="//button[contains(.,'Finalize Evaluation Report')]")
+	private WebElement finalize_evaluation_report_button;
+	
+	
+	public void give_feedback_chairperson()
+	{
+		
+		
+		
+		common.pause(2);
+		logged_as_in_committee_member();
+		common.pause(2);
+		select_tender_for_committee();
+		common.pause(2);
+		
+	
+		show_feedback_button.click();
+		common.pause(2);
+		
+		finalize_evaluation_report_button.click();
+		common.pause(2);
+		
+		ok_button.click();
+		common.pause(2);
+		
+	    submit_button.click();
+	    common.pause(2);
+		
+	    ok_button.click();
+		common.pause(2);
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+}

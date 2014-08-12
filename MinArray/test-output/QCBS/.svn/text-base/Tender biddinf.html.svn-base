@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  Tender biddinf</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tender biddinf</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 28 17:10:29 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>217 seconds (217434 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qcbs.verifications.Tender_bid.tender_bid()'><b>tender_bid</b><br>Test class: com.qcbs.verifications.Tender_bid<br>Parameters: jammie, admin123<br/>
+<a href="#Output-11608737" onClick='toggleBox("Output-11608737", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11608737" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11608737">
+<h3><u>Data Entered</u></h3><li><b> User ID :</b> 'jammie'</li> <li><b>Password :</b> 'admin123'</li><br></br><br/>
+ 'Logout:' label text verification on page.<h3 style=color:green>PASSED</h3><br/>
+<h3>Log out Performed</h3><br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.qcbs.verifications.Tender_bid@15a8767</td></tr>
+<tr>
+<td title='com.qcbs.verifications.Tender_bid.tender_bid()'><b>tender_bid</b><br>Test class: com.qcbs.verifications.Tender_bid<br>Parameters: emmette, admin123<br/>
+<a href="#Output-3115866" onClick='toggleBox("Output-3115866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3115866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3115866">
+<h3><u>Data Entered</u></h3><li><b> User ID :</b> 'emmette'</li> <li><b>Password :</b> 'admin123'</li><br></br><br/>
+ 'Logout:' label text verification on page.<h3 style=color:green>PASSED</h3><br/>
+<h3>Log out Performed</h3><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.qcbs.verifications.Tender_bid@15a8767</td></tr>
+<tr>
+<td title='com.qcbs.verifications.Tender_bid.tender_bid()'><b>tender_bid</b><br>Test class: com.qcbs.verifications.Tender_bid<br>Parameters: emiligeorge, admin123<br/>
+<a href="#Output-26598747" onClick='toggleBox("Output-26598747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26598747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26598747">
+<h3><u>Data Entered</u></h3><li><b> User ID :</b> 'emiligeorge'</li> <li><b>Password :</b> 'admin123'</li><br></br><br/>
+ 'Logout:' label text verification on page.<h3 style=color:green>PASSED</h3><br/>
+<h3>Log out Performed</h3><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.qcbs.verifications.Tender_bid@15a8767</td></tr>
+<tr>
+<td title='com.qcbs.verifications.Tender_bid.tender_bid()'><b>tender_bid</b><br>Test class: com.qcbs.verifications.Tender_bid<br>Parameters: emilygeorge, admin123<br/>
+<a href="#Output-22481221" onClick='toggleBox("Output-22481221", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22481221" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22481221">
+<h3><u>Data Entered</u></h3><li><b> User ID :</b> 'emilygeorge'</li> <li><b>Password :</b> 'admin123'</li><br></br><br/>
+ 'Logout:' label text verification on page.<h3 style=color:green>PASSED</h3><br/>
+<h3>Log out Performed</h3><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.qcbs.verifications.Tender_bid@15a8767</td></tr>
+<tr>
+<td title='com.qcbs.verifications.Tender_bid.tender_bid()'><b>tender_bid</b><br>Test class: com.qcbs.verifications.Tender_bid<br>Parameters: jammygeorge, admin123<br/>
+<a href="#Output-14892568" onClick='toggleBox("Output-14892568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14892568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14892568">
+<h3><u>Data Entered</u></h3><li><b> User ID :</b> 'jammygeorge'</li> <li><b>Password :</b> 'admin123'</li><br></br><br/>
+ 'Logout:' label text verification on page.<h3 style=color:green>PASSED</h3><br/>
+<h3>Log out Performed</h3><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.qcbs.verifications.Tender_bid@15a8767</td></tr>
+</table><p>
+</body>
+</html>

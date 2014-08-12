@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/load_testing/!svn/ver/12/QCBS/src/test/java/com/qcbs/verifications
+END
+Tender_bidding.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/load_testing/!svn/ver/10/QCBS/src/test/java/com/qcbs/verifications/Tender_bidding.java
+END
+Tender_closing_index.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/load_testing/!svn/ver/6/QCBS/src/test/java/com/qcbs/verifications/Tender_closing_index.java
+END
+Tender_creation_index.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/load_testing/!svn/ver/5/QCBS/src/test/java/com/qcbs/verifications/Tender_creation_index.java
+END
+Tender_committee_index.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/load_testing/!svn/ver/10/QCBS/src/test/java/com/qcbs/verifications/Tender_committee_index.java
+END
+tender_bidding_index.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/load_testing/!svn/ver/6/QCBS/src/test/java/com/qcbs/verifications/tender_bidding_index.java
+END
+Tender_briefcase_menu_index.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/load_testing/!svn/ver/2/QCBS/src/test/java/com/qcbs/verifications/Tender_briefcase_menu_index.java
+END
+Tender_creation_with_data_provider.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/load_testing/!svn/ver/12/QCBS/src/test/java/com/qcbs/verifications/Tender_creation_with_data_provider.java
+END
+Index.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/load_testing/!svn/ver/2/QCBS/src/test/java/com/qcbs/verifications/Index.java
+END
+Tender_authorization_index.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/load_testing/!svn/ver/5/QCBS/src/test/java/com/qcbs/verifications/Tender_authorization_index.java
+END

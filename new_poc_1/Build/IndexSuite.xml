@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="QCBS" verbose="10" parallel="false" thread-count="1">
+<!-- 
+<listeners>
+
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+
+  </listeners>
+ -->
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="4444" />
+
+
+	<parameter name="selenium.browser" value="firefox" />
+	<parameter name="selenium.url"	value="http://27.109.14.11:8081" />
+	
+
+ <test name="Create_New_network_Discovery">
+		<classes>
+			<class name="com.new_poc.verifications.mindArray_CreateNewNetworkDiscovery_index">
+				<methods>
+					<include name="CreateNewNetworkDiscovery" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

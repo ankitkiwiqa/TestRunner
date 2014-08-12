@@ -1,0 +1,1181 @@
+package com.qcbs.pages.indexpages;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.qcbs.Init.Common;
+import com.qcbs.Init.TestData;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_bid_Indexpage extends AbstractPage {
+
+	public Tender_bid_Indexpage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+	
+	 String Tender_name="";
+
+	@FindBy(xpath = "//td/div/div/div/div[3]/div/div[2]/div/div/table/tbody/tr[1]/td[1]/div/div")
+	private WebElement itt_tender;
+
+	@FindBy(xpath = ".//*[@id='latesttenderPanel']/div[2]/div/div/table[1]/tbody/tr/td[1]/table/tbody/tr/td[2]/select")
+	private WebElement itt_tender_select_box;
+
+	@FindBy(xpath = "//img[@title='Respond']")
+	private WebElement tender_respond_button;
+
+	@FindBy(xpath = "//tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/img")
+	private WebElement download_button;
+
+	@FindBy(xpath = "//button[contains(.,'Download')]")
+	private WebElement download_button_on_popup;
+
+	@FindBy(xpath = "//img[@alt='Proceed To Next']")
+	private WebElement next_button;
+
+	@FindBy(xpath = "//select[@class='listBoxStyle']")
+	private WebElement Payment_Mode_on_document_tender_fee;
+
+	@FindBy(xpath = "//tr[9]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement Cheque_number;
+
+	@FindBy(xpath = "//tr[10]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement Bank_name;
+
+	@FindBy(xpath = "//tr[11]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement Branch;
+
+	@FindBy(xpath = "//tr[12]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/img")
+	private WebElement date_of_issue;
+
+	@FindBy(xpath = "//tr[13]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/img")
+	private WebElement validity_of_cheque;
+
+	@FindBy(xpath = "//div/form/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr[4]/td/input")
+	private WebElement upload_document_button;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Save']")
+	private WebElement save_button;
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td[2]/div/table/tbody/tr[2]/td/button")
+	private WebElement upload_file_ok;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'OK')]")
+	private WebElement ok_button;
+
+	/*-------------------------------------------PREPARE BID ELEMENTS-------------------------------------------------------------*/
+
+	@FindBy(xpath = ".//div[2]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box1;
+
+	@FindBy(xpath = ".//div[3]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box2;
+
+	@FindBy(xpath = ".//div[4]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box3;
+
+	@FindBy(xpath = ".//div[5]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box4;
+
+	@FindBy(xpath = ".//div[6]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box5;
+
+	@FindBy(xpath = ".//div[7]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box6;
+
+	@FindBy(xpath = ".//div[8]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box7;
+
+	@FindBy(xpath = ".//div[9]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box8;
+
+	@FindBy(xpath = ".//div[10]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box9;
+
+	@FindBy(xpath = ".//div[11]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/select")
+	private WebElement prepare_bid_select_box10;
+
+	@FindBy(xpath = ".//div[2]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box1;
+
+	@FindBy(xpath = ".//div[3]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box2;
+
+	@FindBy(xpath = ".//div[4]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box3;
+
+	@FindBy(xpath = ".//div[5]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box4;
+
+	@FindBy(xpath = ".//div[6]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box5;
+
+	@FindBy(xpath = ".//div[7]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box6;
+
+	@FindBy(xpath = ".//div[8]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box7;
+
+	@FindBy(xpath = ".//div[9]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box8;
+
+	@FindBy(xpath = ".//div[10]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box9;
+
+	@FindBy(xpath = ".//div[11]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement prepare_bid_text_box10;
+
+	@FindBy(xpath = "//div[2]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_1;
+
+	@FindBy(xpath = "//div[3]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_2;
+
+	@FindBy(xpath = "//div[4]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_3;
+
+	@FindBy(xpath = "//div[5]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_4;
+
+	@FindBy(xpath = "//div[6]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_5;
+
+	@FindBy(xpath = "//div[7]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_6;
+
+	@FindBy(xpath = "//div[8]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_7;
+
+	@FindBy(xpath = "//div[9]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_8;
+
+	@FindBy(xpath = "//div[10]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_9;
+
+	@FindBy(xpath = "//div[11]/div[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[3]/div/table/tbody/tr/td[1]/img")
+	private WebElement prepare_bid_document_10;
+
+	@FindBy(xpath = "//div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement certificate_selection;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Proceed')]")
+	private WebElement proceed_button_on_certification_popup;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/table/tbody/tr/td[6]/div/input")
+	private WebElement offer_rate;
+
+	@FindBy(xpath = "//tr/td[8]/div/table/tbody/tr/td/img[@title='Attach files']")
+	private WebElement attach_file_on_tender_items;
+
+	@FindBy(xpath = "//div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement certificate_selection_on_tender_item;
+
+	
+	
+	@FindBy(xpath = "//div[contains(.,'TENDER SCHEDULES - EXPERIENCE OF TENDERER')][starts-with(@ __gwt_cell,'cell-gwt-uid')]")
+	private WebElement TENDER_SCHEDULES;
+
+	@FindBy(xpath = "//tr[3]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Employer_ongoing;
+
+	@FindBy(xpath = "//tr[3]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement contact_person_ongoing;
+
+	@FindBy(xpath = "//tr[3]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[3]/div/table/tbody/tr/td/textarea")
+	private WebElement telephone_on_going;
+
+	@FindBy(xpath = "//tr[3]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[4]/div/table/tbody/tr/td/textarea")
+	private WebElement discription_of_contact_on_going;
+
+	@FindBy(xpath = "//tr[3]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[6]/div/table/tbody/tr/td[1]/input")
+	private WebElement Start_date_ongoing;
+
+	@FindBy(xpath = "//tr[3]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[8]/div/table/tbody/tr/td[1]/img")
+	private WebElement supporting_document_ongoing;
+
+	@FindBy(xpath = "//tr[4]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[1]/div/table/tbody/tr/td/textarea")
+	private WebElement Employer_completed;
+
+	@FindBy(xpath = "//tr[4]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[2]/div/table/tbody/tr/td/textarea")
+	private WebElement contact_person_completed;
+
+	@FindBy(xpath = "//tr[4]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[3]/div/table/tbody/tr/td/textarea")
+	private WebElement telephone_completed;
+
+	@FindBy(xpath = "//tr[4]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[4]/div/table/tbody/tr/td/textarea")
+	private WebElement discription_of_contact_completed;
+
+	@FindBy(xpath = "//tr[4]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[7]/div/table/tbody/tr/td[1]/input")
+	private WebElement start_date_completed;
+
+	@FindBy(xpath = "//tr[4]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[8]/div/table/tbody/tr/td[1]/input")
+	private WebElement completed_date_completed;
+
+	@FindBy(xpath = "//tr[4]/td/table/tbody/tr[2]/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div[2]/div/table/tbody/tr/td[9]/div/table/tbody/tr/td[1]/img")
+	private WebElement supporing_document_completed;
+
+	@FindBy(xpath = "//div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement certificate_selection_on_tender_schedule;
+
+	@FindBy(xpath = "//div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement certificate_selection_on_tender_evalution_criteria;
+
+	@FindBy(xpath = "//div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement certificate_selection_on_tender_health_and_safety;
+
+	@FindBy(xpath = "//div/div[2]/div/div/table/tbody/tr/td[1]/div/input")
+	private WebElement certificate_selection_on_bid_submission;
+
+	@FindBy(xpath = "//div[contains(.,'Tender Data – Tender Evaluation Criteria')][starts-with(@__gwt_cell,'cell-gwt-uid')]")
+	private WebElement tender_data;
+
+	@FindBy(xpath = "//div[contains(.,'TENDER SCHEDULES - HEALTH AND SAFETY PLAN')][starts-with(@__gwt_cell,'cell-gwt-uid')]")
+	private WebElement tender_schedule_health_and_safety;
+
+	@FindBy(xpath = "//div[starts-with(@__gwt_cell,'cell-gwt-uid')][contains(.,'TENDER SCHEDULES - BASIS OF DESIGN (Design & Build / Turnkey Contracts)')]")
+	private WebElement tender_basis_of_design;
+	
+	
+	
+	
+
+
+	@FindBy(xpath = "//tbody/tr/td/table/tbody/tr[6]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement Tax_Clearance_Certificate_No;
+
+
+	@FindBy(xpath = "//tbody/tr[7]/td/table/tbody/tr/td/table/tbody/tr/td[2]/div/input")
+	private WebElement VAT_Reg_No;
+
+	
+	
+	
+
+	/*--------------------------------------------------Verification elements------------------------------------------------------------*/
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Dashboard')]")
+	private WebElement dashboardmanu;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'My Briefcase')]")
+	private WebElement mybriefcase;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Edit')]")
+	private WebElement edit_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'ITT')]")
+	private WebElement itt_button;
+
+	@FindBy(xpath = ".//*[@class='loggedInUserNameLabel']")
+	private WebElement account_name;
+
+	@FindBy(xpath = "//p[@class='panel-title'][contains(.,'Payment Details')]")
+	private WebElement Payment_details_label;
+
+	@FindBy(xpath = "//div[contains(.,'Latest ITTs')][@class='greenfonts']")
+	private WebElement latest_itt_label;
+
+	@FindBy(xpath = "//p[@class='panel-title'][contains(.,'Compliance Requirements')]")
+	private WebElement compliance_requirement_label;
+
+	@FindBy(xpath = "//p[@class='panel-title'][contains(.,'Tender Items')]")
+	private WebElement tender_item_label;
+
+	@FindBy(xpath = "//p[@class='panel-title'][contains(.,'TENDER SCHEDULES - EXPERIENCE OF TENDERER')]")
+	private WebElement TENDER_SCHEDULES_label;
+
+	@FindBy(xpath = "//p[@class='panel-title'][contains(.,'TENDER SCHEDULES - BASIS OF DESIGN')]")
+	private WebElement basis_of_design_label;
+
+	@FindBy(xpath = "//p[@class='panel-title'][contains(.,'TENDER SCHEDULES - HEALTH AND SAFETY PLAN')]")
+	private WebElement HEALTH_AND_SAFETY_PLAN_label;
+
+	@FindBy(xpath = "//input[@class='searchBox']")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Search')]")
+	private WebElement search_button;
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[8]/div/span[1]/img[@title='Respond']")
+	private WebElement Proceed_button;
+
+	
+	
+	
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage select_tender_for_bid() {
+
+		
+		// dashboard verification
+
+		common.pause(4);
+
+		tcd.verification_method(dashboardmanu, "Dashboard", "Button",
+				"Dashboard");
+		tcd.verification_method(mybriefcase, "My Briefcase", "Button",
+				"Dashboard");
+		tcd.verification_method(account_name, "User Name", "Label", "Dashboard");
+		/*
+		 * Actions move_to_select_box = new Actions(driver);
+		 * move_to_select_box.moveToElement(itt_tender_select_box).build()
+		 * .perform();
+		 */
+		/*
+		 * common.pause(1); Select select_itt_tender_select_box = new
+		 * Select(itt_tender_select_box);
+		 * select_itt_tender_select_box.selectByVisibleText("ITT");
+		 * 
+		 * Actions move_to_element = new Actions(driver);
+		 * move_to_element.moveToElement(itt_tender).build().perform();
+		 * 
+		 * tcd.verification_method(latest_itt_label, "Latest ITT", "Label",
+		 * "Dashboard");
+		 * 
+		 * common.pause(1); itt_tender.click(); common.pause(5);
+		 */
+		
+		edit_button.click();
+		common.pause(2);
+		itt_button.click();
+		common.pause(5);
+		/*
+		 * search_box.sendKeys(tender_name); common.pause(2);
+		 * search_button.click(); common.pause(3);
+		 * 
+		 * tender_respond_button.click(); common.pause(8);
+		 */
+
+		
+		
+		
+		if(Tender_name.equals(""))
+		{
+		
+			select_tender_for_open_new();
+		}
+		else
+		{
+			
+			search_box.sendKeys(Tender_name);
+			common.pause(2);
+			search_button.click();
+			common.pause(3);
+			
+			Proceed_button.click();
+			common.pause(7);
+			
+		}
+		
+		
+		
+		
+		
+		
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	@FindBy(xpath = "//img[@aria-label='Next page'][@aria-disabled='false']")
+	private WebElement next_page;
+
+	public Tender_creation_DashboardPage select_tender_for_open_new() {
+
+		
+		
+		
+		List<WebElement> allrows = driver.findElements(By
+				.xpath("//div/div/table/tbody/tr/td[6]"));
+
+		System.out.println(allrows);
+		/*
+		 * for (int i = 1; i <= allrows.size(); i++) {
+		 */
+		int i = 1;
+		for (WebElement ele : allrows) {
+			/*
+			 * WebElement bidstatus = driver.findElement(By
+			 * .xpath("//table/tbody/tr["+i+"]/td[5]/div/div"));
+			 * 
+			 * 
+			 * WebElement
+			 * ittstatus=driver.findElement(By.xpath("//table/tbody/tr["
+			 * +i+"]/td[5]/div"));
+			 */
+
+			System.out.println(ele.getText());
+
+			if (ele.getText().equalsIgnoreCase("ITT Status:Released")) {
+
+				common.pause(3);
+
+				WebElement tender_name=driver.findElement(By.xpath("//table/tbody/tr["
+						+ (i - 2) + "]/td[4]/div/div"));
+
+				System.out.println(tender_name);
+				
+				Tender_name=tender_name.getText();
+				
+				
+				System.out.println("i = " + (i-3));
+				
+				
+				System.out.println("//tr[" + (i - 2)
+						+ "]/td[8]/div/span/img[@title='Respond']");
+
+				System.out.println(Tender_name);
+				common.log("Selected Tender for bidding -<h3 style=color:green> "+Tender_name+"</h3>");
+				WebElement Respond_button = driver.findElement(By.xpath("//tr["
+						+ (i - 2) + "]/td[8]/div/span/img[@title='Respond']"));
+
+				
+			
+				Actions action = new Actions(driver);
+				action.moveToElement(Respond_button).build().perform();
+
+				common.pause(3);
+				Respond_button.click();
+
+				common.pause(7);
+				break;
+
+			}
+
+			if (i == 13) {
+
+				try {
+
+					if (next_page.isDisplayed()) {
+						next_page.click();
+						common.pause(3);
+						select_tender_for_open_new();
+
+					}
+				} catch (NoSuchElementException e) {
+
+					common.log("<h3 style=color:green>NO Tender is found for bidding</h3>");
+					break;
+
+				}
+
+			}
+
+			i++;
+
+		}
+
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+	// *--------------------------------------------------------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage download_document() {
+
+		// verification here
+
+		common.log("<h3>Step 4:Click on Download Button,Click on next.</h3>");
+
+		common.pause(3);
+		/*
+		 * download_button.click(); common.pause(3);
+		 * download_button_on_popup.click(); common.pause(10);
+		 * document_download_enter_press(); common.pause(5);
+		 */
+
+		tcd.verification_method(download_button, "Download", "Button",
+				"Download Tender Document");
+	
+		next_button.click();
+		common.pause(5);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage document_download_enter_press() {
+
+		try {
+
+			Robot r = new Robot();
+
+			r.keyPress(KeyEvent.VK_ENTER); // confirm by pressing Enter in the
+			r.keyRelease(KeyEvent.VK_ENTER);
+
+			r.keyPress(KeyEvent.VK_ENTER); // confirm by pressing Enter in the
+			r.keyRelease(KeyEvent.VK_ENTER);
+
+			r.keyPress(KeyEvent.VK_ENTER); // confirm by pressing Enter in the
+			r.keyRelease(KeyEvent.VK_ENTER);
+
+			common.pause(5);
+
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	TestData td = new TestData();
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	
+	//
+	public Tender_creation_DashboardPage Pay_Tender_Document_Fees() {
+
+		// verification here
+
+		common.pause(3);
+		common.log("<h3>Step 5:Enter Valid detils into Payment Details Form on Pay Tender Document Fees,Click on Save,Click on next.</h3>");
+
+		tcd.verification_method(Payment_details_label, "Payment Details",
+				"label", "Pay Tender Document Fees");
+
+		common.pause(3);
+		Actions move_to_payement = new Actions(driver);
+		move_to_payement.moveToElement(Payment_Mode_on_document_tender_fee)
+				.build().perform();
+		common.pause(1);
+
+		Select select_payment_mode = new Select(
+				Payment_Mode_on_document_tender_fee);
+		select_payment_mode.selectByVisibleText("Bank Guarantee Cheque");
+		common.pause(2);
+
+		Cheque_number.sendKeys(td.cheque_number());
+		common.pause(1);
+
+		Bank_name.sendKeys(td.bank_name());
+		common.pause(1);
+
+		Actions move_to_branch = new Actions(driver);
+		move_to_branch.moveToElement(Branch).build().perform();
+		common.pause(1);
+
+		Branch.sendKeys(td.branch());
+		common.pause(1);
+
+		date_issue_and_validity_of_check();
+		common.pause(1);
+
+		document_upload_for_document_fee();
+		/*
+		 * document_upload(upload_document_button);
+		 */
+		common.pause(3);
+
+		/*------------saving data--------------------------*/
+
+		save_button.click();
+
+		common.pause(3);
+		ok_button.click();
+		common.pause(3);
+		next_button.click();
+		common.pause(5);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage date_issue_and_validity_of_check() {
+
+		common.pause(3);
+		Actions move_to_date_of_issue = new Actions(driver);
+		move_to_date_of_issue.moveToElement(date_of_issue).build().perform();
+
+		Date today = new Date();
+		Calendar calender = Calendar.getInstance();
+		calender.setTime(today);
+
+		int issue_date = calender.get(Calendar.DAY_OF_MONTH);
+		common.pause(1);
+		date_of_issue.click();
+		common.pause(2);
+
+		WebElement date_pick = driver
+				.findElement(By.xpath("//div[@tabindex='0'][contains(.,'"
+						+ issue_date + "')]"));
+
+		date_pick.click();
+
+		common.pause(3);
+
+		calender.add(Calendar.DAY_OF_MONTH, +1);
+
+		int validity_Of = calender.get(Calendar.DAY_OF_MONTH);
+
+		common.pause(1);
+
+		Actions move_to_validity_of_check = new Actions(driver);
+		move_to_validity_of_check.moveToElement(validity_of_cheque).build()
+				.perform();
+		System.out.println(validity_Of);
+
+		validity_of_cheque.click();
+		common.pause(3);
+
+		WebElement date_pick_for_validity_of_cheque = driver.findElement(By
+				.xpath("//div[@tabindex='0'][contains(.,'" + validity_Of
+						+ "')]"));
+
+		date_pick_for_validity_of_cheque.click();
+		common.pause(2);
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	@FindBy(xpath = "//img[@class='gwt-Image'][@title='Upload Files from Briefcase']")
+	private WebElement upload_file_browse_from_briefcase;
+
+	@FindBy(xpath = "//div[starts-with(@__gwt_cell,'cell-gwt-uid')]/input")
+	private WebElement select_document;
+
+	@FindBy(xpath = "//button[contains(.,'Save')]")
+	private WebElement save_button_briefcase_popup;
+
+	/*
+	 * @FindBy(xpath = "//button[contains(.,'OK')]") private WebElement
+	 * ok_button;
+	 */
+	@FindBy(xpath = "//div/table/tbody/tr[2]/td/table/tbody/tr/td/button")
+	private WebElement file_upload_close;
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage document_upload(WebElement element) {
+
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+
+		common.pause(1);
+		element.click();
+		common.pause(2);
+		upload_file_browse_from_briefcase.click();
+		common.pause(2);
+		select_document.click();
+		common.pause(2);
+
+		save_button_briefcase_popup.click();
+		common.pause(5);
+		ok_button.click();
+
+		common.pause(2);
+
+		file_upload_close.click();
+
+		
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage document_upload_for_document_fee() {
+
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(upload_file_browse_from_briefcase)
+				.build().perform();
+
+		common.pause(3);
+		/*
+		 * element.click();
+		 */common.pause(2);
+		upload_file_browse_from_briefcase.click();
+		common.pause(2);
+		select_document.click();
+		common.pause(2);
+
+		save_button_briefcase_popup.click();
+		common.pause(5);
+		ok_button.click();
+
+		common.pause(2);
+
+		System.out.println("comp");
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage prepare_bid() {
+
+		common.log("<h3>Step 6:Enter Valid data into Compliance Requirements on Prepare Bid page.Click on Save,Select Certificate by Encrypt Data,Click on Next</h3>");
+
+	tcd.verification_method(compliance_requirement_label,
+				"Compliance Requirements", "Label", "Prepare Bid");
+		common.pause(3);
+	/*	prepare_bid_select_method(prepare_bid_select_box1, "Yes");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box2, "Yes");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box3, "No");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box4, "No");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box5, "No");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box6, "Yes");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box7, "Yes");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box8, "Yes");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box9, "Yes");
+		common.pause(1);
+		prepare_bid_select_method(prepare_bid_select_box10, "Yes");
+		common.pause(1);
+		*/
+		
+		
+		prepare_bid_textbox_method(prepare_bid_text_box1, "Complies");
+		common.pause(1);
+		prepare_bid_textbox_method(prepare_bid_text_box2, "Complies");
+		common.pause(1);
+		prepare_bid_textbox_method(prepare_bid_text_box3, "Does not Complies");
+		common.pause(1);
+
+		prepare_bid_textbox_method(prepare_bid_text_box4, "Does not Complies");
+		common.pause(1);
+
+		prepare_bid_textbox_method(prepare_bid_text_box5, "Does not Complies");
+		common.pause(1);
+
+		prepare_bid_textbox_method(prepare_bid_text_box6, "Complies");
+		common.pause(1);
+		prepare_bid_textbox_method(prepare_bid_text_box7, "Complies");
+		common.pause(1);
+		prepare_bid_textbox_method(prepare_bid_text_box8, "Complies");
+		common.pause(1);
+		prepare_bid_textbox_method(prepare_bid_text_box9, "Complies");
+		common.pause(1);
+
+		prepare_bid_textbox_method(prepare_bid_text_box10, "Complies");
+		common.pause(1);
+
+		document_upload(prepare_bid_document_1);
+		common.pause(1);
+		document_upload(prepare_bid_document_2);
+		common.pause(1);
+		document_upload(prepare_bid_document_3);
+		common.pause(1);
+		document_upload(prepare_bid_document_4);
+		common.pause(1);
+		document_upload(prepare_bid_document_5);
+		common.pause(1);
+		document_upload(prepare_bid_document_6);
+		common.pause(1);
+		document_upload(prepare_bid_document_7);
+		common.pause(1);
+		document_upload(prepare_bid_document_8);
+		common.pause(1);
+		document_upload(prepare_bid_document_9);
+		common.pause(1);
+		document_upload(prepare_bid_document_10);
+
+         Tax_Clearance_Certificate_No.sendKeys("kqtestno");
+         common.pause(1);
+		 VAT_Reg_No.sendKeys("kqtestno");
+		 common.pause(2);
+		 save_button.click();
+		 common.pause(3);
+		 certificate_selection(certificate_selection);
+		 common.pause(5);
+
+		
+		
+		tender_evalution_criteria();
+		common.pause(5);
+
+		next_button.click();
+		
+
+	    new WebDriverWait(driver, 15).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='hyperlink_item'][contains(.,'Prepare Bid')]")));
+		common.move_to_element(offer_rate);
+		offer_rate.sendKeys(td.offer_rate());
+		
+
+		/* document_upload_for_tender_items(attach_file_on_tender_items); */
+
+		/*document_upload(attach_file_on_tender_items);
+*/
+		common.pause(1);
+
+		save_button.click();
+		common.pause(3);
+		certificate_selection(certificate_selection_on_tender_item);
+		common.pause(3);
+
+		
+		tender_schedule();
+		common.pause(2);
+
+		tender_basis_of_design();
+		common.pause(2);
+		tender_health_and_Safty();
+		common.pause(2);
+
+		next_button.click();
+		common.pause(5);
+
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage tender_basis_of_design() {
+
+		common.log("<h3>Step 9:Enter Valid data into TENDER SCHEDULES - BASIS OF DESIGN (Design & Build / Turnkey Contracts) on Prepare Bid page,Click on next template.</h3>");
+
+		common.pause(2);
+		tender_basis_of_design.click();
+		common.pause(3);
+
+		tcd.verification_method(basis_of_design_label,
+				"ENDER SCHEDULES - BASIS OF DESIGN", "label", "Prepare Bid");
+
+		save_button.click();
+		common.pause(3);
+		certificate_selection(certificate_selection_on_tender_evalution_criteria);
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage tender_evalution_criteria() {
+		common.pause(3);
+		tender_data.click();
+		common.pause(3);
+
+		save_button.click();
+		common.pause(3);
+		certificate_selection(certificate_selection_on_tender_evalution_criteria);
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage tender_health_and_Safty() {
+
+		common.log("<h3>Step 10:Enter Valid data into TENDER SCHEDULES - HEALTH AND SAFETY PLAN on Prepare Bid page,Click on Save,Select certificate For Encrypt Data,Click on Next.</h3>");
+
+		common.pause(3);
+		tender_schedule_health_and_safety.click();
+		common.pause(3);
+
+		tcd.verification_method(HEALTH_AND_SAFETY_PLAN_label,
+				"TENDER SCHEDULES - HEALTH AND SAFETY PLAN", "label",
+				"Prepare Bid");
+		save_button.click();
+		common.pause(3);
+		certificate_selection(certificate_selection_on_tender_health_and_safety);
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage prepare_bid_select_method(
+			WebElement element, String select_value) {
+
+		common.pause(1);
+		Actions move_to_elements = new Actions(driver);
+		move_to_elements.moveToElement(element).build().perform();
+		common.pause(1);
+		Select select_element = new Select(element);
+		select_element.selectByVisibleText(select_value);
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage prepare_bid_textbox_method(
+			WebElement element, String textbox_value) {
+
+		common.pause(1);
+		Actions move_to_elements = new Actions(driver);
+		move_to_elements.moveToElement(element).build().perform();
+
+		element.sendKeys(textbox_value);
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage certificate_selection(
+			WebElement element) {
+
+		common.pause(1);
+
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+		common.pause(1);
+		element.click();
+		common.pause(1);
+
+		proceed_button_on_certification_popup.click();
+		common.pause(7);
+		ok_button.click();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage prepare_bid_tender_items_offer_rate(
+			WebElement offer_rat) {
+		common.pause(3);
+		Actions move_to_offer = new Actions(driver);
+		move_to_offer.moveToElement(offer_rat).build().perform();
+
+		offer_rat.sendKeys(td.offer_rate());
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage document_upload_for_tender_items(
+			WebElement element) {
+
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+
+		common.pause(4);
+		element.click();
+		common.pause(6);
+		try {
+
+			Robot r = new Robot();
+
+			common.pause(3);
+			r.keyPress(KeyEvent.VK_D); // d
+			r.keyRelease(KeyEvent.VK_D);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_PERIOD); // d
+			r.keyRelease(KeyEvent.VK_PERIOD);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_P); // t
+			r.keyRelease(KeyEvent.VK_P);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_D); // x
+			r.keyRelease(KeyEvent.VK_D);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_F); // t
+			r.keyRelease(KeyEvent.VK_F);
+
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_TAB); // t
+			r.keyRelease(KeyEvent.VK_TAB);
+			common.pause(1);
+			r.keyPress(KeyEvent.VK_TAB); // t
+			r.keyRelease(KeyEvent.VK_TAB);
+			common.pause(1);
+
+			r.keyPress(KeyEvent.VK_ENTER); // confirm by pressing Enter in the
+											// end
+			r.keyRelease(KeyEvent.VK_ENTER);
+
+		} catch (AWTException e) {
+
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		common.pause(3);
+		upload_file_ok.click();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+
+	public Tender_creation_DashboardPage tender_schedule() {
+
+		common.log("<h3>Step 8:Enter Valid data into TENDER SCHEDULES - EXPERIENCE OF TENDERER on Prepare Bid page.</h3>");
+
+		common.pause(3);
+		TENDER_SCHEDULES.click();
+		common.pause(3);
+		tcd.verification_method(TENDER_SCHEDULES_label,
+				"TENDER SCHEDULES - EXPERIENCE OF TENDERER", "label",
+				"Prepare Bid");
+
+		data_fill(Employer_ongoing, td.test_date_add_item());
+		common.pause(1);
+		data_fill(contact_person_ongoing, td.test_date_add_item());
+		common.pause(1);
+		data_fill(telephone_on_going, td.telephone_no());
+		common.pause(1);
+
+		data_fill(discription_of_contact_on_going, td.test_date_add_item());
+		common.pause(1);
+
+		fill_past_date(Start_date_ongoing);
+		common.pause(1);
+		/* document_upload_for_tender_items(supporting_document_ongoing); */
+		document_upload(supporting_document_ongoing);
+
+		common.pause(1);
+
+		data_fill(Employer_completed, td.test_date_add_item());
+		common.pause(1);
+		data_fill(contact_person_completed, td.test_date_add_item());
+		common.pause(1);
+		data_fill(telephone_completed, td.telephone_no());
+		common.pause(1);
+
+		data_fill(discription_of_contact_completed, td.test_date_add_item());
+		common.pause(1);
+		fill_past_date(start_date_completed);
+		common.pause(1);
+		fill_past_date(completed_date_completed);
+		common.pause(1);
+		/*
+		 * document_upload_for_tender_items(supporing_document_completed);
+		 */
+		document_upload(supporing_document_completed);
+		common.pause(1);
+
+		save_button.click();
+		common.pause(3);
+		certificate_selection(certificate_selection_on_tender_schedule);
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage data_fill(WebElement element,
+			String field_value) {
+		common.pause(1);
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+		common.pause(1);
+		element.sendKeys(field_value);
+		common.pause(1);
+
+		return new Tender_creation_DashboardPage(driver);
+
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage fill_past_date(WebElement element) {
+
+		Date date1 = new Date(); // your date
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date1);
+
+		cal.add(Calendar.DAY_OF_MONTH, -4);
+
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+		int day = cal.get(Calendar.DAY_OF_MONTH);
+
+		String past_date = "" + day + "/" + month + "/" + year + "";
+
+		common.pause(2);
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+		common.pause(2);
+		element.sendKeys(past_date);
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------*/
+	public Tender_creation_DashboardPage fill_future_date(WebElement element) {
+
+		Date date1 = new Date(); // your date
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date1);
+
+		cal.add(Calendar.DAY_OF_MONTH, 4);
+
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+		int day = cal.get(Calendar.DAY_OF_MONTH);
+
+		String future_date = "" + day + "/" + month + "/" + year + "";
+
+		common.pause(2);
+		Actions move_to_element = new Actions(driver);
+		move_to_element.moveToElement(element).build().perform();
+		common.pause(2);
+		element.sendKeys(future_date);
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	/*-----------------------------------Bid submission-----------------------------------------------*/
+
+	@FindBy(xpath = "//img[@title='Decrypt All Templates']")
+	private WebElement decrypt_all_template;
+
+	@FindBy(xpath = "//button[contains(.,'Yes')]")
+	private WebElement yes_button;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='Submit']")
+	private WebElement submit;
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Bid Submission')]")
+	private WebElement submit_bid_button;
+
+	public Tender_creation_DashboardPage bid_submission() {
+
+		common.log("<h3>Step 11:Click on Submit,Select certificate For Encrypt Data,Click on Next.</h3>");
+		common.pause(3);
+		tcd.verification_method(submit_bid_button, "Bid Submission", "label",
+				"Bid Submission");
+		common.pause(3);
+		/*decrypt_all_template.click();
+		common.pause(3);
+		yes_button.click();
+		common.pause(3);*/
+
+		submit.click();
+		common.pause(3);
+
+		certificate_selection(certificate_selection_on_bid_submission);
+		common.pause(3);
+
+		next_button.click();
+		common.pause(3);
+
+		ok_button.click();
+		common.pause(3);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="10" name="Failed suite [QCBS]">
+  <parameter name="selenium.url" value="http://27.109.14.11:8081"/>
+  <parameter name="selenium.browser" value="firefox"/>
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <test name="Create_New_network_Discovery(failed)">
+    <classes>
+      <class name="com.minArray.verifications.mindArray_CreateNewNetworkDiscovery_index">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="CreateNewNetworkDiscovery"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.minArray.verifications.mindArray_CreateNewNetworkDiscovery_index -->
+    </classes>
+  </test> <!-- Create_New_network_Discovery(failed) -->
+</suite> <!-- Failed suite [QCBS] -->

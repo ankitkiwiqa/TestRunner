@@ -1,0 +1,135 @@
+package com.qcbs.pages.indexpages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+import com.qcbs.Init.Common;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_prepare_Indexpage extends AbstractPage {
+
+	public Tender_prepare_Indexpage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+	Tender_updatePrepare_Indexpage tupi = new Tender_updatePrepare_Indexpage(
+			driver);
+
+	Tender_update_prepare_2_Indexpage tpi = new Tender_update_prepare_2_Indexpage(
+			driver);
+
+	/*----------------------------------------TENDER PREPARE AFTER CONFORM FUND--------------------------------------------------------*/
+
+	@FindBy(xpath = "//*[@class='loggedinAsBox']")
+	private WebElement select_loggedin;
+
+	@FindBy(xpath = "//*[@id='mytaskPanel']/div[2]/div/table[1]/tbody/tr/td[1]/table/tbody/tr/td[2]/select")
+	private WebElement select_show;
+
+	@FindBy(xpath = "//*[@id='mytaskPanel']/div[2]/div/table[2]/tbody/tr/td/div/div/div/div[3]/div/div[2]/div/div/table/tbody/tr[1]/td[1]/div/div")
+	private WebElement select_tender_record;
+	
+	
+	
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/div[contains(.,'Edit')]")
+	private WebElement edit_button;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')][contains(.,'ITT')]")
+	private WebElement itt_button;
+
+	@FindBy(xpath = "//div/div/div/div/div[2]/div[1]/div/table[1]/tbody/tr/td[2]/input")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Search')]")
+	private WebElement search_box_button;
+
+	@FindBy(xpath = "//table/tbody/tr[1]/td[7]/div/span[1]/img[@title='Proceed']")
+	private WebElement tender_record;
+	
+	
+	
+
+	public Tender_creation_DashboardPage prepare_after_conform_fund(String title) {
+		
+		
+		common.log("<h3>Step 9:Select Logged In As MOA Department veterinary services officers,Then Select IIT record from MY PENDING TASKS on dashboard</h3>");
+		
+		common.pause(3);
+		/*Select logedin_select = new Select(select_loggedin);
+		logedin_select
+				.selectByVisibleText("MOA Department Veterinary services Project Officer : Office - MOA - Department of Veterinary Services - South East");
+
+		common.pause(3);*/
+
+		tcd.dashboard_verify(); // dashboard verification method
+
+		common.pause(1);
+		/*Select show_select = new Select(select_show);
+		show_select.selectByVisibleText("ITT");
+*/
+
+		
+		common.pause(2);
+		edit_button.click();
+		common.pause(2);
+		itt_button.click();
+		common.pause(5);
+		
+		
+		search_box.sendKeys(title);
+		common.pause(2);
+		search_box_button.click();
+		common.pause(3);
+		
+		
+		
+		
+		common.pause(3);
+
+		
+		select_tender_record.click();
+		common.pause(5);
+
+		
+		tupi.prepare_after_conform_fund();// method called
+		common.pause(2);
+
+		tupi.Update_ITT_Attributes();// update itt attribute
+
+		common.pause(2);
+
+		
+		
+		
+		tupi.Manage_ITT_forms();// manage itt forms method
+
+		common.pause(2);
+
+		tpi.Manage_bid_forms();// manage bid forms
+
+		common.pause(2);
+
+		tpi.add_item();// add boq item
+
+		common.pause(2);
+
+		tpi.Evaluation_criteria();// evaluation criteria
+		common.pause(2);
+		tpi.prepare_notice();
+		common.pause(2);
+		tpi.Prepare_Schedule();
+		common.pause(2);
+		tpi.Preview();
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+}

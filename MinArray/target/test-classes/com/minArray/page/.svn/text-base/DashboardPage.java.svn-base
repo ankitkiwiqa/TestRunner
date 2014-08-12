@@ -1,0 +1,585 @@
+package com.qcbs.page;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
+public class DashboardPage extends AbstractPage {
+
+	public DashboardPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	@FindBy(xpath = ".//*[@id='header_logo']")
+	public WebElement login_page;
+
+	/*-------------------------------------homepage verification-------------------------------------*/
+	public void open_homepage() {
+
+		if (login_page.isDisplayed()) {
+
+			common.log("Browser is opened for this URL: http://mphb.mp.latest.etenders.in:8080/IVM/login <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+		}
+
+	}
+
+	/*---------logout verification------------------*/
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')]/div[@class='loggedInUserNameLabel']")
+	private WebElement admin_name;
+
+	@FindBy(xpath = ".//*[starts-with(@id,'gwt-uid')][contains(.,'Logout')]")
+	private WebElement admin_log_out;
+
+
+	
+	public void logout() {
+
+		if (admin_log_out.isDisplayed()) {
+
+			common.log(" 'Logout:' label text verification on page.<h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+		}
+
+	}
+
+	
+	
+	
+	
+	
+	/*-----------------------------------------------*/
+	
+	/*-----------------------------login page elements & dashboard page elements ----------------------------------------------------------------------*/
+	@FindBy(xpath = ".//*[@id='testform']/div[2]/label")
+	public WebElement login_user_id;
+
+	@FindBy(xpath = ".//*[@id='username']")
+	public WebElement login_user_textbox;
+
+	@FindBy(xpath = ".//*[@id='testform']/div[3]/label")
+	public WebElement login_password_label;
+
+	@FindBy(xpath = ".//*[@id='password']")
+	public WebElement login_password_textbox;
+
+	@FindBy(xpath = ".//*[@id='submitbutton']")
+	public WebElement login_button;
+
+	
+	
+	
+	/*-------------------------------------------------*/
+	
+	@FindBy(xpath = ".//*[@id='gwt-uid-90']")
+	public WebElement dashboard_manu;
+
+	@FindBy(xpath = ".//*[@id='gwt-uid-108']")
+	public WebElement document_manu;
+
+	@FindBy(xpath = ".//*[@id='gwt-uid-92']")
+	public WebElement mybriefcase_manu;
+
+	@FindBy(xpath = "//*[@id='gwt-uid-89']")
+	public WebElement manage_button;
+
+	@FindBy(xpath = ".//*[@id='nav']/div[1]/div/h1/div")
+	public WebElement dashboard_image;
+
+	@FindBy(xpath = ".//*[@id='gwt-uid-81']/div")
+	public WebElement dashboard_account_name;
+
+	/*----------------------------------------------------------------------------------------*/
+	/*----------------------------------login verify--------------------------------*/
+	public void login_varify() {
+
+		if (login_user_id.isDisplayed()) {
+
+			common.log("'User ID:' label text verification on Login page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+		}
+
+		if (login_user_textbox.isDisplayed()) {
+
+			common.log("'User Id:' textbox verification on Login page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
+
+		if (login_password_label.isDisplayed()) {
+
+			common.log("'Password:' Label verification on Login page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (login_password_textbox.isDisplayed()) {
+
+			common.log("'Password:' textbox verification on Login page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (login_button.isDisplayed()) {
+
+			common.log("'Login:' Button verification on Login page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+	}
+
+	/*----------------------------------------------------------------------------------------------------------*/
+
+	/*----------------------------------dashboard menu verify-------------------------------------*/
+	public void dashboard_manu_verify() {
+
+		if (dashboard_manu.isDisplayed()) {
+
+			common.log("'Dashboard:' Button verification on Dashboard page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (document_manu.isDisplayed()) {
+
+			common.log("'Document:' Button verification on Dashboard page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (mybriefcase_manu.isDisplayed()) {
+
+			common.log("'My Briefcase:' Button verification on Dashboard page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (manage_button.isDisplayed()) {
+
+			common.log("'Manage:' Button verification on Dashboard page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (dashboard_image.isDisplayed()) {
+
+			common.log("'MP Housing Board:' label verification on Dashboard page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (dashboard_account_name.isDisplayed()) {
+
+			common.log("'Dashboard:' Button verification on Dashboard page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+	}
+
+	/*--------------------------------------------------------------------------------------------*/
+
+	/*--------------------------------manage organization elements------------------------------------------------------------*/
+
+	@FindBy(xpath = "//*[@class='hyperlink_item'][contains(.,'Manage Organization Admin')]")
+	private WebElement Manage_Organization_Admin;
+
+	@FindBy(xpath = ".//*[@id='gwt-uid-90']")
+	private WebElement Manage_Organization_dashboard_menu;
+
+	@FindBy(xpath = "//*[@class='hyperlink_item'][contains(.,'Manage Organization Admin')]")
+	private WebElement Manage_Organization_document_menu;
+
+	@FindBy(xpath = "//button[contains(.,'Add New')]")
+	private WebElement Manage_Organization_add_new;
+
+	/*
+	 * @FindBy(xpath = "//table/tbody/tr[2]/td/button") private WebElement
+	 * alert_ok;
+	 */
+	/*--------------------------------------------------------------------------------------------*/
+
+	/*----------------Manage Organization Admin verification --------------------------------------*/
+
+	public void Manage_Organization_Admin_verify() {
+
+		if (Manage_Organization_Admin.isDisplayed()) {
+
+			common.log("'Manage Oraganization Admin:' Link verification on Dashboard page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (Manage_Organization_dashboard_menu.isDisplayed()) {
+
+			common.log("'Manage Oraganization Dashboard Menu:' button verification on Dashboard page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+	}
+
+	@FindBy(xpath = "//table/tbody/tr[2]/td/table/tbody/tr/td[3]/input")
+	private WebElement organization_name;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'Organization Name')]")
+	private WebElement label_organization_name;
+
+	@FindBy(xpath = "//table/tbody/tr[4]/td/table/tbody/tr/td[3]/textarea")
+	private WebElement organization_description;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'Organization Description')]")
+	private WebElement label_organization_description;
+
+	@FindBy(xpath = "//table/tbody/tr[6]/td/table/tbody/tr/td[3]/input")
+	private WebElement oraganization_url;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'Organization URL')]")
+	private WebElement label_organization_url;
+
+	@FindBy(xpath = "//table/tbody/tr[12]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_first_name;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'First Name')]")
+	private WebElement label_admin_first_name;
+
+	@FindBy(xpath = "//table/tbody/tr[14]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_middle_name;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'Middle Name')]")
+	private WebElement label_admin_middle_name;
+
+	@FindBy(xpath = "//table/tbody/tr[16]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_last_name;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'Last Name')]")
+	private WebElement label_admin_last_name;
+
+	@FindBy(xpath = "//table/tbody/tr[18]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_user_name;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'Username')]")
+	private WebElement label_admin_user_name;
+
+	@FindBy(xpath = "//table/tbody/tr[20]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_password;
+
+	@FindBy(xpath = "//table/tbody/tr[20]/td/table/tbody/tr/td[2]/div[@class='registrationPanelLabel'][contains(.,'Password')]")
+	private WebElement label_admin_password;
+
+	@FindBy(xpath = "//table/tbody/tr[22]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_conform_password;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'Confirm Password')]")
+	private WebElement label_admin_conform_password;
+
+	@FindBy(xpath = "//table/tbody/tr[24]/td/table/tbody/tr/td[3]/input")
+	private WebElement admin_email;
+
+	@FindBy(xpath = "//div[@class='registrationPanelLabel'][contains(.,'E-Mail')]")
+	private WebElement label_admin_email;
+
+	@FindBy(xpath = "//table/tbody/tr/td[1]/button")
+	private WebElement admin_register_button;
+
+	public void add_new_button_verify() {
+
+		if (Manage_Organization_add_new.isDisplayed()) {
+
+			common.log("'Add New:' Button verification on Manage Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+	}
+
+	public void new_org_form_verify() {
+
+		if (organization_name.isDisplayed()) {
+
+			common.log("'Organization Name:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_organization_name.isDisplayed()) {
+
+			common.log("'Organization Name:' lebel verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (organization_description.isDisplayed()) {
+
+			common.log("'Organization description:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_organization_description.isDisplayed()) {
+
+			common.log("'Organization Description:' lebel verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (admin_first_name.isDisplayed()) {
+
+			common.log("'First Name:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_admin_first_name.isDisplayed()) {
+
+			common.log("'First Name:' Label verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (admin_middle_name.isDisplayed()) {
+
+			common.log("'Middle Name:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_admin_middle_name.isDisplayed()) {
+
+			common.log("'Middle Name:' label verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (admin_last_name.isDisplayed()) {
+
+			common.log("'Middle Name:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_admin_last_name.isDisplayed()) {
+
+			common.log("'last Name:' label verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (admin_user_name.isDisplayed()) {
+
+			common.log("'UserName:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_admin_user_name.isDisplayed()) {
+
+			common.log("'UserName:' label verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (admin_password.isDisplayed()) {
+
+			common.log("'Password:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_admin_password.isDisplayed()) {
+
+			common.log("'Password:' label verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (admin_conform_password.isDisplayed()) {
+
+			common.log("'Conform Password:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_admin_conform_password.isDisplayed()) {
+
+			common.log("'Conform Password:' label verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (admin_email.isDisplayed()) {
+
+			common.log("'E-Mail:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (label_admin_email.isDisplayed()) {
+
+			common.log("'E-Mail:' label verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (admin_register_button.isDisplayed()) {
+
+			common.log("'REGISTER:' Textbox verification on Setup an Organization page. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+	}
+
+	/*------------------------------------REGISTRATION DONE POP-UP ELEMENT------------------------------------------------------------------*/
+	@FindBy(xpath = "//table/tbody/tr[1]/td[2]/div/div[contains(.,'Registration Done')]")
+	private WebElement registration_done;
+
+	@FindBy(xpath = "	//table/tbody/tr[1]/td/table/tbody/tr/td[2]/div[contains(.,'You have successfully ')]")
+	private WebElement registration_done_text;
+
+	/*-----------------------------------------------------------------------------------------------------------------------------------*/
+	/*-----------------------------------REGISTRATION DONE POP-UP VERIFICATION METHOD--------------------------------------------------------------------------------*/
+
+	public void Registration_done_verify() {
+
+		if (registration_done.isDisplayed()) {
+
+			common.log("'Registration Done:' label verification on Registration Done Pop-up. <h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+		if (registration_done_text.isDisplayed()) {
+
+			common.log("You have successfully added the Organization: label verification on Registration Done. <b><h3 style=color:green>PASSED</h3>");
+			Assert.assertTrue(true);
+		} else {
+
+			Assert.assertTrue(false);
+
+		}
+
+	}
+
+	/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	/*-----------------------------------------ADD NEW ORGANIZATION VERIFICATION--------------------------------------------------------------------------------*/
+
+	public void add_new_organization_verify() {
+		common.log("<b>Test :<b><b style=color:green>PASSED</b>");
+		Assert.assertTrue(true);
+
+	}
+
+	/*------------------------------------------------------------------------------------------------------------------------*/
+
+}

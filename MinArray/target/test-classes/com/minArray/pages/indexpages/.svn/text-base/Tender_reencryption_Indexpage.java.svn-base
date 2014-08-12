@@ -1,0 +1,116 @@
+package com.qcbs.pages.indexpages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.qcbs.Init.Common;
+import com.qcbs.page.AbstractPage;
+import com.qcbs.page.Tender_creation_DashboardPage;
+
+public class Tender_reencryption_Indexpage extends AbstractPage {
+
+	public Tender_reencryption_Indexpage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	Common common = new Common(driver);
+
+	Tender_creation_DashboardPage tcd = new Tender_creation_DashboardPage(
+			driver);
+
+	@FindBy(xpath = "//input[@class='searchBox']")
+	private WebElement search_box;
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'Search')]")
+	private WebElement search_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Edit')]")
+	private WebElement edit_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'ITT')]")
+	private WebElement itt_button;
+
+	@FindBy(xpath = "//img[@title='Proceed']")
+	private WebElement tender_respond_button;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'Dashboard')]")
+	private WebElement dashboardmanu;
+
+	@FindBy(xpath = "//*[starts-with(@id,'gwt-uid')][contains(.,'My Briefcase')]")
+	private WebElement mybriefcase;
+
+	@FindBy(xpath = ".//*[@class='loggedInUserNameLabel']")
+	private WebElement account_name;
+
+	@FindBy(xpath = "//img[@class='block_head_image'][@alt='ReEncrypt']")
+	private WebElement reencrypt_button;
+
+	@FindBy(xpath = "//div[@class='hyperlink_item'][contains(.,'Bid Re-encryption')]")
+	private WebElement reencrypt_label_button;
+
+	@FindBy(xpath = "//button[contains(.,'Yes')]")
+	private WebElement yes_button;
+
+	public Tender_creation_DashboardPage select_tender_for_encrypt() {
+
+		common.log("<h3>Step 3:Click on Edit,Click on ITT,Select Record For Procced.</h3>");
+		common.pause(1);
+		tcd.verification_method(dashboardmanu, "Dashboard", "Button",
+				"Dashboard");
+		tcd.verification_method(mybriefcase, "My Briefcase", "Button",
+				"Dashboard");
+		tcd.verification_method(account_name, "User Name", "Label", "Dashboard");
+
+		common.pause(1);
+		edit_button.click();
+		common.pause(1);
+		itt_button.click();
+		common.pause(7);
+Tender_bid_Indexpage tbi=new Tender_bid_Indexpage(driver);
+		
+		search_box.sendKeys(tbi.Tender_name);
+		common.pause(1);
+		search_button.click();
+		common.pause(4);
+
+		tender_respond_button.click();
+		common.pause(5);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+	@FindBy(xpath = "//button[@class='gwt-Button'][contains(.,'OK')]")
+	private WebElement ok_button;
+
+	@FindBy(xpath = "//img[@alt='Proceed To Next']")
+	private WebElement next_button;
+
+	public Tender_creation_DashboardPage bid_reencryption() {
+
+		common.log("<h3>Step 5:Click on Reencrypt,Click on Complete on Bid Re-encryption Page </h3>");
+
+		common.pause(5);
+		tcd.verification_method(reencrypt_label_button, "Bid Re-encryption",
+				"Button", "Bid Re-encryption");
+		common.pause(1);
+		reencrypt_button.click();
+		common.pause(1);
+
+		yes_button.click();
+		common.pause(3);
+
+		ok_button.click();
+		common.pause(2);
+
+		next_button.click();
+		common.pause(2);
+
+		ok_button.click();
+		common.pause(2);
+
+		return new Tender_creation_DashboardPage(driver);
+	}
+
+}

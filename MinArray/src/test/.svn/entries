@@ -1,0 +1,31 @@
+10
+
+dir
+12
+https://59.90.218.3:3693/svn/load_testing/QCBS/src/test
+https://59.90.218.3:3693/svn/load_testing
+
+
+
+2014-07-10T08:35:43.100158Z
+12
+kiwiqa
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7795437f-b56a-43a2-b627-abb1ce54b6ba
+
+java
+dir
+
